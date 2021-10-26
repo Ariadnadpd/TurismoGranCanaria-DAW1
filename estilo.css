@@ -1,0 +1,1259 @@
+/* Estilo común */
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  margin: 40px;
+  background-color: #FBFCFD;
+  font-family: "LPBentonSans";
+}
+
+/*.zoom {
+  padding-right: 40px;
+  padding-left: 40px;
+}*/
+
+h1 {
+  text-align: center;
+}
+
+hr {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 92%;
+  color: #374861;
+}
+
+em {
+  font-weight: bold;
+}
+
+.header1{
+  width: 100%;
+  height: 300px;
+  background-image: url(./imagenes/fondo.jpeg);
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center 40%;
+  position: relative;
+}
+
+
+
+/***************************************** Header *****************************************/
+
+/*** Menú ***/
+.navegacion{
+  position:  absolute;
+  width: 50%;
+  left:  1%;
+  margin-top:  1.5%;
+  height: 71px;
+}
+
+.navegacion ul{
+  list-style: none;
+}
+
+.menu > li{
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a{
+  display: block;
+  padding: 12px 15px;
+  color: #374861;
+  text-decoration: none;
+}
+
+.menu li a {
+  font-weight: bold;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.menu li a:hover{
+  color: #CDADAB;
+  transition: all .3s;
+}
+
+.submenu{
+  position: absolute;
+  background: #333333;
+  width: 120%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.submenu li a{
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+  z-index: 50;
+}
+
+/*** Buscador ***/
+
+.contenedor_buscador {
+    position:  absolute;
+    left:  70%;
+    max-width: 450px;
+    width: 25%;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:  1.5%;
+
+    
+}
+
+.contenedor_buscador .buscador {
+    width: 100%;
+    border-radius: 10em;
+    position: relative;
+    box-shadow: 0px 1px 5px 5px rgba(0,0,0,0.2);
+
+}
+
+.buscador input {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 60px 0 20px;
+    font-size: 1em;
+    background-color: transparent;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+
+}
+
+.buscador div i {
+    position: absolute;
+    right:0px;
+    top: 0px;
+    height: 30px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1em;
+    color: black;
+    cursor: pointer;
+}
+
+/*logo*/
+
+.logon {
+  width: 10%;
+  left:52%;
+  position:  absolute;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:  1.5%;
+}
+
+.logon img {
+  width:  100%;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: left;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display:  none;
+}
+
+#check{
+  display: none;
+}
+
+/**************************+***** Fin del header ******************************************/
+
+
+/******************************** Páginas principales ************************************/
+
+/* Video Presentacion */
+
+.presentacion_gc_insider {
+  
+  margin: auto;
+}
+
+.presentacion_gc_insider h1, .contenedor h2,
+ .contenedor2 h2, .contenedor3 h2{
+  margin-top: 4%;
+  font-size: 2.4rem;
+  position: relative;
+  font-style: normal;
+  font-weight: 100;
+  color: #4b5258;
+  text-align: center;
+}
+
+.presentacion_gc_insider p {
+  text-align: justify;
+  /*text-indent: 1.65em;*/
+  margin: auto;
+  width: 80%;
+  font-size: 1.2em;
+}
+
+.presentacion_gc_insider video {
+  margin: auto;
+  display: block;
+  margin-top: 1.7%;
+  width: 70%;
+}
+
+/*** Imagenes páginas principales de Artesanía y A donde ir ***/
+
+.presentacion {
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+}
+
+.presentacion p {
+  width: 85%;
+  padding: 15px;
+  font-size: 1.2em;
+  line-height: normal;
+  text-align: justify;
+  text-indent: 1.65em;
+}
+
+.presentacion .img_presentacion{
+  float: right;
+  width: 40%;
+  height: 340px;
+  margin-left: 45px;
+  border-radius: 0.3em;
+}
+
+/*** Imagenes paginas principales Gastronomía y Actividades ***/
+.presentacion_columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.presentacion_columna .imagenes_horizontales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 85%;
+}
+
+.presentacion_columna .imagenes_horizontales img {
+  width: 45%;
+  height: 300px;
+  border-radius: 0.3em;
+}
+
+
+
+/*** Seccion imángees en disposición GRID ***/
+.contenedor, .contenedor2, .contenedor3 {
+  width: 95%;
+  margin: auto;
+}
+
+.contenedor-grid{ 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  grid-gap: 1px;
+  margin-top: 6%;
+}
+
+
+.contenedor-grid2,
+.contenedor-grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  grid-gap: 1px; 
+  margin-top: 6%;
+}
+
+.contenedor-grid2 div:nth-child(1){
+  grid-column-start: span 2;
+}
+
+.contenedor-grid2 div:nth-child(1) .img2{
+  grid-column-start: span 2;
+  width: 90%;
+}
+
+.contenedor-grid div,
+.contenedor-grid2 div,
+.contenedor-grid3 div {
+  position:relative;
+}
+
+.contenedor-grid div p,
+.contenedor-grid2 div p,
+.contenedor-grid3 div p{
+  position: absolute;
+  left:12.5%;
+  top:0;
+  visibility: hidden;
+  color:#243342;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: 150;
+  text-align: center;
+  width: 75%;
+}
+
+.contenedor-grid div:hover p,
+.contenedor-grid2 div:hover p,
+.contenedor-grid3 div:hover p{
+    visibility: visible;
+}
+
+.contenedor-grid div:hover .img,
+.contenedor-grid2 div:hover .img2,
+.contenedor-grid3 div:hover .img3{
+  opacity: 0.6;
+}
+
+.img, .img2, .img3 {
+  width: 82%;
+  height: 90%;
+  display: block;
+  margin: auto;
+  border-radius: 0.3em;
+  object-fit: cover;
+}
+
+.img3:hover {
+  transform: scale(0.75);
+  transition: all 1.5s;
+}
+
+.contenedor .fila_1 {
+    margin-top: 4%;
+}
+
+.contenedor .img1 {
+  float: left;
+  width: 45%;
+  height: 50%;
+  margin-left: 8%;
+}
+
+.contenedor .img2 {
+  float: right;
+  width: 25%;
+  height: 50%;
+  margin-right:9%;
+  margin-top: 2%;
+}
+
+.contenedor .fila_2 {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5.5%;
+}
+
+.contenedor .img3,
+.contenedor .img4,
+.contenedor .img5 {
+  width: 32%;
+  border-radius:57%;
+  height: auto;
+} 
+
+
+/*********************************** Fin de Páginas principales ************************************/
+
+
+/******************************************* Footer ************************************************/
+
+footer {
+    background-image: linear-gradient(50deg,#243342, #374861, #606B78 );
+    overflow: hidden;
+    /*height: auto;*/
+    height: 120%;
+    margin-top: 4%;
+    padding: 25px;
+}
+
+.capa_principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.primera_capa {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primera_capa #iconos{
+  font-size: 1.4em;
+  color: #fff;
+  display: flex;
+}
+
+.primera_capa #iconos div i {
+  padding: 15px;
+}
+
+.primera_capa #seccion_logo img{
+  width: 33%;
+}
+
+.segunda_capa{
+  display:flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.segunda_capa .nombre_pagina_footer {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.segunda_capa .copyright {
+  color: white;
+  font-weight: bold;
+  font-size: 0.75em; 
+}
+
+.segunda_capa p {
+  padding:15px;
+}
+
+.tercera_capa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tercera_capa img{
+  width: 10%;
+  padding-top: 1.5%;
+}
+/********************************************* Fin de Footer ******************************************/
+
+/******************************************** Migas de pan ********************************************/
+
+.migasdepan {
+  background-image: linear-gradient(50deg,#243342, #374861, #606B78 );
+  
+  
+}
+/* Style the list */
+ul.migasdepan {
+    padding: 10px 16px;
+    list-style: none;
+    background-image: linear-gradient(50deg,#1E2B3E, #243342, #606B78);
+  }
+  
+  /* Display list items side by side */
+  ul.migasdepan li {
+    display: inline;
+    font-size: 1.125em;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.migasdepan li+li:before {
+    padding: 8px;
+    color: #eee;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.migasdepan li a {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  /* Add a color on mouse-over */
+  ul.migasdepan li a:hover {
+    color: #B78D8B;
+    font-size: 1.3em;
+    transition: 0.2s;
+  }
+
+  ul.migasdepan li a:focus {
+    background-size: 100% 2px;
+  }
+
+  .migasdepan_sinespacio {
+    margin-top: -1.5%;
+  }
+
+  /****************************************** Fin de Migas de pan ********************************************/
+
+  /**************************************** Páginas principales **********************************************/
+
+  .presentacion .texto{
+    margin: 5%;
+    text-align: justify;
+  }
+
+  /* Imagen principal de a donde ir*/
+  #cala {
+    display: grid;
+    float: right;
+    width: 200px; height: 200px;
+  }
+
+
+  /*** Título de las páginas principales  ***/
+  
+  .catras {
+    background-image: url(./imagenes/fondo.jpeg);
+    background-size: cover;
+    background-position: bottom ;
+  }
+
+  
+  /*.catras .atras{
+    text-decoration: none;
+    color:black;
+    width: 30%;
+  }*/
+
+  .header2 .nombre_pagina {
+    text-transform: uppercase;
+  }
+
+  .catras .nombre_pagina {
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    color: #eee;
+    margin: auto;
+  }
+
+  .vacio {
+    width: 30%;
+    background-color: blue;
+  }
+
+   
+  /*** Enlaces a categorías ***/
+ 
+  .nnav {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .catras {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .cenlaces {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .cenlaces .menu2 {
+    margin-left: -2%;
+  }
+
+  .cenlaces .menu2 li { 
+    display: inline-table;
+    padding: 7px;
+  }
+
+  .cenlaces .menu2 li a{ 
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  /* Efecto hover */
+  .cenlaces .menu2 li a {
+    text-decoration: none;
+    background-image: linear-gradient(#374861, #374861);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+  .cenlaces .menu2 li a:hover, a:focus {
+    background-size: 100% 2px;
+  }
+
+  /*** Imagenes de la parte de abajo ***/
+
+  .contenedor2 {
+    display: grid;
+  }
+
+  .img1_1, .img2_2, .img3_3, .img4_4 {
+    width: 300px; height: 300px;
+    border-radius: 0.3em;
+  }
+
+
+
+  /*************************************** Páginas de categorías  ***************************************/
+
+  /********* Parte de arriba de las categorías (texto e imagenes) *********/
+
+  /*** Presentación categoría actividades y artesanía ***/
+
+  .presentacion_categoria {
+   /* margin: 2.5% 5%;*/
+   margin: 0;
+  }
+
+  .presentacion_categoria p {
+    font-size: 1.2em;
+    line-height: normal;
+    text-align: justify;
+  }
+  
+  /* Slider De Imágenes */
+
+.slider-frame {
+  width: 62%;
+  height: auto;
+  margin:50px auto 0;
+  overflow: hidden;
+
+  position: relative;
+}
+  
+.slider-frame .slide {
+  display: flex;
+  padding: 0;
+  width: 500%;
+    
+  animation: desplazamiento 20s infinite alternate ease-in-out;
+}
+  
+.slider-frame .slide li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider-frame .slide li h3{
+  position: absolute;
+  padding: 10px;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color:#fff;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  width:auto;
+  
+}
+.slider-frame img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+  
+@keyframes desplazamiento {
+  0% {margin-left: 0;}
+  10% {margin-left: 0;}
+
+  22% {margin-left: -100%;}
+  32% {margin-left: -100%;}
+
+  44% {margin-left: -200%;}
+  54% {margin-left: -200%;}
+
+  66% {margin-left: -300%;}
+  76% {margin-left: -300%;}
+
+  88% {margin-left: -400%;}
+  100% {margin-left: -400%;}
+}
+
+
+  /*** Presentación categoría a donde ir y gastronomía ***/
+
+  .presentacion_categoria1 {
+    margin: 60px;
+    display: block;
+    padding-right: 40px;
+    padding-left:40px;
+  }
+  
+  .presentacion_categoria1 p {
+    font-size: 1.2em;
+    line-height: normal;
+    text-align: justify;
+  }
+
+  .presentacion_categoria1 .texto p{
+    font-size: 1.2em;
+    line-height: normal;
+    text-align: justify;
+  }
+
+  .bloque_imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .img_presentacion_cat1, .img_presentacion_cat_grande1 {
+    width: 270px; height: 270px;
+    border-radius: 0.3em;
+    margin: 3px;
+    object-fit: cover;
+  }
+
+  /********* Parte de abajo de las categorías (mapa y enlaces) *********/
+
+  .contenedor_int{
+    display: flex; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  
+  .masinfo p{
+    width: 100%;
+  }
+
+
+  .h3enlaces {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .hrenlaces {
+    width: 100%;
+  }
+
+  .h4enlaces {
+    font-size: 1.5em;
+    font-weight: bold;
+    
+  }
+
+  .penlaces {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .mapa1 {
+    width: 40%;
+  }
+
+  .mapa1 iframe {
+    display: block;
+    margin: 10% auto;
+    width: 100%;
+    height: 460px;
+  } 
+
+  .contenedor {
+    margin: 2%;
+    margin-right: 3%;
+  }
+
+  .masinfo {
+    width: 45%;  
+  }
+  
+  /* Caja de información de todas las categorías (enlaces) */
+  .cajainfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  /* Caja de información de parques temáticos (enlaces) */
+  .cajainfopt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  /* Caja de información de senderismos (enlaces) */
+  .cajainfos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .cajainfopt {
+    grid-column-gap: 10%;
+  }
+
+  .cajainfo section {
+    grid-column-gap: 50px;
+    grid-row-gap: 1em;
+  }
+
+
+  .masinfo a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a.boton {
+    border: 2px solid #5D7893;
+    border-radius: 0.40em;
+    background-color: #9AB3CC;
+    padding: 7px; 
+    color: white;
+  }
+
+  
+
+  /*** Iconos de los enlaces en las categorías ***/
+
+  .iconosrss {
+    width: 15px;
+    height: 13px;
+    margin-left: 7px;
+  }
+  
+  .iconoscu {
+    width: 15px;
+    height: 13px;
+    margin-left: 7px;
+  }
+
+/*************************************** Fin de Páginas de categorías  ***************************************/
+
+
+/************************************************ RESPONSIVE  ************************************************/
+
+
+
+@media screen and (max-width: 1311px) {
+
+  .menu li a {
+    font-size: 0.6em;
+  }
+}
+
+
+@media screen and (max-width: 1198px) {
+
+  .menu > li > a{
+    padding:  10px 12px;
+  }
+
+  .contenedor_buscador {
+      width: 20%;
+      left:  70%;
+  }
+
+  .logon {
+    width: 8%;
+    left:  53%;
+  }
+
+  .navegacion{
+    width:  60%;
+  }
+
+  .buscador input {
+    font-size:  0.75em;
+  }
+}
+
+
+
+
+/********* Estilo para ordenadores *********/
+@media screen and (max-width: 1024px) {
+  
+  .contenedor_buscador .buscador input::-moz-placeholder {
+    opacity: 0;
+  }
+
+  .contenedor_buscador .buscador input {
+    font-size: 0.4em;
+  }
+
+  .mapa1, .cajainfo, .contenedor, .contenedor_int, .masinfo, .presentacion_categoria1, .bloque_imagenes{
+    margin: auto;
+    width: 100%;
+  }
+
+  .contenedor_int {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cajainfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cajainfopt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .cajainfopt {
+    grid-column-gap: 5%;
+  }
+
+  .masinfo {
+    display: block;
+    margin: -5% 25% 0 7%;
+  }
+
+  .hrenlaces {
+    width: 50%;
+    margin-right: 50%;
+  }
+  
+  .mapa1 {
+    margin-top: 1%;
+  }
+
+  .mapa1 iframe {
+    margin: 10% auto;
+    width: 85%;
+  } 
+
+  .bloque_imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+  }
+
+  .img_presentacion_cat, .img_presentacion_cat_grande {
+    width: 300px; height: 300px;
+    margin: 5px;
+  }
+
+  .img_presentacion_cat1, .img_presentacion_cat_grande1 {
+    width: 300px; height: 300px;
+    border-radius: 0.3em;
+    margin: 5px;
+  }
+  
+  .presentacion_categoria1 p {
+    font-size: 1.2em;
+    line-height: normal;
+    text-align: justify;
+  }
+
+
+  /* Imagenes páginas principales */
+
+  .presentacion .img_presentacion {
+    height: 200px;
+    width: 55%;
+    padding-left: 20px;
+  }
+
+
+  /********* Footer *********/
+
+  .primera_capa #seccion_logo img {
+    width: 70%;
+  }
+
+  .tercera_capa {
+    width: 80%;
+  }
+
+  .presentacion_columna .imagenes_horizontales img {
+    height: 200px;
+    width: 70%;
+    padding: 15px;
+  }
+
+  .presentacion_columna .imagenes_horizontales {
+    flex-direction: column;
+  }
+
+
+  .img, .img2, .img3 {
+    height: 72%;
+    
+  }
+
+  .contenedor-grid div p{
+    font-size: 1.1em;
+    width: 45%;
+    left: 27%;
+    top: 20%;
+  }
+
+  .contenedor-grid2 div p{
+    font-size: 1.1em;
+    width: 80%;
+    left: 10%;
+    top: 20%; 
+  }
+
+  .contenedor-grid3 div p{
+    font-size: 0.75em;
+    width: 80%;
+    left: 10%;
+    top: 20%; 
+  }
+
+  .contenedor-grid3 {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .contenedor-grid div .img,
+  .contenedor-grid2 div .img2,
+  .contenedor-grid3 div .img3 {
+    border-radius: 0.3em;
+  }
+
+}
+
+
+@media screen and (max-width: 1030px) {
+
+  .logon {
+    left:  60%;
+  }
+
+  .contenedor_buscador {
+    left:  78%;
+  }
+}
+
+
+
+/********** Estilo para tablets *********/
+
+
+@media screen and (max-width: 930px) {
+
+  .contenedor_buscador {
+    left:  80%;
+    width: 17%;
+  }
+
+  .logon {
+    left:  67%;
+  }
+
+  .navegacion{
+    width:  68%;
+  }
+  .buscador input {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  #check:checked ~ ul{
+    left:  6.5%;
+    top: 10.8%;
+    height: 85%;
+  }
+
+
+
+  .checkbtn{
+    display: block;
+    margin-left: 2%;
+    visibility: visible;
+  }
+
+  /*ul{*/
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 50%;
+    height: 45%;
+    background: #2c3e50;
+    top: 90px;
+    left: -120%;
+    text-align: center;
+    transition: all .5s;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0;
+    z-index: 70;
+    overflow-y: auto;
+  }
+
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+
+  }
+
+  nav .menu li a{
+    font-size: 0.5em;
+    color: #eee;
+  }
+
+  li a:hover, li a.active{
+    background: none;
+    color: red;
+  }
+
+  .menu li:hover .submenu{
+    display: none;
+  }
+
+  .menu i {
+    display: none;
+  }
+
+  .logon {
+    width:  15%;
+    left:  45%;
+    margin-top: 1%;
+  }
+}
+
+
+/********** Estilo para móviles *********/
+
+@media screen and (max-width: 715px) {
+
+  .bloque_imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+   
+  }
+  .img_presentacion_cat_grande, .img_presentacion_cat {
+    width: 300px; height: 300px;
+  }
+  
+  .img_presentacion_cat1, .img_presentacion_cat_grande1 {
+    width: 300px; height: 300px;
+    border-radius: 0.3em;
+  }
+
+  .buscador input {
+    font-size: 0.90em;  
+  }
+
+  .contenedor_buscador input{
+    font-size: 0.65em;
+    padding: 0 40px 0 10px;
+  }
+
+
+}
+
+@media screen and (max-width: 608px) {
+
+  .presentacion_categoria1 {
+    margin: auto;
+  }
+
+  .bloque_imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .img_presentacion_cat_grande, .img_presentacion_cat {
+    width: 200px; height: 200px;
+    padding: 2px;
+  }
+
+  .img_presentacion_cat1, .img_presentacion_cat_grande1 {
+    width: 200px; height: 200px;
+    border-radius: 0.3em;
+    padding: 2px;
+  }
+
+  .buscador input {
+    font-size: 0.75em;  
+  }
+
+  #check:checked ~ ul{
+    left:  9.5%;
+  }
+
+  .logon {
+    margin-top: 3%;
+    width:  26%;
+    left:  30%;
+  }
+
+  .contenedor_buscador {
+    width: 29%;
+    left: 67%;
+  }
+
+  .contenedor_buscador input{
+    font-size: 0.5em;
+    padding: 0 40px 0 10px;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+  .bloque_imagenes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .img_presentacion_cat_grande, .img_presentacion_cat {
+    width: 200px; height: 200px;
+    border-radius: 0.3em;
+  }
+
+  .img_presentacion_cat1, .img_presentacion_cat_grande1 {
+    width: 200px; height: 200px;
+    border-radius: 0.3em;
+
+  }
+}
+
+/********************************************** FIN RESPONSIVE  **********************************************/
