@@ -15,58 +15,17 @@
 		<meta name= "keywords" content= "Turismo, Gastronomía, Actividades, Artesanía, A donde ir, Gran Canaria">
 		<meta http-equiv= "refresh" content="400"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script>
+			$(function(){
+			   $('.header_dinamico').load("../carga_ficheros/header_footer.html .header1");
+			   $('.footer_dinamico').load("../carga_ficheros/header_footer.html .footer");
+			});
+		</script>
 	</head>
 	<body>
 		<!-- Menú de navegación-->
-		<header class="header1">
-			<nav class="navegacion">
-				<input type="checkbox" id="check">
-				<label for="check" class="checkbtn">
-						<i class="fas fa-bars"></i>
-				</label>
-				<ul class="menu">
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="../artesania.html">Artesanía <i class="fas fa-angle-down"></i></a>
-						<ul class="submenu">
-							<li><a href="../artesania/alfareria.html">Alfarería</a></li>
-							<li><a href="../artesania/canteria.html">Cantería</a></li>
-							<li><a href="../artesania/cuchilloscanarios.html">Cuchillería</a></li>
-							<li><a href="../artesania/trajestradicionales.html">Trajes tradicionales</a></li>
-						</ul>
-					</li>
-					<li><a href="../gastronomia.html">Gastronomía <i class="fas fa-angle-down"></i></a>
-						<ul class="submenu">
-							<li><a href="../gastronomia/platos.html">Platos típicos</a></li>
-							<li><a href="../gastronomia/postres.html">Postres típicos</a></li>
-						</ul>
-					</li>
-					<li><a href="../adondeir.html">A dónde ir <i class="fas fa-angle-down"></i></a>
-						<ul class="submenu">
-							<li><a href="../adondeir/museos.html">Museos</a></li>
-							<li><a href="../adondeir/parquesnaturales.html">Parques naturales</a></li>
-							<li><a href="../adondeir/playas.html">Playas</a></li>
-						</ul>
-					</li>
-					<li><a href="../actividades.html">Actividades <i class="fas fa-angle-down"></i></a>
-						<ul class="submenu">
-							<li><a href="../actividades/buceo.html">Buceo</a></li>
-							<li><a href="../actividades/parquestematicos.html">Parques temáticos</a></li>
-							<li><a href="../actividades/senderismos.html">Senderismos</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			
-			<section class="logon">
-				<a href="../index.html"><img id="logo" src="../imagenes/logo.png" alt="Logo GC-Insider"></a>
-			</section>   
-			<form class="contenedor_buscador">
-				<div class="buscador">
-					<input type="search" placeholder="Buscar aquí">
-					<div><i class="fas fa-search"></i></div>
-				</div>
-			</form>
-		</header>
+		<div class="header_dinamico"></div>
 
 		<main>
 			<section class="main">
@@ -217,33 +176,6 @@
 		</section>
 	
 		<!-- Pie de página del sitio web -->
-		<footer class="footer">
-			<section class="capa_principal">
-				<section class="primera_capa">
-					<section id="seccion_logo">
-						<img src="../imagenes/logo.png" alt="Logo Gran Canaria Insider">
-					</section>
-
-					<section id="iconos">
-						<div class="twitter"><i class="fab fa-twitter"></i></div>
-						<div class="youtube"><i class="fab fa-youtube"></i></div>
-						<div class="instagram"><i class="fab fa-instagram"></i></div>
-						<div class="facebook"><i class="fab fa-facebook"></i></div>
-						<div class="rss"><i class="fas fa-rss"></i></div>
-					</section>
-				</section>
-					
-				<section class="segunda_capa">
-					<p class="nombre_pagina_footer">Turismo en Gran Canaria</p>
-					<p class="copyright">2021 © Gran Canaria Insider</p>	
-				</section>
-
-				<section class="tercera_capa">
-					<img src="../imagenes/gobierno.png" alt="Gobierno de Canarias">
-					<img src="../imagenes/ministerioturismo.png" alt="Ministerio de Turismo">
-					<img src="../imagenes/cabildo.jpeg" alt="Cabildo de Gran canaria">
-				</section>	
-			</section>
-		</footer>
+		<div class="footer_dinamico"></div>
 	</body>
 </html>
