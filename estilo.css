@@ -412,46 +412,105 @@ footer {
   justify-content: center;
 }
 
+/*.capa_principal .primera_capa {
+  border: 2px solid red;
+}*/
+
+#seccion_logo , #iconos , #seccion_texto{
+  /*border: 2px solid green;*/
+  flex: 2;
+}
+
 .primera_capa {
   display:flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .primera_capa #iconos{
-  font-size: 1.4em;
-  color: #fff;
+  font-size: 1.1em;
   display: flex;
+  align-content: center;
+  justify-content: center;
+  flex: 1.5;
 }
 
 .primera_capa #iconos div i {
-  padding: 15px;
+  padding: 10px;
+}
+
+.primera_capa #iconos div a i{
+  text-decoration: none;
+  color:white;
 }
 
 .primera_capa #seccion_logo img{
   width: 33%;
 }
 
-.segunda_capa{
-  display:flex;
+.primera_capa #seccion_logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex: 1.5;
+}
+
+#seccion_texto {
+  display: flex;
+  flex-direction: column;
+}
+
+#seccion_texto #seccion_enlaces {
+  /*border: 2px solid yellow;*/
+  width: 100%;
+  display: flex;
+  flex-direction: initial;
   align-items: center;
-  justify-content: center; 
+  justify-content:center; 
 }
 
-.segunda_capa .nombre_pagina_footer {
+
+#seccion_texto .seccion_info {
+  /*border: 2px solid black;*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+#ulenlaces {
+  margin-left: -7%;
+  text-align: center;
+  margin-right: 2%;
+}
+
+#ulenlaces li {
+  display: inline;
+}
+
+#ulenlaces li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.9em;
   color: white;
-  font-weight: bold;
-  font-size: 1.4em;
 }
 
-.segunda_capa .copyright {
+#ulenlaces li+li:before {
   color: white;
-  font-weight: bold;
-  font-size: 0.75em; 
+  content: "-\00a0";
 }
 
-.segunda_capa p {
-  padding:15px;
+#seccion_texto p{
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 0.9em;
+}
+
+.seccion_info .nombre_pagina_footer {
+  font-weight: bold;
 }
 
 .tercera_capa {
@@ -470,9 +529,8 @@ footer {
 
 .migasdepan {
   background-image: linear-gradient(50deg,#243342, #374861, #606B78 );
-  
-  
 }
+
 /* Style the list */
 ul.migasdepan {
     padding: 10px 16px;
@@ -995,8 +1053,23 @@ ul.migasdepan {
 
   /********* Footer *********/
 
-  .primera_capa #seccion_logo img {
-    width: 70%;
+  
+  .primera_capa #seccion_texto ul li a, p {
+    font-size:x-small;
+  }
+
+  .primera_capa #seccion_texto p {
+    font-size:x-small;
+  }
+
+  .primera_capa #iconos{
+    font-size: 1em;
+    flex: 1.5;
+    
+  }
+
+  .primera_capa #iconos div i {
+    padding: 3px;
   }
 
   .tercera_capa {
