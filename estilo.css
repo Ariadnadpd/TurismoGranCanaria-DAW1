@@ -922,6 +922,18 @@ ul.migasdepan {
 
 /*************************************** Fin de Páginas de categorías  ***************************************/
 
+/************************** Páginas de Preguntas Frecuentes, Contacto y Quienes Somos ************************/
+
+#pagn {
+  /*font-size: 2.4rem;*/
+  font-size: 2 em;
+}
+
+#hrpagn {
+  width: 40%;
+}
+
+/********************* Fin de páginas de Preguntas Frecuentes, Contacto y Quienes Somos **********************/
 
 /************************************************ RESPONSIVE  ************************************************/
 
