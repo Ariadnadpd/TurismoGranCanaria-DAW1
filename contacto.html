@@ -15,13 +15,15 @@
 		<meta name= "keywords" content= "Turismo, Gastronomía, Actividades, Artesanía, A donde ir, Gran Canaria">
 		<meta http-equiv= "refresh" content="400"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script>
+		<script src="../script.js"></script>
+		<!--<script>
 			$(function(){
 			   $('.header_dinamico').load("./carga_ficheros/header_footer.html .header1");
 			   $('.footer_dinamico').load("./carga_ficheros/header_footer.html .footer");
 			});
-		</script>
+		</script>-->
 	</head>
      
 	<body>
@@ -40,7 +42,55 @@
 		<section>
 			<h1 id="pagn">Contacta con Gran Canaria Insider</h1> 		
             <hr id="hrpagn">
-			<p> AQUI FORMULARIO</p>
+			
+			<div class="contenedor_formulario">
+				<form id="formulario_contacto" action="#" method="POST">
+					<label for="asunto">El mensaje es sobre</label>
+					<select name="seleccion_asunto" required>
+						<option value="0">Por favor, escoja uno de la lista...</option>
+						<option value="1">Correcciones/Actualizaciones</option>
+						<option value="2">Quejas generales</option>
+						<option value="3">Agradecimientos generales</option>
+						<option value="4">Sugerencias</option>
+						<option value="5">Otros</option>
+					</select>
+
+					<label for="asunto">Comentario</label>
+					<div>
+						<textarea name="comentario" maxlength="250" required onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>
+						<div> 
+							<em id="em_com">Comentario limitado a 250 caracteres, restante: <strong>250</strong></em>
+						</div>
+					</div>
+					
+					<label for="nombre_apellidos">Nombre y apellidos</label>
+					<input type="text" value="" name="nombreyapellidos" required>
+					
+					<label for="email">Email de contacto</label>
+					<input type="email" value="" id="mail" name="email" required 
+					pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+					
+					<span>
+						EDITORIAL GCINSIDER, S.A.U., con domicilio en Avda. Diagonal, 660-662 tratará sus datos personales 
+						para tramitar su solicitud y/o resolver la consulta planteada, siendo eliminados una vez tramitada 
+						dicha solicitud o resuelta su consulta. Sus datos no se cederán a terceros ni serán objeto de 
+						transferencias internacionales.
+						<br>
+						<br>
+						Ud. podrá ejercer los derechos de acceso, supresión, rectificación, oposición, limitación y portabilidad, 
+						mediante carta a EDITORIAL GCINSIDER, S.A.U., Apartado de Correos 221 de Las Palmas o remitiendo un email 
+						a boletin@gcinsider.es. Asimismo, cuando lo considere oportuno podrá presentar una reclamación ante la 
+						Agencia Española de protección de datos.
+						<br>
+						<br>
+						Podrá ponerse en contacto con nuestro Delegado de Protección de Datos mediante escrito dirigido a 
+						dpo@insider.es o a Grupo Insider, At.: Delegado de Protección de Datos, Avda. Diagonal 662-664, 35011 Las Palmas.
+					</span>
+					<input type="submit" value="Enviar" name="enviar">
+				</form>
+		
+	
+			</div>
         </section>
 
 		<!-- Pie de página del sitio web -->

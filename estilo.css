@@ -924,14 +924,225 @@ ul.migasdepan {
 
 /************************** Páginas de Preguntas Frecuentes, Contacto y Quienes Somos ************************/
 
+/* Página de Contacto */
+
 #pagn {
   /*font-size: 2.4rem;*/
-  font-size: 2 em;
+  font-size: 2em;
 }
 
 #hrpagn {
   width: 40%;
 }
+
+.contenedor_formulario {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: auto 100px;
+  padding: 20px 80px;
+}
+
+input[type=text], select, textarea, input[type=email]{ 
+  width: 99%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  resize: vertical;
+}
+
+textarea {
+  height: 200px;
+}
+
+select {
+  height: 35px;
+}
+
+label, span {
+  padding: 20px 12px 12px 0;
+  display: block;
+}
+
+form span {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin: 30px 0;
+  display: block;
+  text-align: justify;
+}
+
+input[type=submit] {
+  background-color: #444644;
+  color: white;
+  padding: 12px 20px;  
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-bottom: 3%;
+}
+
+input[type=submit]:hover {
+  background-color: #8F9EB8;
+}
+
+#formulario_contacto label:after {
+  color: red;
+  content: "*";
+}
+
+#em_com {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Fin Página de Contacto */
+
+/* Página de Preguntas Frecuentes */
+
+#a_arriba::before {
+  content: "\0000a0 \0000a0 \0000a0 \0000a0 ";
+}
+
+#a_arriba {
+  background: url(imagenes/iconos/arriba.png) no-repeat;
+  background-position: left 6px;
+	padding: 0 0 0 20 px;
+  text-decoration: none;
+  color: #2E72C1;
+}
+
+#hrseccionpf {
+  width: 100%;
+  margin-right: 10%;
+}
+
+.contenedor_preguntas {
+  margin: auto 100px;
+  padding: 20px 80px;
+}
+
+#seccion_respuestas section p {
+  padding-right: 20px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+#seccion_preguntas {
+  margin-top: -5%;
+}
+
+#seccion_preguntas ul li {
+  border:none;
+  border-radius: 10px;
+  list-style: none;
+  background-color:#d2d6dd;
+  margin-bottom: 2%;
+  padding: 8px;
+}
+
+#seccion_preguntas ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+#seccion_respuestas #p1 h1 {
+  font-family: 'LPBentonSans';
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Fin Página de Preguntas Frecuentes */
+
+/* Página de Quienes Somos */
+
+.contenedor-tarjetas{
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+}
+
+.titulo-tarjetas{
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.tarjeta{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background:#fff;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+
+.tarjeta:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%);
+}
+
+.tarjeta img{
+  width: 100%;
+  height: 210px;
+  border-radius: 50%;
+}
+
+.tarjeta .contenido-tarjeta{
+  padding: 15px;
+  text-align: center;
+}
+
+.tarjeta .contenedor-tarjetas h3{
+  margin-bottom: 15px;
+  color: #7a7a7a;
+}
+
+.tarjeta .contenido-tarjeta p{
+  line-height: 1.8;
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.tarjeta .contenido-tarjeta a{
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+
+.tarjeta .contenido-tarjeta a:hover{
+  background: #2fb4cc;
+  color: #fff;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+  .contenedor-tarjetas{
+    flex-wrap: wrap;
+  }
+  .tarjeta{
+    margin: 15px;
+    width: 75%;
+  }
+}
+
+/* Fin Página Quienes somos */
 
 /********************* Fin de páginas de Preguntas Frecuentes, Contacto y Quienes Somos **********************/
 
