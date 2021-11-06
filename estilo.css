@@ -4,7 +4,7 @@
   clear: both;
 }
 
-body {
+body{
   margin: 40px;
   background-color: #FBFCFD;
   font-family: "LPBentonSans";
@@ -711,6 +711,14 @@ ul.migasdepan {
   
   /* Slider De Imágenes */
 
+  .img-slide {
+    width: 100%;
+  }
+
+  #active, .item {
+    height: 450px;
+  }
+
 .slider-frame {
   width: 62%;
   height: auto;
@@ -850,6 +858,23 @@ ul.migasdepan {
     width: 100%;
     height: 460px;
   } 
+
+  /* Parte de abajo: compartir */
+  .seccion_compartir {
+    margin-left: 5%;
+   
+  }
+
+  .seccion_compartir div {
+    display: inline;
+    margin: 20px;
+  }
+  
+  .hrenlacescompartir {
+    width: 30%;
+    margin-right: 70%;
+  }
+  
 
   .contenedor {
     margin: 2%;
@@ -1202,6 +1227,7 @@ input[type=submit]:hover {
     width: 100%;
   }
 
+  
   .contenedor_int {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1240,6 +1266,8 @@ input[type=submit]:hover {
     margin: 10% auto;
     width: 85%;
   } 
+
+ 
 
   .bloque_imagenes {
     display: grid;
@@ -1358,6 +1386,19 @@ input[type=submit]:hover {
   .contenedor_buscador {
     left:  78%;
   }
+
+  .mapa1 h3 {
+    margin-left: 7%;
+    
+  }
+
+  /*.mapa1 h3 hr {
+    width: 80%;
+  }*/
+
+  /*.masinfo h3, hr {
+    margin-left: 1%;
+  }*/
 }
 
 
@@ -1382,6 +1423,8 @@ input[type=submit]:hover {
   .buscador input {
     font-size: 0.5em;
   }
+
+ 
 }
 
 @media screen and (max-width: 850px) {
@@ -1393,7 +1436,7 @@ input[type=submit]:hover {
   }
 
 
-
+ 
   .checkbtn{
     display: block;
     margin-left: 2%;
@@ -1479,6 +1522,10 @@ input[type=submit]:hover {
   .contenedor_buscador input{
     font-size: 0.65em;
     padding: 0 40px 0 10px;
+  }
+
+  #active,  .item {
+    height: 285px;
   }
 
 

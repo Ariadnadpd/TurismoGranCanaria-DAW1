@@ -15,16 +15,16 @@
 		<meta name= "keywords" content= "Turismo, Gastronomía, Actividades, Artesanía, A donde ir, Gran Canaria">
 		<meta http-equiv= "refresh" content="400"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script>
-			$(function(){
-			   $('.header_dinamico').load("../carga_ficheros/header_footer.html .header1");
-			   $('.footer_dinamico').load("../carga_ficheros/header_footer.html .footer");
-			});
-		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+		<script src="../script.js"> </script>
+		<noscript>You need to enable JavaScript to view the full site.</noscript>
+
 	</head>
 
 	<body>
+		<div id="fb-root"></div>
+		<!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0" nonce="AmorfSsu"></script>-->
+		<!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
 		<!-- Menú de navegación-->
 		<div class="header_dinamico"></div>	
 		
@@ -187,6 +187,25 @@
 							
 						</section>
 					</section>	
+				</section>
+			</section>
+			<section class="seccion_compartir">
+				<section>
+					<h3 class="h3enlaces">Compartir</h3>
+					<hr class="hrenlacescompartir">
+					<div class="fb-share-button" data-href="http://127.0.0.1:5500/gastronomia/platos.html" 
+					data-layout="button_count" data-size="small">
+						<a target="_blank" 
+						href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A5500%2Fgastronomia%2Fplatos.html&amp;src=sdkpreparse" 
+						class="fb-xfbml-parse-ignore">Compartir</a>
+					</div>
+					<div><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" 
+					data-text="Hi! I think you will like this page " data-url="http://127.0.0.1:5500/gastronomia/platos.html" 
+					data-via="GC Insider" data-related="GC Insider" data-show-count="false">Tweet</a></div>
+		
+					<div>
+						<a href="https://api.whatsapp.com/send?text=Platos%20Típicos%20en%20Gran%20Canaria%20Insider%20http://127.0.0.1:5500/gastronomia/platos.html">Compartir en Whatsapp</a>
+					</div>
 				</section>
 			</section>
 		</section>
