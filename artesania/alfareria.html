@@ -17,13 +17,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
-		<script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		  
+		<!--<script>
 			$(function(){
 			   $('.header_dinamico').load("../carga_ficheros/header_footer.html .header1");
 			   $('.footer_dinamico').load("../carga_ficheros/header_footer.html .footer");
 			});
-		</script>
+		</script>-->
 	</head>
 	
 	<body>
@@ -65,9 +66,9 @@
 					e importancia del mercado. 
 				</p>
 				
-				<div class="container" style="width: 80%;">
+				<!--<div class="container" style="width: 80%;">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
+					 
 					  <ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -76,7 +77,8 @@
 						<li data-target="#myCarousel" data-slide-to="4"></li>
 					  </ol>
 	  
-					  <!-- Wrapper for slides -->
+					
+					 
 					  <div class="carousel-inner">
 	  
 						<div class="item active" id="active">
@@ -121,7 +123,7 @@
 	  
 					  </div>
 	  
-					  <!-- Left and right controls -->
+					  
 					  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
 						<span class="glyphicon glyphicon-chevron-left"></span>
 						<span class="sr-only">Previous</span>
@@ -131,8 +133,36 @@
 						<span class="sr-only">Next</span>
 					  </a>
 					</div>
-			    </div>
+			    </div>-->
 	  
+
+				<div class="contenedor-slider">
+					<div class="slider" id="slider">
+						<section class="seccion-slider">
+							<h3>Alfarería en Gran Canaria</h3>
+							<img src="../imagenes/artesania/alfareria1.png" alt="Alfarería 1" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Alfarería en Gran Canaria</h3>
+							<img src="../imagenes/artesania/alfareria2.jpg" alt="Alfarería 2" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Alfarería en Gran Canaria</h3>
+							<img src="../imagenes/artesania/alfarería3.jpg" alt="Alfarería 3" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Alfarería en Gran Canaria</h3>
+							<img src="../imagenes/artesania/alfarería4.jpg" alt="Alfarería 4" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Alfarería en Gran Canaria</h3>
+							<img src="../imagenes/artesania/alfarería5.jpg" alt="Alfarería 5" class="slider-imagen">
+						</section>
+					</div>
+					<div class="boton-slider boton-derecho" id="boton-derecho"><img src="../imagenes/iconos/flecha-der.svg" alt="Flecha Derecha"></div>
+					<div class="boton-slider boton-izquierdo" id="boton-izquierdo"><img src="../imagenes/iconos/flecha-izq.svg" alt="Flecha Izquierda"></div>
+				</div>
+				
 			</section> 
 		</main>
 
@@ -231,5 +261,6 @@
 		
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+		<script src="../script.js"></script>
 	</body>
 </html>
