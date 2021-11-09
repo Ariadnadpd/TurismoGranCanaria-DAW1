@@ -10,11 +10,6 @@ body{
   font-family: "LPBentonSans";
 }
 
-/*.zoom {
-  padding-right: 40px;
-  padding-left: 40px;
-}*/
-
 h1 {
   text-align: center;
 }
@@ -717,7 +712,7 @@ ul.migasdepan {
     max-width: 900px;
     margin: auto;
     overflow: hidden;
-    box-shadow: 0 0 0 10px #fff,
+    box-shadow: 0 0 0 5px #fff,
     0 15px 50px;
     position: relative;
     margin-top: 6.5%;

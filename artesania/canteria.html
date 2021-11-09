@@ -15,13 +15,7 @@
 		<meta name= "keywords" content= "Turismo, Gastronomía, Actividades, Artesanía, A donde ir, Gran Canaria">
 		<meta http-equiv= "refresh" content="400"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script>
-			$(function(){
-			   $('.header_dinamico').load("../carga_ficheros/header_footer.html .header1");
-			   $('.footer_dinamico').load("../carga_ficheros/header_footer.html .footer");
-			});
-		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -60,19 +54,34 @@
 					aprenden a <em>restaurar y conservar</em> el patrimonio arquitectónico de los cascos históricos de la isla. 
 				</p>
 
-				<section class="slider-frame">
-					<ul class="slide">
-						<li id="slide1">
+
+				<div class="contenedor-slider">
+					<div class="slider" id="slider">
+						<section class="seccion-slider">
 							<h3>Cantería en Gran Canaria</h3>
-							<img src="../imagenes/artesania/canteria1.jpg" alt="Cantería 1">
-						</li>
-						<li id="slide2">
-							<img class="img_presentacion_cat_grande" src="../imagenes/artesania/canteria2.jpg" alt="Cantería 2"></li>
-						<li id="slide3"><img src="../imagenes/artesania/canteria3.jpg" alt="Cantería 3"></li>
-						<li id="slide4"><img src="../imagenes/artesania/canteria4.jpg" alt="Cantería 4"></li>
-						<li id="slide5"><img src="../imagenes/artesania/canteria5.jpg" alt="Cantería 5"></li>
-					</ul>
-				</section>
+							<img src="../imagenes/artesania/canteria1.jpg" alt="Cantería 1" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Cantería en Gran Canaria</h3>
+							<img src="../imagenes/artesania/canteria2.jpg" alt="Cantería 2" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Cantería en Gran Canaria</h3>
+							<img src="../imagenes/artesania/canteria3.jpg" alt="Cantería 3" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Cantería en Gran Canaria</h3>
+							<img src="../imagenes/artesania/canteria4.jpg" alt="Cantería 4" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Cantería en Gran Canaria</h3>
+							<img src="../imagenes/artesania/canteria5.jpg" alt="Cantería 5" class="slider-imagen">
+						</section>
+					</div>
+					<div class="boton-slider boton-derecho" id="boton-derecho"><img src="../imagenes/iconos/flecha-der.svg" alt="Flecha Derecha"></div>
+					<div class="boton-slider boton-izquierdo" id="boton-izquierdo"><img src="../imagenes/iconos/flecha-izq.svg" alt="Flecha Izquierda"></div>
+				</div>
+			
 			</section> 
 		</main>
 
@@ -151,5 +160,6 @@
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+		<script src="../script.js"></script>
 	</body>
 </html>
