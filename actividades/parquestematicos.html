@@ -15,13 +15,7 @@
 		<meta name= "keywords" content= "Turismo, Gastronomía, Actividades, Artesanía, A donde ir, Gran Canaria">
 		<meta http-equiv= "refresh" content="400"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script>
-			$(function(){
-			   $('.header_dinamico').load("../carga_ficheros/header_footer.html .header1");
-			   $('.footer_dinamico').load("../carga_ficheros/header_footer.html .footer");
-			});
-		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -62,26 +56,32 @@
 					Puedes ver en dónde están ubicados cada uno y su respectiva información haciencdo clic <a href="#abajo">aquí</a>.
 				</p>
 
-				<section class="slider-frame">
-					<ul class="slide">
-						<li id="slide1">
+				<div class="contenedor-slider">
+					<div class="slider" id="slider">
+						<section class="seccion-slider">
 							<h3>Parques temáticos en Gran Canaria</h3>
-							<img src="../imagenes/actividades/aqualand2.png" alt="Aqualand">
-						</li>
-						<li id="slide2">
-							<img src="../imagenes/actividades/camelpark.png" alt="Camelpark">
-						</li>
-						<li id="slide3">
-							<img src="../imagenes/actividades/holidayworld2.png" alt="Holiday World">
-						</li>
-						<li id="slide4">
-							<img src="../imagenes/actividades/palmitospark.png" alt="Palmitos Park">
-						</li>
-						<li id="slide5">
-							<img src="../imagenes/actividades/poema_del_mar.png" alt="Poema del mar">
-						</li>
-					</ul>
-				</section>
+							<img src="../imagenes/actividades/aqualand2.png" alt="Aqualand" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Parques temáticos en Gran Canaria</h3>
+							<img src="../imagenes/actividades/camelpark.png" alt="Camelpark" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Parques temáticos en Gran Canaria</h3>
+							<img src="../imagenes/actividades/holidayworld2.png" alt="Holiday World" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Parques temáticos en Gran Canaria</h3>
+							<img src="../imagenes/actividades/palmitospark.png" alt="Palmitos Park" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Parques temáticos en Gran Canaria</h3>
+							<img src="../imagenes/actividades/poema_del_mar.png" alt="Poema del mar" class="slider-imagen">
+						</section>
+					</div>
+					<div class="boton-slider boton-derecho" id="boton-derecho"><img src="../imagenes/iconos/flecha-der.svg" alt="Flecha Derecha"></div>
+					<div class="boton-slider boton-izquierdo" id="boton-izquierdo"><img src="../imagenes/iconos/flecha-izq.svg" alt="Flecha Izquierda"></div>
+				</div>
 			</section> 
 		</main>
 
@@ -183,5 +183,6 @@
 	
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+		<script src="../script.js"></script>
 	</body>
 </html>
