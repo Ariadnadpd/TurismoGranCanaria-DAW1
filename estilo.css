@@ -1221,7 +1221,7 @@ input[type=submit]:hover {
   margin-bottom: 5px;
 }
 
-.tarjeta .contenido-tarjeta a{
+.tarjeta .contenido-tarjeta button{
   display: inline-block;
   padding: 10px;
   margin-top: 10px;
@@ -1231,22 +1231,21 @@ input[type=submit]:hover {
   border-radius: 4px;
   transition: all 400ms ease;
   margin-bottom: 5px;
+  border: 2px solid black;
+  margin: auto;
 }
 
-.tarjeta .contenido-tarjeta a:hover{
+.tarjeta .contenido-tarjeta button:hover{
   background: #2fb4cc;
   color: #fff;
 }
 
-@media only screen and (min-width:320px) and (max-width:768px){
-  .contenedor-tarjetas{
-    flex-wrap: wrap;
-  }
-  .tarjeta{
-    margin: 15px;
-    width: 75%;
-  }
+.leermas1, .leermas2, .leermas3,
+#botonM1, #botonM2, #botonM3 {
+  display: none;
 }
+
+
 
 /* Fin Página Quienes somos */
 
@@ -1573,6 +1572,17 @@ input[type=submit]:hover {
     width:  15%;
     left:  45%;
     margin-top: 1%;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+  .contenedor-tarjetas{
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+  }
+  .tarjeta{
+    margin: 15px;
+    width: 75%;
   }
 }
 
