@@ -15,13 +15,7 @@
 		<meta name= "keywords" content= "Turismo, Gastronomía, Actividades, Artesanía, A donde ir, Gran Canaria">
 		<meta http-equiv= "refresh" content="400"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script>
-			$(function(){
-			   $('.header_dinamico').load("../carga_ficheros/header_footer.html .header1");
-			   $('.footer_dinamico').load("../carga_ficheros/header_footer.html .footer");
-			});
-		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -73,26 +67,33 @@
 				
 				</p>
 
-				<section class="slider-frame">
-					<ul class="slide">
-						<li id="slide1">
+				<div class="contenedor-slider">
+					<div class="slider" id="slider">
+						<section class="seccion-slider">
 							<h3>Senderismos en Gran Canaria</h3>
-							<img src="../imagenes/actividades/llanosdelapez.png" alt="LLanos de La Pez">
-						</li>
-						<li id="slide2">
-							<img src="../imagenes/actividades/sendero.png" alt="Sendero en GC">
-						</li>
-						<li id="slide3">
-							<img src="../imagenes/actividades/bandama.png" alt="Caldera de Bandama">
-						</li>
-						<li id="slide4">
-							<img src="../imagenes/actividades/rutapresaperez.jpg" alt="Presa Los Pérez">
-						</li>
-						<li id="slide5">
-							<img src="../imagenes/actividades/sendero_roquenublo.png" alt="Sendero Roque Nublo">
-						</li>
-					</ul>
-				</section>
+							<img src="../imagenes/actividades/llanosdelapez.png" alt="LLanos de La Pez" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Senderismos en Gran Canaria</h3>
+							<img src="../imagenes/actividades/sendero.png" alt="Sendero en GC" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Senderismos en Gran Canaria</h3>
+							<img src="../imagenes/actividades/bandama.png" alt="Caldera de Bandama" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Senderismos en Gran Canaria</h3>
+							<img src="../imagenes/actividades/rutapresaperez.jpg" alt="Presa Los Pérez" class="slider-imagen">
+						</section>
+						<section class="seccion-slider">
+							<h3>Senderismos en Gran Canaria</h3>
+							<img src="../imagenes/actividades/sendero_roquenublo.png" alt="Sendero Roque Nublo" class="slider-imagen">
+						</section>
+					</div>
+					<div class="boton-slider boton-derecho" id="boton-derecho"><img src="../imagenes/iconos/flecha-der.svg" alt="Flecha Derecha"></div>
+					<div class="boton-slider boton-izquierdo" id="boton-izquierdo"><img src="../imagenes/iconos/flecha-izq.svg" alt="Flecha Izquierda"></div>
+				</div>
+				
 			</section> 
 		</main>
 
@@ -150,5 +151,6 @@
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+		<script src="../script.js"></script>
 	</body>
 </html>
