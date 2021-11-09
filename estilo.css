@@ -1,4 +1,4 @@
-jj/* Estilo común */
+/* Estilo común */
 
 .clearfix {
   clear: both;
@@ -956,6 +956,9 @@ ul.migasdepan {
     margin-right: 70%;
   }
   
+  .seccion_compartir div .comp_rss {
+    width: 20px;
+  }
 
   .contenedor {
     margin: 2%;
