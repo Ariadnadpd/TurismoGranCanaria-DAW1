@@ -18,6 +18,7 @@
 		
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 		<script src="../script.js"></script>
+		<script src="./validacion.js"></script>
 	</head>
      
 	<body>
@@ -38,7 +39,7 @@
             <hr id="hrpagn">
 			
 			<div class="contenedor_formulario">
-				<form id="formulario_contacto" action="#" method="POST">
+				<form id="formulario_contacto" onSubmit="return validarFormulario();">
 					<label for="asunto">El mensaje es sobre</label>
 					<select name="seleccion_asunto" required> 
 						<option value="0">Por favor, escoja uno de la lista...</option>
@@ -51,11 +52,12 @@
 
 					<label for="asunto">Comentario</label>
 					<div>
-						<textarea name="comentario" maxlength="250" required onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>
+						<textarea name="comentario" id="comentario" maxlength="250" required onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>
 						<div> 
-							<em id="em_com">Comentario limitado a 250 caracteres, restante: <strong>250</strong></em>
+							<em id="em_com">Comentario limitado a 250 caracteres, restante: <strong id="strong">250</strong></em>
 						</div>
 					</div>
+					<div class="error"></div>
 					
 					<label for="nombre_apellidos">Nombre y apellidos</label>
 					<input type="text" value="" name="nombreyapellidos" required>

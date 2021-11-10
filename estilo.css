@@ -97,6 +97,22 @@ em {
   z-index: 50;
 }
 
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* Vlidacions de formularios */
+/*
+:invalid {
+  color: red;
+}
+*/
+/*
+:valid {
+  color: green;
+}*/
+
 /*** Buscador ***/
 
 .contenedor_buscador {
