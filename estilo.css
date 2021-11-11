@@ -97,15 +97,22 @@ em {
   z-index: 50;
 }
 
-.error {
+
+/* Validaciones del formulario */
+.error{
   color: red;
   text-align: center;
+}
+
+select:focus {
+  border: 2px solid #2E72C1;
 }
 
 .correcto {
   color: green;
   text-align: center;
 }
+
 /* Vlidacions de formularios */
 /*
 :invalid {
