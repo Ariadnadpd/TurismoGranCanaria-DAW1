@@ -1,5 +1,5 @@
 const buscador = document.getElementById('cuadrobusqueda');
-const comentario = document.getElementById('comentario');
+const comentario = document.getElementById('comentario1');
 
 buscador.addEventListener("input", function (evento) {
     if(evento) evento.preventDefault();
@@ -11,17 +11,37 @@ buscador.addEventListener("input", function (evento) {
 });
 
 
+
 function validarFormulario(evento){
-    let comentario = document.getElementById('comentario');
+    let comentario = document.getElementById('comentario1');
+    let error = document.getElementById('error');
+
+    if(evento) {
+      evento.preventDefault();
+    }
+
+    // Select
+    
+
+    // Textarea
     console.log(comentario.value.length);
     if(comentario.value.length > 248) {
-        comentario.innerHTML='<p>¡El número máximo de caracteres es 250!</p>';
+        alert("entro en el if");
+        error.innerHTML='<p>¡El número máximo de caracteres es 250!</p>';
+    } else {
+      error.innerHTML='';
     }
+
+   
 }
 
 function cuenta(){
-    let tam = document.getElementById("comentario").value;
+    let tam = document.getElementById("comentario1").value;
     let negrita = document.getElementById('strong');
     negrita.innerHTML = 250 - tam.length;
 
 }
+
+
+//correcto.innerHTML = '<p> Se ha enviado correctamente</p>';
+//let correcto = document.getElementById('correcto');
