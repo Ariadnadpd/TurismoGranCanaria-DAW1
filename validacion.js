@@ -16,8 +16,9 @@ function validarFormulario(evento){
     //Evitamos la acción por defecto del evento
     if(evento) evento.preventDefault();
 
-    //Variable control
+    //Variables de control y de comprobación
     var control = true;
+    var comprueba = false;
     
     //Variables generales del formulario
     let comentario = document.getElementById('comentario1');
@@ -46,6 +47,7 @@ function validarFormulario(evento){
     if(comentario.value.trim().length > 250) {
         errorTxa.innerHTML='<p>¡El número máximo de caracteres es de 250!</p>';
         control=false;
+        comprueba=true;
         comentario.focus();
     } else {
         errorTxa.innerHTML='';
@@ -56,7 +58,7 @@ function validarFormulario(evento){
       errorTxa.innerHTML='<p>¡El número mínimo de caracteres es de 2!</p>';
       control=false;
       comentario.focus();
-    } else {
+    } else if(!comprueba){
       errorTxa.innerHTML='';
     }
 
@@ -82,6 +84,7 @@ function validarFormulario(evento){
       errorEmail.innerHTML = '';
     }
     
+    // Valores devueltos por la función
     if(!control) {
       errorDialogo();
       return false;
@@ -108,9 +111,9 @@ function cuenta(){
     }
 }
 
-//Mensaje de error con el objeto dialog() de JQuery-UI
+//Mensaje de error con el objeto dialog() de jQuery-UI
 function errorDialogo(){
-  var error = "Algunos campos son incorrectos. Vuelva a revisar su formulario";
+  var error = "Algunos campos son incorrectos. Vuelva a revisar su formulario.";
   dialogo=$('<div></div>');
   dialogo.text(error);
   dialogo.dialog({
