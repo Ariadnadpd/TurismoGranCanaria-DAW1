@@ -97,6 +97,33 @@ em {
   z-index: 50;
 }
 
+
+/* Validaciones del formulario */
+.error{
+  color: red;
+  text-align: center;
+}
+
+select:focus {
+  border: 2px solid #2E72C1;
+}
+
+.correcto {
+  color: green;
+  text-align: center;
+}
+
+/* Vlidacions de formularios */
+/*
+:invalid {
+  color: red;
+}
+*/
+/*
+:valid {
+  color: green;
+}*/
+
 /*** Buscador ***/
 
 .contenedor_buscador {
@@ -943,12 +970,14 @@ ul.migasdepan {
   /* Parte de abajo: compartir */
   .seccion_compartir {
     margin-left: 5%;
-   
+    /*border: 3px solid red;*/
   }
 
-  .seccion_compartir div {
-    display: inline;
-    margin: 20px;
+  .seccion_compartir .contenedor_iconosc {
+    display:grid;
+    /*border: 3px solid green;*/
+    grid-template-columns: repeat(10, 1fr);
+    /*grid-auto-rows: minmax(6px, auto);*/
   }
   
   .hrenlacescompartir {
@@ -956,9 +985,12 @@ ul.migasdepan {
     margin-right: 70%;
   }
   
-  .seccion_compartir div .comp_rss {
+  .seccion_compartir div div .comp_rss{
     width: 20px;
+    height: 60px;
   }
+
+ 
 
   .contenedor {
     margin: 2%;

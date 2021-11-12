@@ -117,5 +117,4 @@ function leermenos3() {
     $('#botonM3').hide();
     $('.leermas3').css({"display":"none"});
     $('#boton3').show();
-    
 }

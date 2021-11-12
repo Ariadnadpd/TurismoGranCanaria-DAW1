@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Contacto</title>
-		<link rel="stylesheet" type="text/css" href="./estilo.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
 			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,9 +14,13 @@
 		<meta name= "keywords" content= "Turismo, Gastronomía, Actividades, Artesanía, A donde ir, Gran Canaria">
 		<meta http-equiv= "refresh" content="400"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script src="../script.js"></script>
+		<!--<script src="https://code.jquery.com/jquery-3.6.0.js"></script>-->
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  		<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  		<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./estilo.css">
+		<script src="./script.js"></script>
+		<script src="./validacion.js"></script>
 	</head>
      
 	<body>
@@ -38,7 +41,7 @@
             <hr id="hrpagn">
 			
 			<div class="contenedor_formulario">
-				<form id="formulario_contacto" action="#" method="POST">
+				<form id="formulario_contacto" onSubmit="return validarFormulario();">
 					<label for="asunto">El mensaje es sobre</label>
 					<select name="seleccion_asunto" required> 
 						<option value="0">Por favor, escoja uno de la lista...</option>
@@ -48,22 +51,23 @@
 						<option value="4">Sugerencias</option>
 						<option value="5">Otros</option>
 					</select>
-
+                    <div class="error" id="error_select"></div>
 					<label for="asunto">Comentario</label>
 					<div>
-						<textarea name="comentario" maxlength="250" required onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>
-						<div> 
-							<em id="em_com">Comentario limitado a 250 caracteres, restante: <strong>250</strong></em>
+						<textarea name="comentario" id="comentario1" required onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>
+						<div id="em_com"> 
+							<em>Comentario limitado a mínimo 2 caracteres y máximo 250 caracteres, restante: <strong id="strong">250</strong></em>
 						</div>
 					</div>
+					<div id="error_textarea" class="error"></div>
 					
 					<label for="nombre_apellidos">Nombre y apellidos</label>
-					<input type="text" value="" name="nombreyapellidos" required>
-					
+					<input id="nombreContacto" type="text" value="" name="nombreyapellidos" required>
+					<div id="error_nombre" class="error"></div>
+
 					<label for="email">Email de contacto</label>
-					<input type="email" value="" id="mail" name="email" required 
-					pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
-					
+					<input id="emailContacto" type="email" value="" name="email" required>
+					<div id="error_email" class="error"></div>
 					<span>
 						EDITORIAL GCINSIDER, S.A.U., con domicilio en Avda. Diagonal, 660-662 tratará sus datos personales 
 						para tramitar su solicitud y/o resolver la consulta planteada, siendo eliminados una vez tramitada 
@@ -81,6 +85,8 @@
 						dpo@insider.es o a Grupo Insider, At.: Delegado de Protección de Datos, Avda. Diagonal 662-664, 35011 Las Palmas.
 					</span>
 					<input type="submit" value="Enviar" name="enviar">
+
+					<div id="confirmado" class="correcto"></div>
 				</form>
 		
 			</div>
