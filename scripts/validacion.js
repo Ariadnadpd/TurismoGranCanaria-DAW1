@@ -1,14 +1,14 @@
-// Validación del buscador del header
-buscador.addEventListener("input", function (evento) {
-    var buscador = document.getElementById('cuadrobusqueda');
+'use strict'
 
-    if(evento) evento.preventDefault();
-    if (buscador.validity.tooLong) {
-      buscador.setCustomValidity("¡Como máximo se deben introducir 40 caracteres!");
-    } else {
-      buscador.setCustomValidity("");
-    }
-});
+// Validación del buscador del header.
+function buscador(){
+  var buscador = document.getElementById('cuadrobusqueda');
+  if (buscador.validity.tooLong) {
+    buscador.setCustomValidity("¡Como máximo se deben introducir 40 caracteres!");
+  } else {
+    buscador.setCustomValidity("");
+  }
+}
 
 //Función que valida el formulario de la página de contacto desde la parte del cliente, antes de enviar la informacíon del mismo al servidor
 function validarFormulario(evento){
@@ -114,7 +114,7 @@ function cuenta(){
 //Mensaje de error con el objeto dialog() de jQuery-UI
 function errorDialogo(){
   var error = "Algunos campos son incorrectos. Vuelva a revisar su formulario.";
-  dialogo=$('<div></div>');
+  var dialogo=$('<div></div>');
   dialogo.text(error);
   dialogo.dialog({
       title:'Error al enviar el formulario',

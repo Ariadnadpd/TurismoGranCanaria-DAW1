@@ -25,6 +25,7 @@ em {
   font-weight: bold;
 }
 
+/*
 .header1{
   width: 100%;
   height: 300px;
@@ -34,71 +35,251 @@ em {
   background-position: center 40%;
   position: relative;
 }
-
-
+*/
 
 /***************************************** Header *****************************************/
 
-/*** Menú ***/
-.navegacion{
-  position:  absolute;
-  width: 50%;
-  left:  1%;
-  margin-top:  1.5%;
-  height: 71px;
+.fondo {
+  height: 300px;
+  background-image: url(./imagenes/fondo.jpeg);
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center 40%;
 }
 
-.navegacion ul{
-  list-style: none;
+.header1{
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  
 }
-
-.menu > li{
-  position: relative;
-  display: inline-block;
+.header1 .barra_navegacion{
+  box-sizing: border-box;
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 50px;
 }
-
-.menu > li > a{
-  display: block;
-  padding: 12px 15px;
-  color: #374861;
+.barra_navegacion .logo a{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+  color: #fff;
   text-decoration: none;
+  font-weight: 600;
 }
 
-.menu li a {
+.barra_navegacion .logo img{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 60px;
+}
+
+
+.header1 .barra_navegacion .menu-hamburguesa{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 70px;
+  height: 100%;
+}
+
+.header1 .barra_navegacion .menu-hamburguesa img{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 60px;
+    line-height: 70px;
+    
+  }
+
+.header1 .barra_navegacion .menu{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+.header1 .barra_navegacion .menu li{
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+.header1 .barra_navegacion .menu li a{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #374861;
   font-weight: bold;
   font-size: 0.75em;
-  text-transform: uppercase;
 }
 
-.menu li a:hover{
+.header1 .barra_navegacion .menu li a:hover{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: #CDADAB;
   transition: all .3s;
 }
 
-.submenu{
+.menu li:hover .htmlcss-arrow,
+.menu li:hover .js-arrow{
+  transform: rotate(180deg);
+}
+
+.header1 .barra_navegacion .menu li .arrow{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #374861;
+  transition: all 0.3s ease;
+}
+.header1 .barra_navegacion .menu li .sub-menu{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 40px;
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
   background: #333333;
-  width: 120%;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s;
 }
-
-.submenu li a{
+.header1 .barra_navegacion .menu li:hover .artesania-sub-menu,
+.header1 .barra_navegacion .menu li:hover .gastronomia-sub-menu,
+.header1 .barra_navegacion .menu li:hover .adondeir-sub-menu,
+.header1 .barra_navegacion .menu li:hover .actividades-sub-menu{
   display: block;
-  padding: 15px;
+}
+.barra_navegacion .menu li .sub-menu li{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.barra_navegacion .menu li .sub-menu a{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: #fff;
-  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.menu li:hover .submenu{
-  visibility: visible;
+.barra_navegacion .buscador{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+.barra_navegacion .buscador i{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.barra_navegacion .buscador .icono-buscador{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  right: calc(100% - 40px);
+  top: 80px;
+  height: 60px;
+  width: 300px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.barra_navegacion.showInput .buscador .icono-buscador{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 65px;
   opacity: 1;
-  z-index: 50;
+  pointer-events: auto;
+  background: #243342;
+}
+.buscador .icono-buscador::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  /*background: #3E8DA8;*/
+  right: 10px;
+  top: -6px;
+  transform: rotate(45deg);
+}
+.buscador .icono-buscador input{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left:40%;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 230px;
+  outline: none;
+  padding: 0 15px;
+  display: flex;
+  align-self: flex-start;
+  font-size: 16px;
+  border: none;
+}
+
+.buscador .icono-buscador #buscar{
+  position: absolute;
+  left: 80%;
+  top: 22%;
+  height: 35px;
 }
 
 
-/* Validaciones del formulario */
+.barra_navegacion .menu-hamburguesa .barra-hamburguesa{
+  display: none;
+}
+.barra_navegacion .bx-menu{
+  display: none;
+}
+
+/******************************** Fin del header ******************************************/
+
+/******************************** Validaciones de formularios ******************************************/
 .error{
   color: red;
   text-align: center;
@@ -112,101 +293,6 @@ select:focus {
   color: green;
   text-align: center;
 }
-
-/* Vlidacions de formularios */
-/*
-:invalid {
-  color: red;
-}
-*/
-/*
-:valid {
-  color: green;
-}*/
-
-/*** Buscador ***/
-
-.contenedor_buscador {
-    position:  absolute;
-    left:  70%;
-    max-width: 450px;
-    width: 25%;
-    height: 71px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:  1.5%;
-
-    
-}
-
-.contenedor_buscador .buscador {
-    width: 100%;
-    border-radius: 10em;
-    position: relative;
-    box-shadow: 0px 1px 5px 5px rgba(0,0,0,0.2);
-
-}
-
-.buscador input {
-    height: 35px;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    padding: 0 60px 0 20px;
-    font-size: 1em;
-    background-color: transparent;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
-
-}
-
-.buscador div i {
-    position: absolute;
-    right:0px;
-    top: 0px;
-    height: 30px;
-    width: 35px;
-    text-align: center;
-    line-height: 35px;
-    font-size: 1em;
-    color: black;
-    cursor: pointer;
-}
-
-/*logo*/
-
-.logon {
-  width: 10%;
-  left:52%;
-  position:  absolute;
-  height: 71px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top:  1.5%;
-}
-
-.logon img {
-  width:  100%;
-}
-
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: left;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display:  none;
-}
-
-#check{
-  display: none;
-}
-
-/**************************+***** Fin del header ******************************************/
-
 
 /******************************** Páginas principales ************************************/
 
@@ -1266,7 +1352,6 @@ input[type=submit]:hover {
   border-radius: 4px;
   transition: all 400ms ease;
   margin-bottom: 5px;
-  border: 2px solid black;
   margin: auto;
 }
 
@@ -1290,60 +1375,14 @@ input[type=submit]:hover {
 /************************************************ RESPONSIVE  ************************************************/
 
 
-
-@media screen and (max-width: 1311px) {
-
-  .menu li a {
-    font-size: 0.6em;
-  }
-}
-
-
-@media screen and (max-width: 1198px) {
-
-  .menu > li > a{
-    padding:  10px 12px;
-  }
-
-  .contenedor_buscador {
-      width: 20%;
-      left:  70%;
-  }
-
-  .logon {
-    width: 8%;
-    left:  53%;
-  }
-
-  .navegacion{
-    width:  60%;
-  }
-
-  .buscador input {
-    font-size:  0.75em;
-  }
-}
-
-
-
-
 /********* Estilo para ordenadores *********/
 @media screen and (max-width: 1024px) {
   
-  .contenedor_buscador .buscador input::-moz-placeholder {
-    opacity: 0;
-  }
-
-  .contenedor_buscador .buscador input {
-    font-size: 0.4em;
-  }
-
   .mapa1, .cajainfo, .contenedor, .contenedor_int, .masinfo, .presentacion_categoria1, .bloque_imagenes{
     margin: auto;
     width: 100%;
   }
 
-  
   .contenedor_int {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1383,8 +1422,6 @@ input[type=submit]:hover {
     width: 85%;
   } 
 
- 
-
   .bloque_imagenes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1408,7 +1445,6 @@ input[type=submit]:hover {
     text-align: justify;
   }
 
-
   /* Imagenes páginas principales */
 
   .presentacion .img_presentacion {
@@ -1417,10 +1453,8 @@ input[type=submit]:hover {
     padding-left: 20px;
   }
 
-
   /********* Footer *********/
 
-  
   .primera_capa #seccion_texto ul li a, p {
     font-size:x-small;
   }
@@ -1492,7 +1526,6 @@ input[type=submit]:hover {
 
 }
 
-
 @media screen and (max-width: 1030px) {
 
   .logon {
@@ -1508,122 +1541,126 @@ input[type=submit]:hover {
     
   }
 
-  /*.mapa1 h3 hr {
-    width: 80%;
-  }*/
-
-  /*.masinfo h3, hr {
-    margin-left: 1%;
-  }*/
 }
 
+@media (max-width:920px) {
 
+  .header1 .barra_navegacion{
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  .header1 .barra_navegacion .logo a{
+    font-size: 27px;
+  }
+  .header1 .barra_navegacion .menu li{
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  nav .barra_navegacion .menu li a{
+    font-size: 15px;
+  }
+}
+
+@media (max-width:800px){
+
+  .barra_navegacion .bx-menu{
+    display: block;
+    cursor: pointer;
+  }
+
+  .header1 .barra_navegacion .menu-hamburguesa{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    max-width: 270px;
+    width: 100%;
+    background:#243342;
+    overflow-y: auto;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+
+  .barra_navegacion .menu-hamburguesa .barra-hamburguesa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+   
+  .header1 .barra_navegacion .menu li a {
+    color: #fff;
+  }
+
+  .barra-hamburguesa .nombre-sitioweb{
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .barra-hamburguesa  i,
+  .barra_navegacion .bx-menu{
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .header1 .barra_navegacion .menu{
+    display: block;
+    margin-top: 20px;
+  }
+
+  .header1 .barra_navegacion .menu li .arrow{
+    line-height: 40px;
+    color: #fff;
+  }
+
+  .header1 .barra_navegacion .menu li{
+      display: block;
+  }
+
+  .header1 .barra_navegacion .menu li .sub-menu{
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    display: none;
+  }
+
+  .header1 .barra_navegacion .menu li .sub-menu li{
+    border-bottom: none;
+  }
+
+  .menu li:hover .htmlcss-arrow,
+  .menu li:hover .js-arrow{
+    transform: rotate(0deg);
+    cursor:pointer;
+  }
+
+  .header1 .barra_navegacion .menu li:hover .artesania-sub-menu,
+  .header1 .barra_navegacion .menu li:hover .gastronomia-sub-menu,
+  .header1 .barra_navegacion .menu li:hover .adondeir-sub-menu,
+  .header1 .barra_navegacion .menu li:hover .actividades-sub-menu{
+      display: none;
+  }
+    
+  .header1 .barra_navegacion .menu-hamburguesa.show1 .menu li .artesania-sub-menu,
+  .header1 .barra_navegacion .menu-hamburguesa.show2 .menu li .gastronomia-sub-menu,
+  .header1 .barra_navegacion .menu-hamburguesa.show3 .menu li .adondeir-sub-menu,
+  .header1 .barra_navegacion .menu-hamburguesa.show4 .menu li .actividades-sub-menu{
+        display: block;
+  }
+
+  .bx-x {
+    cursor:pointer;
+  }
+
+  .bx-x:hover {
+    color:red;
+  }
+}
 
 /********** Estilo para tablets *********/
-
-
-@media screen and (max-width: 930px) {
-
-  .contenedor_buscador {
-    left:  80%;
-    width: 17%;
-  }
-
-  .logon {
-    left:  67%;
-  }
-
-  .navegacion{
-    width:  68%;
-  }
-  .buscador input {
-    font-size: 0.5em;
-  }
-
- 
-}
-
-@media screen and (max-width: 850px) {
-
-  #check:checked ~ ul{
-    left:  6.5%;
-    top: 10.8%;
-    height: 85%;
-  }
-
-
- 
-  .checkbtn{
-    display: block;
-    margin-left: 2%;
-    visibility: visible;
-  }
-
-  /*ul{*/
-  .menu {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 50%;
-    height: 45%;
-    background: #2c3e50;
-    top: 90px;
-    left: -120%;
-    text-align: center;
-    transition: all .5s;
-    font-size: 1.6em;
-    margin: 0;
-    padding: 0;
-    z-index: 70;
-    overflow-y: auto;
-  }
-
-
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-
-  }
-
-  nav .menu li a{
-    font-size: 0.5em;
-    color: #eee;
-  }
-
-  li a:hover, li a.active{
-    background: none;
-    color: red;
-  }
-
-  .menu li:hover .submenu{
-    display: none;
-  }
-
-  .menu i {
-    display: none;
-  }
-
-  .logon {
-    width:  15%;
-    left:  45%;
-    margin-top: 1%;
-  }
-}
-
-@media only screen and (min-width:320px) and (max-width:768px){
-  .contenedor-tarjetas{
-    flex-direction: column;
-    /*flex-wrap: wrap;*/
-  }
-  .tarjeta{
-    margin: 15px;
-    width: 75%;
-  }
-}
-
-
-/********** Estilo para móviles *********/
 
 @media screen and (max-width: 715px) {
 
@@ -1642,20 +1679,18 @@ input[type=submit]:hover {
     border-radius: 0.3em;
   }
 
+  #active,  .item {
+    height: 285px;
+  }
+
   .buscador input {
-    font-size: 0.90em;  
+    font-size: 0.90em; 
   }
 
   .contenedor_buscador input{
     font-size: 0.65em;
     padding: 0 40px 0 10px;
   }
-
-  #active,  .item {
-    height: 285px;
-  }
-
-
 }
 
 @media screen and (max-width: 608px) {
@@ -1681,30 +1716,6 @@ input[type=submit]:hover {
     padding: 2px;
   }
 
-  .buscador input {
-    font-size: 0.75em;  
-  }
-
-  #check:checked ~ ul{
-    left:  9.5%;
-  }
-
-  .logon {
-    margin-top: 3%;
-    width:  26%;
-    left:  30%;
-  }
-
-  .contenedor_buscador {
-    width: 29%;
-    left: 67%;
-  }
-
-  .contenedor_buscador input{
-    font-size: 0.5em;
-    padding: 0 40px 0 10px;
-  }
-
 }
 
 @media screen and (max-width: 560px) {
@@ -1722,7 +1733,42 @@ input[type=submit]:hover {
   .img_presentacion_cat1, .img_presentacion_cat_grande1 {
     width: 200px; height: 200px;
     border-radius: 0.3em;
+  }
 
+  .barra_navegacion .buscador .icono-buscador{
+    width: 200px;
+    height: 50px;
+  }
+  
+  .barra_navegacion .buscador .icono-buscador input {
+    width: 135px;
+    height: 35px;
+    font-size: 10px;
+    left:36%;
+  }
+
+  .barra_navegacion .buscador .icono-buscador #buscar {
+    height: 35px;
+    left:73%;
+    top: 16%;
+  }
+
+}
+
+@media (max-width:370px){
+  .header1 .barra_navegacionnn .menu-hamburguesa{
+     max-width: 100%;
+  } 
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+  .contenedor-tarjetas{
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+  }
+  .tarjeta{
+    margin: 15px;
+    width: 75%;
   }
 }
 
