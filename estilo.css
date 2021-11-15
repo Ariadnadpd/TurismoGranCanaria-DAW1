@@ -253,7 +253,7 @@ em {
   border-radius: 4px;
   transform: translate(-50%, -50%);
   height: 35px;
-  width: 230px;
+  width: 220px;
   outline: none;
   padding: 0 15px;
   display: flex;
@@ -267,8 +267,16 @@ em {
   left: 80%;
   top: 22%;
   height: 35px;
+  width: 50px;
+  border: 1px solid white;
+  background-color: #2E72C1;
 }
 
+.buscador .icono-buscador #buscar #ic-buscar{
+  position:absolute;
+  left: 0;
+  top: -10%;
+}
 
 .barra_navegacion .menu-hamburguesa .barra-hamburguesa{
   display: none;
@@ -832,8 +840,7 @@ ul.migasdepan {
     margin-bottom: 2%;
   }
     
-    
-    
+  
   .slider {
     display: flex;
     width: 500%;
@@ -1378,7 +1385,7 @@ input[type=submit]:hover {
 /********* Estilo para ordenadores *********/
 @media screen and (max-width: 1024px) {
   
-  .mapa1, .cajainfo, .contenedor, .contenedor_int, .masinfo, .presentacion_categoria1, .bloque_imagenes{
+  .mapa1, .cajainfo, .contenedor, .contenedor_int, .masinfo, .bloque_imagenes{
     margin: auto;
     width: 100%;
   }
@@ -1440,10 +1447,10 @@ input[type=submit]:hover {
   }
   
   .presentacion_categoria1 p {
-    font-size: 1.2em;
-    line-height: normal;
-    text-align: justify;
+    font-size: 1.1em;
   }
+
+  
 
   /* Imagenes páginas principales */
 
@@ -1545,6 +1552,24 @@ input[type=submit]:hover {
 
 @media (max-width:920px) {
 
+  .presentacion_gc_insider video {
+    margin-top: 3%;
+  }
+
+  .slider {
+    height: 370px;
+  }
+
+  .presentacion p {
+    
+    font-size: 1em;
+  }
+
+  .presentacion_categoria1 {
+    padding-right: 29px;
+    padding-left:29px;
+  }
+
   .header1 .barra_navegacion{
     max-width: 100%;
     padding: 0 25px;
@@ -1563,6 +1588,27 @@ input[type=submit]:hover {
 }
 
 @media (max-width:800px){
+
+  .presentacion .img_presentacion{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .cenlaces .menu2 li a{ 
+    font-size: 1em;
+  }
+
+  .presentacion_categoria1 {
+    margin: 60px 45px 45px 45px;
+    padding-right: 28px;
+    padding-left:28px;
+  }
 
   .barra_navegacion .bx-menu{
     display: block;
@@ -1658,11 +1704,43 @@ input[type=submit]:hover {
   .bx-x:hover {
     color:red;
   }
+  
+  .contenedor-slider {
+    margin-top: 8%;
+    margin-bottom: 4%;
+  }
+  
+
+  .slider {
+    height: 300px;
+  }
 }
 
 /********** Estilo para tablets *********/
 
 @media screen and (max-width: 715px) {
+
+  .presentacion_gc_insider p {
+    font-size: 1em;
+  }
+
+  .presentacion_gc_insider video {
+    margin-top: 6%;
+  }
+
+  .presentacion_categoria1 {
+    margin: 56px 20px 20px 20px;
+    padding-right: 27px;
+    padding-left:27px;
+  }
+
+  .presentacion_categoria1 p{
+   font-size: 1em;
+  }
+
+  .cenlaces .menu2 li a{ 
+    font-size: 0.9em;
+  }
 
   .bloque_imagenes {
     display: grid;
@@ -1691,12 +1769,35 @@ input[type=submit]:hover {
     font-size: 0.65em;
     padding: 0 40px 0 10px;
   }
+
+  .contenedor-slider {
+    width: 95%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+  }
+
+  .slider {
+    height: 270px;
+  }
 }
 
 @media screen and (max-width: 608px) {
+  .presentacion_gc_insider p {
+    font-size: 0.95em;
+  }
 
   .presentacion_categoria1 {
-    margin: auto;
+    margin: 50px 12px 12px 12px;
+    padding-right: 26px;
+    padding-left:26px;
+  }
+
+  .presentacion_categoria1 p{
+   font-size: 0.95em;
+  }
+
+  .cenlaces .menu2 li a{ 
+    font-size: 0.75em;
   }
 
   .bloque_imagenes {
@@ -1716,9 +1817,28 @@ input[type=submit]:hover {
     padding: 2px;
   }
 
+  .slider {
+    height: 250px;
+  }
+
 }
 
 @media screen and (max-width: 560px) {
+
+  .presentacion_categoria1 {
+    margin: 40px 5px 5px 5px;
+    padding-right: 25px;
+    padding-left:25px;
+  }
+
+  .presentacion_categoria1 p{
+   font-size: 0.85em;
+  }
+
+  .cenlaces .menu2 li a{ 
+    font-size: 0.65em;
+  }
+
   .bloque_imagenes {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1752,13 +1872,56 @@ input[type=submit]:hover {
     left:73%;
     top: 16%;
   }
+  
+  .contenedor-slider{
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+
+  .slider {
+    height: 225px;
+  }
 
 }
 
+@media screen and (max-width: 500px) {
+  .cenlaces .menu2 li a{ 
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 430px){
+
+  .cenlaces .menu2 li a{ 
+    font-size: 0.55em;
+  }
+  
+  .presentacion_categoria1 p{
+    font-size: 0.8em;
+   }
+
+  .presentacion p, .presentacion_gc_insider p {
+    font-size: 0.87em;
+  }
+}
+
 @media (max-width:370px){
+
+  .cenlaces .menu2 li a{ 
+    font-size: 0.5em;
+  }
+
   .header1 .barra_navegacionnn .menu-hamburguesa{
      max-width: 100%;
   } 
+
+  .presentacion_categoria1 p{
+    font-size: 0.75em;
+   }
+
+  .presentacion p, .presentacion_gc_insider p {
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (min-width:320px) and (max-width:768px){

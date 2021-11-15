@@ -1,14 +1,24 @@
 'use strict'
 
 // Validación del buscador del header.
-function buscador(){
-  var buscador = document.getElementById('cuadrobusqueda');
+/*function buscador(evento){
+  /*var buscador = document.getElementById('cuadrobusqueda');
   if (buscador.validity.tooLong) {
     buscador.setCustomValidity("¡Como máximo se deben introducir 40 caracteres!");
   } else {
     buscador.setCustomValidity("");
+  }*/
+  /*if(evento) evento.preventDefault();
+  var buscador = document.getElementById('cuadrobusqueda').value;
+  var error_buscador = document.getElementById('error-buscador');
+  if (buscador.length > 45) {
+    error_buscador.innerHTML('<p>¡El número máximo de caracteres es de 45!</p>');
+    return false;
+  } else {
+    error_buscador.innerHTML("");
+    return true;
   }
-}
+}*/
 
 //Función que valida el formulario de la página de contacto desde la parte del cliente, antes de enviar la informacíon del mismo al servidor
 function validarFormulario(evento){
