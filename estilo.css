@@ -297,6 +297,10 @@ select:focus {
   border: 2px solid #2E72C1;
 }
 
+.errorform:focus, .errorform1:focus, .errorform2:focus, .errorform3:focus {
+  outline:3px solid red;
+}
+
 .correcto {
   color: green;
   text-align: center;
@@ -1169,15 +1173,20 @@ ul.migasdepan {
   width: 40%;
 }
 
+#check_icon {
+  height: 20px;
+  float: left; 
+  margin: 0 10px 6px 0;
+}
 .contenedor_formulario {
   border-radius: 5px;
   background-color: #f2f2f2;
   margin: auto 100px;
-  padding: 20px 80px;
+  padding: 20px 100px;
 }
 
 input[type=text], select, textarea, input[type=email]{ 
-  width: 99%;
+  width: 95%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px; 

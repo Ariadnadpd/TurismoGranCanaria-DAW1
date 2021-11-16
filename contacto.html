@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
 			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!--<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>-->
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 		
 		<meta name= "application-name" content="Gran Canaria Insider - DAW1">
 		<meta name= "author" content= "Grupo 4: Ariadna Del Pino Domínguez, Roman Brendler y Danilo Rivero Pérez">
@@ -33,9 +33,12 @@
 		<script src="./scripts/menu_navegacion.js"></script>
 		<script src="./scripts/validacion.js"></script>
 		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
+
 	</head>
      
 	<body>
+		
+
 		<!-- Menú de navegación-->
 		<div class="header_dinamico"></div>
 
@@ -55,9 +58,10 @@
             <hr id="hrpagn">
 			
 			<div class="contenedor_formulario">
-				<form id="formulario_contacto" /*onSubmit="return validarFormulario();"*/>
+				<form id="formulario_contacto"> <!--/*onSubmit="return validarFormulario();"*/-->
+				
 					<label for="asunto">El mensaje es sobre</label>
-					<select name="seleccion_asunto" required> 
+					<select name="seleccion_asunto" id="select_contacto" required> 
 						<option value="0">Por favor, escoja uno de la lista...</option>
 						<option value="1">Correcciones/Actualizaciones</option>
 						<option value="2">Quejas generales</option>
@@ -76,11 +80,11 @@
 					<div id="error_textarea" class="error"></div>
 					
 					<label for="nombre_apellidos">Nombre y apellidos</label>
-					<input id="nombreContacto" type="text" value="" name="nombreyapellidos" required>
+					<input id="nombreContacto" type="text" name="nombreyapellidos" required>
 					<div id="error_nombre" class="error"></div>
 
 					<label for="email">Email de contacto</label>
-					<input id="emailContacto" type="email" value="" name="email" required>
+					<input id="emailContacto" type="email" name="email" required>
 					<div id="error_email" class="error"></div>
 					<span>
 						EDITORIAL GCINSIDER, S.A.U., con domicilio en Avda. Diagonal, 660-662 tratará sus datos personales 
@@ -100,14 +104,13 @@
 					</span>
 					
 					<input type="submit" value="Enviar" name="enviar" id="enviar_form" onSubmit="exitoDialogo();">
-					
 				</form>
-		
 			</div>
-
-			<div class="dialog" title="Se ha enviado"></div>
-			
         </section>
+
+		<div id="dialog" title="Email enviado"><p><img src="./imagenes/iconos/checkmark-done-outline.svg" id="check_icon"></img>
+			<p>El correo se ha enviado correctamente. <br> ¡Muchas gracias por tu opinión!</p>
+		</div>
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>

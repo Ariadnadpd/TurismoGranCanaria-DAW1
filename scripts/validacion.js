@@ -1,25 +1,6 @@
 'use strict'
 
-var general = true;
-// Validación del buscador del header.
-/*function buscador(evento){
-  /*var buscador = document.getElementById('cuadrobusqueda');
-  if (buscador.validity.tooLong) {
-    buscador.setCustomValidity("¡Como máximo se deben introducir 40 caracteres!");
-  } else {
-    buscador.setCustomValidity("");
-  }*/
-  /*if(evento) evento.preventDefault();
-  var buscador = document.getElementById('cuadrobusqueda').value;
-  var error_buscador = document.getElementById('error-buscador');
-  if (buscador.length > 45) {
-    error_buscador.innerHTML('<p>¡El número máximo de caracteres es de 45!</p>');
-    return false;
-  } else {
-    error_buscador.innerHTML("");
-    return true;
-  }
-}*/
+var count = 0;
 
 //Función que valida el formulario de la página de contacto desde la parte del cliente, 
 // antes de enviar la informacíon del mismo al servidor
@@ -32,6 +13,7 @@ function validarFormulario(evento){
     
     var comprueba = false;
     var control = true;
+
     //Variables generales del formulario
     let comentario = document.getElementById('comentario1');
     let errorTxa = document.getElementById('error_textarea'); 
@@ -47,7 +29,12 @@ function validarFormulario(evento){
     // ************************** Select **************************
     if(nombreSelect.value == 0) {
       errorSelect.innerHTML = "<p>!Debe seleccionar alguna opción!</p>";
+      let error_color_select = document.querySelector("#select_contacto");
+      if(!error_color_select.classList.contains("errorform3")){
+        error_color_select.classList.toggle("errorform3");
+      }
       control=false;
+      count++;
       nombreSelect.focus();
     } else {
       errorSelect.innerHTML = "";
@@ -55,11 +42,17 @@ function validarFormulario(evento){
 
     // ************************** Textarea **************************
 
+    let error_color_textarea = document.querySelector("#comentario1");
+
     //TextArea con más de 250 caracteres
     if(comentario.value.trim().length > 250) {
         errorTxa.innerHTML='<p>¡El número máximo de caracteres es de 250!</p>';
+        if(!error_color_textarea.classList.contains("errorform2")){
+          error_color_textarea.classList.toggle("errorform2");
+        }
         control=false;
         comprueba=true;
+        count++;
         comentario.focus();
     } else {
         errorTxa.innerHTML='';
@@ -68,7 +61,11 @@ function validarFormulario(evento){
     //TextArea vacío o  con menos de 2 caracteres
     if(comentario.value.trim().length < 2) {
       errorTxa.innerHTML='<p>¡El número mínimo de caracteres es de 2!</p>';
+      if(!error_color_textarea.classList.contains("errorform2")){
+        error_color_textarea.classList.toggle("errorform2");
+      }
       control=false;
+      count++;
       comentario.focus();
     } else if(!comprueba){
       errorTxa.innerHTML='';
@@ -79,7 +76,12 @@ function validarFormulario(evento){
     //Nombre y apellidos que no cumplen con el patrón de un nombre y apellidos
     if (!regNombre.test(nombre.value)) {
       errorNombre.innerHTML = '<p>Nombre inválido. Un nombre válido podría ser por ejemplo: Antonio García Rodríguez</p>';
+      let error_color_text = document.querySelector("input[type=text]");
+      if(!error_color_text.classList.contains("errorform")){
+        error_color_text.classList.toggle("errorform");    
+      }
       control=false;
+      count++;
       nombre.focus();
     } else {
       errorNombre.innerHTML = '';
@@ -89,8 +91,13 @@ function validarFormulario(evento){
     
     //Email correcto siguiendo un patrón
     if (!regEmail.test(email.value)) {
-      errorEmail.innerHTML = '<p>Email inválido. Un email válido podría ser por ejemplo: jose.daw.99@emalsa.es</p>';
+      errorEmail.innerHTML = '<p>Email inválido. Un email válido podría ser por ejemplo: jose.daw.99@gmail.com</p>';
+      let error_color_email = document.querySelector("input[type=email]");
+      if(!error_color_email.classList.contains("errorform1")){
+        error_color_email.classList.toggle("errorform1");
+      }
       control=false;
+      count++;
       email.focus();
     } else {
       errorEmail.innerHTML = '';
@@ -98,14 +105,17 @@ function validarFormulario(evento){
     
     // Valores devueltos por la función
     if(!control) {
+      if(count == 4){
+        nombreSelect.focus();
+      }
+      count=0;
       errorDialogo();
       return false;
     } else {
-      exitoDialogo();
-      //return true;
-      
+      $("#dialog").dialog("open");       
     }
 }
+
 
 //Función que cuenta los caracteres restantes a escribir en el cuadro de texto del comentario del formulario.
 function cuenta(){
@@ -125,6 +135,7 @@ function cuenta(){
     }
 }
 
+
 //Función para el mensaje de error con el objeto dialog() de jQuery-UI
 function errorDialogo(){
   var error = "Algunos campos son incorrectos. Vuelva a revisar su formulario.";
@@ -134,43 +145,42 @@ function errorDialogo(){
       title:'Error al enviar el formulario',
       width: '400px',
       modal: true,
+      resizable: false,
       buttons: [{
           text: "Aceptar",
           click: function() {
-             $(this).dialog("close");
+            $(this).dialog("close");
           }
       }]
+
   });
+  
 }
 
 // Función para el mensaje de éxito con el objeto dialog() de jQuery-UI
 $(document).ready(function exitoDialogo(){
 
-  $("#dialog").text("El correo se ha enviado correctamente.");
+//  $("#dialog").text("El correo se ha enviado correctamente.");
   $("#dialog").dialog({
     autoOpen: false,
     autoClose: false,
     modal: true,
     width: '400px',
-    
+    resizable: false,
     buttons: {
       "Aceptar": function () {
-      $(this).dialog("close");
+        location.reload();
+        $(this).dialog("close");
       }
     }
   });
 
   $("#enviar_form").button().click(function(){
-    
-    if(validarFormulario()) {
-      
-      $("#dialog").dialog("open"); 
-      
-    }
-    //console.log(result);
-     
+    validarFormulario();
+    return false;     
   });
 });
+
 
 
 
