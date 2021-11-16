@@ -3,10 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Contacto</title>
+		<link rel="stylesheet" type="text/css" href="./estilo.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
 			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+		<!--<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>-->
+		
 		<meta name= "application-name" content="Gran Canaria Insider - DAW1">
 		<meta name= "author" content= "Grupo 4: Ariadna Del Pino Domínguez, Roman Brendler y Danilo Rivero Pérez">
 		<meta name="copyright" content="2021 © Gran Canaria Insider" />
@@ -15,10 +17,19 @@
 		<meta name= "keywords" content= "Turismo, Gastronomía, Actividades, Artesanía, A donde ir, Gran Canaria">
 		<meta http-equiv= "refresh" content="400"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
-  		<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script> 
-  		<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="./estilo.css">
+		
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+		<!-- jQuery Modal -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+		   
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
+
 		<script src="./scripts/menu_navegacion.js"></script>
 		<script src="./scripts/validacion.js"></script>
 		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
@@ -37,12 +48,14 @@
 			</div>
 		</main>
 
+		
 		<section>
+			
 			<h1 id="pagn">Contacta con Gran Canaria Insider</h1> 		
             <hr id="hrpagn">
 			
 			<div class="contenedor_formulario">
-				<form id="formulario_contacto" onSubmit="return validarFormulario();">
+				<form id="formulario_contacto" /*onSubmit="return validarFormulario();"*/>
 					<label for="asunto">El mensaje es sobre</label>
 					<select name="seleccion_asunto" required> 
 						<option value="0">Por favor, escoja uno de la lista...</option>
@@ -85,12 +98,15 @@
 						Podrá ponerse en contacto con nuestro Delegado de Protección de Datos mediante escrito dirigido a 
 						dpo@insider.es o a Grupo Insider, At.: Delegado de Protección de Datos, Avda. Diagonal 662-664, 35011 Las Palmas.
 					</span>
-					<input type="submit" value="Enviar" name="enviar">
-
-					<div id="confirmado" class="correcto"></div>
+					
+					<input type="submit" value="Enviar" name="enviar" id="enviar_form" onSubmit="exitoDialogo();">
+					
 				</form>
 		
 			</div>
+
+			<div class="dialog" title="Se ha enviado"></div>
+			
         </section>
 
 		<!-- Pie de página del sitio web -->

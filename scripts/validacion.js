@@ -1,5 +1,6 @@
 'use strict'
 
+var general = true;
 // Validación del buscador del header.
 /*function buscador(evento){
   /*var buscador = document.getElementById('cuadrobusqueda');
@@ -20,16 +21,17 @@
   }
 }*/
 
-//Función que valida el formulario de la página de contacto desde la parte del cliente, antes de enviar la informacíon del mismo al servidor
+//Función que valida el formulario de la página de contacto desde la parte del cliente, 
+// antes de enviar la informacíon del mismo al servidor
 function validarFormulario(evento){
     
     //Evitamos la acción por defecto del evento
     if(evento) evento.preventDefault();
 
     //Variables de control y de comprobación
-    var control = true;
-    var comprueba = false;
     
+    var comprueba = false;
+    var control = true;
     //Variables generales del formulario
     let comentario = document.getElementById('comentario1');
     let errorTxa = document.getElementById('error_textarea'); 
@@ -99,7 +101,9 @@ function validarFormulario(evento){
       errorDialogo();
       return false;
     } else {
-      return true;
+      exitoDialogo();
+      //return true;
+      
     }
 }
 
@@ -121,14 +125,14 @@ function cuenta(){
     }
 }
 
-//Mensaje de error con el objeto dialog() de jQuery-UI
+//Función para el mensaje de error con el objeto dialog() de jQuery-UI
 function errorDialogo(){
   var error = "Algunos campos son incorrectos. Vuelva a revisar su formulario.";
   var dialogo=$('<div></div>');
   dialogo.text(error);
   dialogo.dialog({
       title:'Error al enviar el formulario',
-      width:350,
+      width: '400px',
       modal: true,
       buttons: [{
           text: "Aceptar",
@@ -139,5 +143,34 @@ function errorDialogo(){
   });
 }
 
-//correcto.innerHTML = '<p> Se ha enviado correctamente</p>';
-//let correcto = document.getElementById('correcto');
+// Función para el mensaje de éxito con el objeto dialog() de jQuery-UI
+$(document).ready(function exitoDialogo(){
+
+  $("#dialog").text("El correo se ha enviado correctamente.");
+  $("#dialog").dialog({
+    autoOpen: false,
+    autoClose: false,
+    modal: true,
+    width: '400px',
+    
+    buttons: {
+      "Aceptar": function () {
+      $(this).dialog("close");
+      }
+    }
+  });
+
+  $("#enviar_form").button().click(function(){
+    
+    if(validarFormulario()) {
+      
+      $("#dialog").dialog("open"); 
+      
+    }
+    //console.log(result);
+     
+  });
+});
+
+
+
