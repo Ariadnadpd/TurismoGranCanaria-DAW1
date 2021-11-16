@@ -1006,10 +1006,11 @@ ul.migasdepan {
 
   .bloque_imagenes {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content:center;
   }
+
+  
 
   .img_presentacion_cat1, .img_presentacion_cat_grande1 {
     width: 270px; height: 270px;
@@ -1392,6 +1393,22 @@ input[type=submit]:hover {
 
 
 /********* Estilo para ordenadores *********/
+
+@media screen and (max-width: 1230px) {
+  .bloque_imagenes {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .bloque_imagenes img{
+    margin:auto;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+}
 @media screen and (max-width: 1024px) {
   
   .mapa1, .cajainfo, .contenedor, .contenedor_int, .masinfo, .bloque_imagenes{
@@ -1437,12 +1454,12 @@ input[type=submit]:hover {
     margin: 10% auto;
     width: 85%;
   } 
-
+/*
   .bloque_imagenes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(auto, auto);
-  }
+  }*/
 
   .img_presentacion_cat, .img_presentacion_cat_grande {
     width: 300px; height: 300px;
@@ -1561,12 +1578,20 @@ input[type=submit]:hover {
 
 @media (max-width:920px) {
 
+  .fondo {
+    height: 260px;
+  }
+
   .presentacion_gc_insider video {
     margin-top: 3%;
   }
 
   .slider {
     height: 370px;
+  }
+
+  .bloque_imagenes img{
+    height: 200px;
   }
 
   .presentacion p {
@@ -1598,6 +1623,10 @@ input[type=submit]:hover {
 
 @media (max-width:800px){
 
+  .fondo {
+    height: 240px;
+  }
+
   .presentacion .img_presentacion{
     float: none;
     margin-left: auto;
@@ -1608,6 +1637,13 @@ input[type=submit]:hover {
     justify-content: center;
     width: 80%;
   }
+   
+  .contenedor-grid div p,
+  .contenedor-grid2 div p,
+  .contenedor-grid3 div p{
+    font-size: 1.1em;
+  }
+  
 
   .cenlaces .menu2 li a{ 
     font-size: 1em;
@@ -1727,7 +1763,17 @@ input[type=submit]:hover {
 
 /********** Estilo para tablets *********/
 
+@media screen and (max-width: 760px) {
+  .tarjeta{
+    width: 80%;
+ }
+}
+
 @media screen and (max-width: 715px) {
+
+  .fondo {
+    height: 250px;
+  }
 
   .presentacion_gc_insider p {
     font-size: 1em;
@@ -1751,12 +1797,29 @@ input[type=submit]:hover {
     font-size: 0.9em;
   }
 
-  .bloque_imagenes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-   
+
+  .img, .img2, .img3 {
+    height: 70%;
   }
+
+  .contenedor-grid2,
+  .contenedor-grid3 {
+    grid-auto-rows: 180px;
+    grid-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor-grid div p,
+  .contenedor-grid2 div p,
+  .contenedor-grid3 div p{
+    font-size: 1em;
+    width: 90%;
+    left:8%;
+  }
+
   .img_presentacion_cat_grande, .img_presentacion_cat {
     width: 300px; height: 300px;
   }
@@ -1791,6 +1854,25 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 608px) {
+
+  .fondo {
+    height: 235px;
+  }
+
+
+  .img2 {
+    width: 250px;
+  }
+
+  .contenedor-grid2 div:nth-child(1) .img2{
+    width: 250px;
+  }
+
+  .presentacion_gc_insider h1, .contenedor h2,
+  .contenedor2 h2, .contenedor3 h2{
+    font-size: 2.1rem;
+  }
+
   .presentacion_gc_insider p {
     font-size: 0.95em;
   }
@@ -1808,12 +1890,12 @@ input[type=submit]:hover {
   .cenlaces .menu2 li a{ 
     font-size: 0.75em;
   }
-
+/*
   .bloque_imagenes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
-  }
+  }*/
 
   .img_presentacion_cat_grande, .img_presentacion_cat {
     width: 200px; height: 200px;
@@ -1834,10 +1916,42 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 560px) {
 
+  .img{
+    height: 85%;
+    margin-top: 15%;
+  }
+
+  .contenedor-grid2,
+  .contenedor-grid3 {
+    grid-auto-rows: 180px;
+  }
+
+  .contenedor-grid div,
+  .contenedor-grid2 div,
+  .contenedor-grid3 div{
+    height: 200px;
+  }
+
+  .contenedor-grid div:nth-child(3), .contenedor-grid div:nth-child(4)  {
+    margin-top: -30%;
+  }
+
+  .contenedor-grid div:nth-child(1), .contenedor-grid div:nth-child(2)  {
+    margin-top: 5%;
+  }
+
+  .contenedor h2{
+    margin-top: 9%;
+  }
+
   .presentacion_categoria1 {
     margin: 40px 5px 5px 5px;
     padding-right: 25px;
     padding-left:25px;
+  }
+
+  .catras .nombre_pagina, .header2 .nombre_pagina {
+    font-size: 1.35rem;
   }
 
   .presentacion_categoria1 p{
@@ -1849,10 +1963,12 @@ input[type=submit]:hover {
   }
 
   .bloque_imagenes {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
   }
+
 
   .img_presentacion_cat_grande, .img_presentacion_cat {
     width: 200px; height: 200px;
@@ -1894,12 +2010,63 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 500px) {
+
+  .fondo {
+    height: 210px;
+  }
+
+  .img2 {
+    width: 220px;
+  }
+
+  .contenedor-grid2 div:nth-child(1) .img2{
+    width: 220px;
+  }
+
+  ul.migasdepan li {
+    font-size: 0.9em;
+  }
+
+  ul.migasdepan li a:hover {
+    font-size: 1.1em;
+  }
+
   .cenlaces .menu2 li a{ 
     font-size: 0.6em;
+  }
+
+  .presentacion_gc_insider h1, .contenedor h2,
+  .contenedor2 h2, .contenedor3 h2{
+    font-size: 2rem;
+  }
+
+  .tarjeta{
+     margin-left: -10%;
   }
 }
 
 @media screen and (max-width: 430px){
+
+  .fondo {
+    height: 200px;
+  }
+
+  .contenedor-grid div p,
+  .contenedor-grid2 div p,
+  .contenedor-grid3 div p{
+    font-size: 0.65em;
+    width: 80%;
+    left:8%;
+  }
+
+  .presentacion_gc_insider h1, .contenedor h2,
+  .contenedor2 h2, .contenedor3 h2{
+    font-size: 1.9rem;
+  }
+
+  .img, .img2, .img3 {
+    object-fit:initial;
+  }
 
   .cenlaces .menu2 li a{ 
     font-size: 0.55em;
@@ -1915,6 +2082,23 @@ input[type=submit]:hover {
 }
 
 @media (max-width:370px){
+
+  .fondo {
+    height: 190px;
+  }
+
+  .img2 {
+    width: 200px;
+  }
+
+  .contenedor-grid2 div:nth-child(1) .img2{
+    width: 200px;
+  }
+
+  .presentacion_gc_insider h1, .contenedor h2,
+  .contenedor2 h2, .contenedor3 h2{
+    font-size: 1.85rem;
+  }
 
   .cenlaces .menu2 li a{ 
     font-size: 0.5em;
@@ -1938,10 +2122,10 @@ input[type=submit]:hover {
     flex-direction: column;
     /*flex-wrap: wrap;*/
   }
-  .tarjeta{
+  /*.tarjeta{
     margin: 15px;
     width: 75%;
-  }
+  }*/
 }
 
 /********************************************** FIN RESPONSIVE  **********************************************/
