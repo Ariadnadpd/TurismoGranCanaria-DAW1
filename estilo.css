@@ -70,6 +70,7 @@ em {
   padding: 0;
   box-sizing: border-box;
   height: 60px;
+  margin-top: 20%;
 }
 
 
@@ -87,8 +88,7 @@ em {
     box-sizing: border-box;
     height: 60px;
     line-height: 70px;
-    
-  }
+}
 
 .header1 .barra_navegacion .menu{
   margin: 0;
@@ -96,6 +96,7 @@ em {
   box-sizing: border-box;
   display: flex;
 }
+
 .header1 .barra_navegacion .menu li{
   margin: 0;
   box-sizing: border-box;
@@ -106,6 +107,7 @@ em {
   list-style: none;
   padding: 0 14px;
 }
+
 .header1 .barra_navegacion .menu li a{
   margin: 0;
   padding: 0;
@@ -153,7 +155,7 @@ em {
   border-radius: 0 0 4px 4px;
   display: none;
   z-index: 2;
-  background: #333333;
+  background: #374861;
 }
 .header1 .barra_navegacion .menu li:hover .artesania-sub-menu,
 .header1 .barra_navegacion .menu li:hover .gastronomia-sub-menu,
@@ -172,8 +174,10 @@ em {
   padding: 0;
   box-sizing: border-box;
   color: #fff;
-  font-size: 15px;
+  font-size: 0.7em;
   font-weight: 500;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .barra_navegacion .buscador{
@@ -258,13 +262,15 @@ em {
   height: 35px;
   width: 50px;
   border: 1px solid white;
-  background-color: #2E72C1;
+  border-radius: 4px;
+  background-color: white;
 }
 
 .buscador .icono-buscador #buscar #ic-buscar{
   position:absolute;
   left: 0;
   top: -10%;
+  color: #243342;
 }
 
 .barra_navegacion .menu-hamburguesa .barra-hamburguesa{
@@ -1820,7 +1826,8 @@ input[type=submit]:hover {
   }
 
   .bx-x:hover {
-    color:red;
+    color:#F0CC0D;
+    font-size: 30px;
   }
   
   .contenedor-slider {
