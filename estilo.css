@@ -25,17 +25,6 @@ em {
   font-weight: bold;
 }
 
-/*
-.header1{
-  width: 100%;
-  height: 300px;
-  background-image: url(./imagenes/fondo.jpeg);
-  background-size: cover;
-  background-size: 100% 100%;
-  background-position: center 40%;
-  position: relative;
-}
-*/
 
 /***************************************** Header *****************************************/
 
@@ -532,15 +521,6 @@ footer {
   justify-content: center;
 }
 
-/*.capa_principal .primera_capa {
-  border: 2px solid red;
-}*/
-
-#seccion_logo , #iconos , #seccion_texto{
-  /*border: 2px solid green;*/
-  flex: 2;
-}
-
 .primera_capa {
   display:flex;
   flex-direction: row;
@@ -582,7 +562,6 @@ footer {
 }
 
 #seccion_texto #seccion_enlaces {
-  /*border: 2px solid yellow;*/
   width: 100%;
   display: flex;
   flex-direction: initial;
@@ -592,7 +571,6 @@ footer {
 
 
 #seccion_texto .seccion_info {
-  /*border: 2px solid black;*/
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -615,6 +593,10 @@ footer {
   text-decoration: none;
   font-size: 0.9em;
   color: white;
+}
+
+#ulenlaces li a:hover {
+  color: #B78D8B;
 }
 
 #ulenlaces li+li:before {
@@ -1065,31 +1047,6 @@ ul.migasdepan {
     height: 460px;
   } 
 
-  /* Parte de abajo: compartir */
-  .seccion_compartir {
-    margin-left: 5%;
-    /*border: 3px solid red;*/
-  }
-
-  .seccion_compartir .contenedor_iconosc {
-    display:grid;
-    /*border: 3px solid green;*/
-    grid-template-columns: repeat(10, 1fr);
-    /*grid-auto-rows: minmax(6px, auto);*/
-  }
-  
-  .hrenlacescompartir {
-    width: 30%;
-    margin-right: 70%;
-  }
-  
-  .seccion_compartir div div .comp_rss{
-    width: 20px;
-    height: 60px;
-  }
-
- 
-
   .contenedor {
     margin: 2%;
     margin-right: 3%;
@@ -1099,6 +1056,92 @@ ul.migasdepan {
     width: 45%;  
   }
   
+  /* Parte de abajo: compartir */
+    .seccion_compartir {
+      margin-left: 5%;
+    }
+    
+    .hrenlacescompartir {
+      width: 30%;
+      margin-right: 70%;
+    }
+  
+  
+    #visible_a {
+      height: 32px;
+      width: 32px;
+      display:inline-block;
+    }
+    
+    
+    #a2apage_mini_services {
+      display: none;
+    }
+  
+    #visible_a:hover #a2apage_mini_services{
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+  
+    .a2a_i {
+      display: block;
+      float: left;
+      border: 1px solid #FFF;
+      line-height: 24px;
+      padding: 6px 8px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
+      text-decoration: none;
+      background-color: #fff;
+      height: auto;
+    }
+  
+    #a2apage_mini_services {
+      border-radius: 6px;
+      direction: ltr;
+      background: #FFF;
+      font-size: 16px; 
+      color: #000;
+      line-height: 12px;
+      border: 1px solid #CCC;
+      vertical-align: baseline;
+      overflow: hidden;
+      
+      box-sizing: content-box;
+      float: none;
+      margin: 0;
+      padding: 0;
+      position: static;
+      height: auto;
+      
+      touch-action: manipulation;
+      outline: 0;
+      min-width: 200px;
+      position: absolute;
+      width: 300px;
+      z-index: 9999997;
+    }
+  
+  
+    .a2a_i:hover {
+      background-color: #CCC;
+    }
+  
+    .a2a_i img {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: middle;
+      margin-right: 5%;
+      color: #0166FF;
+      text-decoration: none;
+      font-size: 16px;
+      outline: 0;
+    }
+  /* Aquí termina parte de compartir*/
+
   /* Caja de información de todas las categorías (enlaces) */
   .cajainfo {
     display: grid;
@@ -1258,12 +1301,16 @@ input[type=submit]:hover {
 
 #hrseccionpf {
   width: 100%;
-  margin-right: 10%;
+  /*margin-right: 10%;*/
 }
 
 .contenedor_preguntas {
   margin: auto 100px;
   padding: 20px 80px;
+}
+
+#seccion_respuestas section {
+  padding-left: 20px;
 }
 
 #seccion_respuestas section p {
@@ -1274,15 +1321,29 @@ input[type=submit]:hover {
 
 #seccion_preguntas {
   margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#seccion_preguntas ul {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #seccion_preguntas ul li {
   border:none;
   border-radius: 10px;
   list-style: none;
+  margin-left: -5%;
   background-color:#d2d6dd;
   margin-bottom: 2%;
   padding: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 #seccion_preguntas ul li a{
@@ -1454,12 +1515,10 @@ input[type=submit]:hover {
     margin: 10% auto;
     width: 85%;
   } 
-/*
-  .bloque_imagenes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(auto, auto);
-  }*/
+
+  .bloque_imagenes img{
+   width: 100%;
+  }
 
   .img_presentacion_cat, .img_presentacion_cat_grande {
     width: 300px; height: 300px;
@@ -1574,6 +1633,15 @@ input[type=submit]:hover {
     
   }
 
+  .contenedor_preguntas {
+    margin: auto 30px;
+    padding: 10px 50px;
+  }
+
+  .contenedor_preguntas #seccion_preguntas ul li{
+    text-align: center;
+  }
+
 }
 
 @media (max-width:920px) {
@@ -1618,6 +1686,10 @@ input[type=submit]:hover {
   }
   nav .barra_navegacion .menu li a{
     font-size: 15px;
+  }
+
+  #seccion_preguntas ul li {
+    margin-left: -10%;
   }
 }
 
@@ -1767,6 +1839,44 @@ input[type=submit]:hover {
   .tarjeta{
     width: 80%;
  }
+
+ .contenedor_formulario {
+  margin: auto 70px;
+  padding: 20px 80px;
+ }
+
+ input[type=text], select, textarea, input[type=email]{ 
+  width: 100%;
+  padding: 10px;
+  }
+
+  select {
+    font-size: 0.7em;
+  }
+
+  textarea {
+    height: 160px;
+  }
+
+  label{
+    font-size: 0.8em;
+  }
+
+  #em_com {
+    font-size: 0.75rem;
+  }
+
+  form span {
+    font-size: 0.75rem;
+  }
+
+  input[type=submit] {
+    padding: 10px 16px;  
+    font-size: 0.7em;
+    margin:auto;
+    display: block;
+  }
+
 }
 
 @media screen and (max-width: 715px) {
@@ -1851,12 +1961,38 @@ input[type=submit]:hover {
   .slider {
     height: 270px;
   }
+
+  .primera_capa #seccion_logo img{
+    width: 50%;
+  }
+
+  .tercera_capa img{
+    width: 20%;
+    padding-top: 4%;
+  }
 }
 
 @media screen and (max-width: 608px) {
 
   .fondo {
     height: 235px;
+  }
+
+  .contenedor_formulario {
+    margin: auto 35px;
+    padding: 20px 60px;
+  }
+  
+  input[type=text], select, textarea, input[type=email]{ 
+    padding: 7px;
+  }
+  
+  select {
+    font-size: 0.65em;
+  }
+  
+  textarea {
+    height: 145px;
   }
 
 
@@ -1890,12 +2026,6 @@ input[type=submit]:hover {
   .cenlaces .menu2 li a{ 
     font-size: 0.75em;
   }
-/*
-  .bloque_imagenes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-  }*/
 
   .img_presentacion_cat_grande, .img_presentacion_cat {
     width: 200px; height: 200px;
@@ -1911,6 +2041,13 @@ input[type=submit]:hover {
   .slider {
     height: 250px;
   }
+
+  .primera_capa #iconos{
+    font-size: 0.7em;
+    flex: 1;
+  }
+
+  
 
 }
 
@@ -2007,16 +2144,79 @@ input[type=submit]:hover {
     height: 225px;
   }
 
+  #seccion_respuestas section h4{
+    font-size: 0.8em;
+  }
+
+  #seccion_preguntas ul li a{
+    font-size: 0.8em;
+  }
+
+  #seccion_preguntas ul li{
+    width: 120%;
+  }
+
+  #pagn {
+    font-size: 1.4em;
+  }
+
+  #em_com {
+    font-size: 0.63rem;
+  }
+
+  form span {
+    font-size: 0.7rem;
+  }
+
+  .primera_capa #seccion_logo img{
+    width: 90%;
+  }
+
+  .primera_capa #seccion_logo img{
+    width: 52px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
+
+  body {
+    margin: 28px;
+  }
 
   .fondo {
     height: 210px;
   }
 
+  .contenedor_formulario {
+    margin: auto 25px;
+    padding: 20px 50px;
+  }
+  
+  input[type=text], select, textarea, input[type=email]{ 
+    padding: 5px;
+  }
+  
+  select {
+    font-size: 0.6em;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+
   .img2 {
     width: 220px;
+  }
+
+  .contenedor_preguntas #seccion_preguntas{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+
+  #seccion_preguntas ul li {
+    margin-left: -30%;
   }
 
   .contenedor-grid2 div:nth-child(1) .img2{
@@ -2043,6 +2243,42 @@ input[type=submit]:hover {
   .tarjeta{
      margin-left: -10%;
   }
+
+  #hrseccionpf{
+    width: 100%;
+  }
+
+  #hrpagn {
+    width: 87%;
+  } 
+
+  .primera_capa #seccion_logo img{
+    width: 50px;
+  }
+
+  .primera_capa #seccion_texto ul {
+   width: 590%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+  }
+
+  .primera_capa #iconos{
+    font-size: 0.6em;
+  }
+
+
+  .primera_capa #seccion_texto ul li a {
+    font-size: 0.55em;
+    margin-left: -30%;
+    text-align: center;
+  }
+
+  .primera_capa #seccion_texto p {
+    font-size: 0.5em;
+  }
+  
 }
 
 @media screen and (max-width: 430px){
@@ -2079,9 +2315,77 @@ input[type=submit]:hover {
   .presentacion p, .presentacion_gc_insider p {
     font-size: 0.87em;
   }
+  .contenedor_preguntas {
+    width: 50%;
+    margin: auto;
+  }
+
+  #seccion_preguntas ul {
+    width: 500%;
+  }
+
+  #seccion_respuestas section {
+    width: 170%;
+    margin: auto;
+    padding: 0;
+    margin-left: -37%;
+  }
+
+  #seccion_preguntas ul li {
+    margin-left: -40%;
+    width: 150%;
+  }
+
+  .contenedor_formulario {
+    margin: auto 10px;
+    padding: 10px 20px;
+  }
+  
+  input[type=text], select, textarea, input[type=email]{ 
+    padding: 2px;
+    width: 100%;
+  }
+  
+  select {
+    font-size: 0.55em;
+  }
+  
+  textarea {
+    height: 110px;
+  }
+
+  #em_com {
+    font-size: 0.6rem;
+  }
+
+  form span {
+    font-size: 0.65rem;
+    margin-top: -0.5%;
+  }
+
+  label {
+    font-size: 0.65em;
+  }
+
+  .primera_capa #seccion_texto p {
+    font-size: 0.5em;
+  }
+
+  .primera_capa #seccion_texto ul li {
+    width: 120%;
+  }
 }
 
 @media (max-width:370px){
+
+  body {
+    margin: 20px;
+  }
+
+  .contenedor_formulario {
+    margin: auto 3px;
+    padding: 5px 8px;
+  }
 
   .fondo {
     height: 190px;
@@ -2117,15 +2421,51 @@ input[type=submit]:hover {
   }
 }
 
+@media screen and (max-width: 330px) {
+  .primera_capa #seccion_texto ul li {
+    width: 140%;
+  }
+}
+
+@media screen and (max-width:220px) {
+  .contenedor_formulario {
+    margin: auto 0;
+    padding: 2px;
+  }
+
+  input[type=text], select, textarea, input[type=email]{ 
+    padding: 2px;
+    width: 92%;
+  }
+  
+  select {
+    font-size: 0.5em;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+
+  #em_com {
+    font-size: 0.5rem;
+  }
+
+  form span {
+    font-size: 0.55rem;
+  }
+
+  label {
+    font-size: 0.55em;
+  }
+}
+
 @media only screen and (min-width:320px) and (max-width:768px){
   .contenedor-tarjetas{
     flex-direction: column;
-    /*flex-wrap: wrap;*/
   }
-  /*.tarjeta{
-    margin: 15px;
-    width: 75%;
-  }*/
+
 }
 
 /********************************************** FIN RESPONSIVE  **********************************************/
+
+

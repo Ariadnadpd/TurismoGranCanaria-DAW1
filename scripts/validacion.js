@@ -114,6 +114,7 @@ function validarFormulario(evento){
     } else {
       $("#dialog").dialog("open");       
     }
+    return true;
 }
 
 
