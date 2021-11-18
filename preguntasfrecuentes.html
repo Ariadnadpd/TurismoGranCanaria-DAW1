@@ -18,7 +18,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 		<script src="./scripts/menu_navegacion.js"></script>
-		<script src="./scripts/validacion.js"></script>
+		<!--<script src="./scripts/validacion.js"></script>-->
+		<!--<script type="text/JavaScript" src="../datos.json"></script>-->
 		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
 	</head>
      
@@ -43,14 +44,14 @@
 			<section class="contenedor_preguntas"> 
 				<section id="seccion_preguntas">
 					<ul>
-						<li><a href="#p1">¿Por qué GCInsider se llama así?</a></li>
+						<!--<li><a href="#p1">¿Por qué GCInsider se llama así?</a></li>
 						<li><a href="#p2">¿Cuál es el lugar más tranquilo para visitar?</a></li>
 						<li><a href="#p3">¿Cuál es el mejor artesano de Gran Canaria?</a></li>
 						<li><a href="#p4">¿En qué restaurante se come mejor?</a></li>
 						<li><a href="#p5">¿Puedo contactar directamente con un autor?</a></li>
 						<li><a href="#p6">¿Los museos abren los días festivos?</a></li>
 						<li><a href="#p7">¿Tengo que registrarme en la página web?</a></li>
-						<li><a href="#p8">¿Que atracción es la más recomendada en el parque Holiday World?</a></li>
+						<li><a href="#p8">¿Que atracción es la más recomendada en el parque Holiday World?</a></li>-->
 					</ul>
 				</section>
 				
@@ -131,5 +132,37 @@
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+
+		<script>
+			$(document).ready(function(){
+				$.getJSON("./datos.json", function(datosJSON){
+					//var mydata = JSON.parse(datosJSON);
+					//$('#seccion_preguntas ul li a').empty();
+					
+					console.log(datosJSON.datos2.preguntasfrec);
+					var i=1;
+					$.each(datosJSON.datos2.preguntasfrec, function(clave, valor){
+						//console.log(clave);
+						$('#seccion_preguntas ul').append("<li><a href='#p" + i + "'>" +  this["pregunta"] + "</a></li>");
+						i++;
+						//console.log(valor);
+						//console.log(this["pregunta"]);
+						//console.log("ola");
+						//console.log(valor[0].pregunta);
+						//var uli = $('#seccion_preguntas ul');
+						//const lia = document.createElement("li");
+						//const aa = document.createElement("a");
+						//uli.insertAdjacentElement("afterbegin", li);
+						//uli.appendChild(lia);
+						//lia.appendChild(aa);
+						//var info = '<a href="#">' + this["pregunta"] + '</a>';
+						//console.log(info);
+                        //aa.innerHTML = this["pregunta"];
+						//$('#seccion_preguntas ul li').append(info);
+						//$('#seccion_preguntas ul li a').innerhtml = "<a>valor</a>";;
+					});
+				});
+			});
+		</script>
 	</body>
 </html>
