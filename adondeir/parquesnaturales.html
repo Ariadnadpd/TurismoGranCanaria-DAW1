@@ -20,6 +20,9 @@
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/validacion.js"></script>
 		<script src="../scripts/iconos_compartir.js"></script>
+		<script type="text/JavaScript" src="../datos.json"></script>
+		<script src="../scripts/adondeir_JSON.js"></script>
+		<script src="../scripts/utlima_actualizacion.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
 		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
 	</head>
@@ -86,37 +89,7 @@
 				<section class="masinfo">
 					<h3 class="h3enlaces">Parques Naturales</h3>
 					<hr class="hrenlaces">
-					<section class="cajainfo">
-						<section>
-							<h4 class="h4enlaces">Tejeda</h4>
-							<p class="penlaces"> Parque Rural del Nublo </p>
-							
-							<p>  
-								<a href="https://goo.gl/maps/owz9LTShBdocY4LF9" class="boton"> Ver ruta</a>
-							</p>
-						</section>
-						<section>
-							<h4 class="h4enlaces">Agaete, Artenara y La Aldea de San Nicolás</h4>
-							<p class="penlaces"> Parque Natural de Tamadaba  </p>
-							<p> 
-								<a href="https://goo.gl/maps/tPpmXSnqvY9YS5y96" class="boton"> Ver ruta</a>
-							</p>
-						</section>
-						<section>
-							<h4 class="h4enlaces">Teror</h4>
-							<p class="penlaces"> Finca de Osorio</p>
-							<p> 
-								<a href="https://goo.gl/maps/Z1vrz8symaBEMLfc6" class="boton"> Ver ruta</a>
-							</p>
-						</section>	
-						<section>
-							<h4 class="h4enlaces">Moya</h4>
-							<p class="penlaces"> Reserva Natural Especial Los Tilos</p>
-							<p> 
-								<a href="https://goo.gl/maps/JwSz9QjHRfxEwfut8" class="boton"> Ver ruta</a>
-							</p>
-						</section>	
-					</section>
+					<section class="cajainfo" id="cajainfojson2"></section>
 				</section>
 
 			</section>
@@ -158,7 +131,10 @@
 			</section>
 
 		</section>
-				
+		
+		<!-- Fecha de actualización del JSON -->
+		<div id="actualizacion"></div>
+
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
 	</body>

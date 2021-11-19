@@ -20,6 +20,9 @@
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/validacion.js"></script>
 		<script src="../scripts/iconos_compartir.js"></script>
+		<script type="text/JavaScript" src="../datos.json"></script>
+		<script src="../scripts/adondeir_JSON.js"></script>
+		<script src="../scripts/utlima_actualizacion.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
 		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
 	</head>
@@ -89,52 +92,7 @@
 				<section class="masinfo">
 					<h3 class="h3enlaces">Museos</h3>
 					<hr class="hrenlaces">
-					<section class="cajainfo">
-						<section>
-							<h4 class="h4enlaces">Agaete</h4>
-							<p class="penlaces">Playa del Dedo de Dios</p>
-							<p> 
-								<a href="https://www.google.com/maps/dir/28.1476038,-15.6529834/Playa+Dedo+de+Dios/@28.1202773,-15.7144448,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xc408b745582e883:0x2a277996c2ac3cb4!2m2!1d-15.7076547!2d28.096138" 
-								class="boton">
-								Cómo llegar</a>
-							</p>
-						</section>
-						<section>
-							<h4 class="h4enlaces">Gáldar</h4>
-							<p class="penlaces">Playa de Caleta Abajo</p>
-							<p> 
-								<a href="https://goo.gl/maps/PadJyHCYWvPjUukTA" class="boton">Cómo llegar</a>
-							</p>
-						</section>
-						<section>
-							<h4 class="h4enlaces">Gáldar</h4>
-							<p class="penlaces">Playa de Sardina del Norte</p>
-							<p> 	
-								<a href="https://goo.gl/maps/zbtSBbdTV2nAi3HTA" class="boton">Cómo llegar</a>
-							</p>
-						</section>
-						<section>
-							<h4 class="h4enlaces">Maspalomas</h4>
-							<p class="penlaces">Playa del Inglés</p>
-							<p>  
-								<a href="https://goo.gl/maps/Rr8uAu6isDh9JcdR7" class="boton"> Cómo llegar</a>
-							</p>
-						</section>		
-						<section>
-							<h4 class="h4enlaces">Agaete</h4>
-							<p class="penlaces">Playa del Juncal</p>
-							<p>  
-								<a href="https://goo.gl/maps/VDJLJKkCo5kvz6ct6" class="boton"> Cómo llegar</a>
-							</p>
-						</section>
-						<section>
-							<h4 class="h4enlaces">Las Palmas de Gran Canaria</h4>
-							<p class="penlaces">Playa de las Canteras</p>
-							<p>  
-								<a href="https://goo.gl/maps/4MGY6fBCHnzyqbZW6" class="boton"> Cómo llegar</a>
-							</p>
-						</section>						
-					</section>			
+					<section class="cajainfo" id="cajainfojson3"></section>			
 				</section>
 			</section>
 
@@ -177,6 +135,9 @@
 
 		</section>
 
+		<!-- Fecha de actualización del JSON -->
+		<div id="actualizacion"></div>
+		
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
 	</body>
