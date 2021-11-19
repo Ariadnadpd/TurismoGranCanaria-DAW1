@@ -1364,6 +1364,10 @@ input[type=submit]:hover {
   font-weight: 700;
 }
 
+#actualizacion {
+  margin-top:6%;
+}
+
 #actualizacion p {
   text-align: center;
 }
