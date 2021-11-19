@@ -1066,6 +1066,8 @@ ul.migasdepan {
   /* Parte de abajo: compartir */
     .seccion_compartir {
       margin-left: 5%;
+      
+      margin-top: 10%;
     }
     
     .hrenlacescompartir {
@@ -1189,7 +1191,7 @@ ul.migasdepan {
     border: 2px solid #5D7893;
     border-radius: 0.40em;
     background-color: #9AB3CC;
-    padding: 7px; 
+    padding: 5px; 
     color: white;
   }
 
@@ -1364,7 +1366,7 @@ input[type=submit]:hover {
   font-weight: 700;
 }
 
-#hora_actualizacion {
+#actualizacion p {
   text-align: center;
 }
 

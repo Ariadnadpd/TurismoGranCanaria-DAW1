@@ -33,6 +33,85 @@
                 "pregunta": "¿Que atracción es la más recomendada en el parque Holiday World?",
                 "respuesta": "Los que buscan adrenalina deberían probar el 'Rollercoaster' y el 'Spin Loop'. Para los niños pequeños, el 'Family Carousel' es perfecto."
             }
+        ], 
+   
+        "actividades": [ 
+            { "buceo": [
+                {
+                    "titulo": "Las Palmas de Gran Canaria",
+                    "subtitulo": "Buceo La vieja",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Olof Palme, 2",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 674338922",
+                    "sitioweb": "<a href='https://www.buceolavieja.com/' class='boton'> Visitar sitio web<\/a>"
+                },
+                {
+                    "titulo": "Puerto de Sardina",
+                    "subtitulo": "Buceo Norte",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Av. Alcalde Antonio Rosas, 46",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 628107479",
+                    "sitioweb": "<a href='https://www.buceonorte.com/' class='boton'>Visitar sitio web<\/a>"
+                },
+                {
+                    "titulo": "Las Palmas de Gran Canaria",
+                    "subtitulo": "Mirafondos",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Galileo, 51",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928490867",
+                    "sitioweb": "<a href='http://www.mirafondos.com/' class='boton'>Visitar sitio web<\/a>"
+                },
+                {
+                    "titulo": "Las Palmas de Gran Canaria",
+                    "subtitulo": "Buceo 7 mares",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Gran Canaria, 4",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 620061028",
+                    "sitioweb": "<a href='https://7mares.es/' class='boton'>Visitar sitio web<\/a>"
+                }
+            ]}, 
+            { "parquestematicos": [
+                {
+                    "titulo": "Maspalomas",
+                    "subtitulo": "Holiday World",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Av. Touroperador Tui",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928730498",
+                    "sitioweb": "<a href='https://www.holidayworldmaspalomas.com/' class='boton'> Visitar sitio web<\/a>"
+                },
+                {
+                    "titulo": "Maspalomas",
+                    "subtitulo": "Palmitos Park",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Barranco de los Palmitos, s/n",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928797070",
+                    "sitioweb": "<a href='https://www.palmitospark.es/' class='boton'> Visitar sitio web<\/a>"
+                },
+                {
+                    "titulo": "Maspalomas",
+                    "subtitulo": "Aqualand",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Carr. Palmitos Park, Km 3",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928140525",
+                    "sitioweb": "<a href='https://www.aqualand.es/maspalomas/' class='boton'> Visitar sitio web<\/a>"
+                }, {
+                    "titulo": "Taurito",
+                    "subtitulo": "Lago Taurito Parque Acuático",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Alhambra, s/n",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928566066",
+                    "sitioweb": "<a href='http://lagotaurito.es/' class='boton'> Visitar sitio web<\/a>"
+                }, 
+                {
+                    "titulo": "Cañon del Águila",
+                    "subtitulo": "Sioux City Park",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Barranco del Aguila s/n",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928129684",
+                    "sitioweb": "<a href='https://parquetematicosiouxcitypark.com/' class='boton'> Visitar sitio web<\/a>"
+                }
+            ]}, 
+            { "senderismos":[
+              
+            ]}
+
+
+
+
+            
+
         ]
-    }
+    }    
 }
+  

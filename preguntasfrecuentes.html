@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -19,14 +21,15 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 		<script src="./scripts/menu_navegacion.js"></script>
 		<script type="text/JavaScript" src="../datos.json"></script>
-		<script src="./scripts/carga_JSON.js"></script>
+		<script src="./scripts/preguntasfrec_JSON.js"></script>
+		<script src="./scripts/utlima_actualizacion.js"></script>
 		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
 	</head>
      
-	<body>
+	<body> 
 		<!-- Menú de navegación-->
 		<div class="header_dinamico">
-
+           
 
 		</div>
 		<main>
@@ -50,11 +53,12 @@
 				<section id="seccion_respuestas"></section>
 			</section>
         </section>
-		<script language="JavaScript">
-			document.write("<p id='hora_actualizacion'>Última actualización el " + ultActualizacion() + "</p>");
-		</script>
+
+		<!-- Fecha de actualización del JSON -->
+		<div id="actualizacion"></div>
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
 	</body>
 </html>
+
