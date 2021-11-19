@@ -1066,8 +1066,6 @@ ul.migasdepan {
   /* Parte de abajo: compartir */
     .seccion_compartir {
       margin-left: 5%;
-      
-      margin-top: 10%;
     }
     
     .hrenlacescompartir {
@@ -1490,6 +1488,9 @@ input[type=submit]:hover {
     width: 100%;
   }
 
+  .seccion_compartir {
+    margin-top: 10%;
+  }
   .contenedor_int {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

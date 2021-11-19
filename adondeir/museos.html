@@ -19,6 +19,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/iconos_compartir.js"></script>
+		<script type="text/JavaScript" src="../datos.json"></script>
+		<script src="../scripts/adondeir_JSON.js"></script>
+		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -98,62 +101,7 @@
 				<section class="masinfo">
 					<h3 class="h3enlaces">Museos</h3>
 					<hr class="hrenlaces">
-					<section class="cajainfo">
-						<section>
-							<h4 class="h4enlaces">Gáldar</h4>
-							<p class="penlaces"> Museo y Parque Arqueológico Cueva Pintada </p>
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calle Audiencia, 2
-							</p>
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 928895489
-							</p>
-							
-							<a href="http://www.cuevapintada.com/es" class="boton">Ver sitio web</a>
-						</section>
-						<section>
-							<h4 class="h4enlaces">Vegueta</h4>
-							<p class="penlaces">Casa de Colón</p>
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calle Colón, 1
-							</p>
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp;  928312373
-							</p>
-							
-							<a href="http://www.casadecolon.com/es" class="boton">Ver sitio web</a>
-						</section>
-						<section>	
-							<h4 class="h4enlaces">Parque Santa Catalina</h4>
-							<p class="penlaces"> Museo Elder de la Ciencia y la Tecnología</p>
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Muelle de Sta. Catalina
-							</p>
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 828011828
-							</p>
-							<a href="http://www.museoelder.org" class="boton">Ver sitio web</a>	
-						</section>
-						<section>
-							<h4 class="h4enlaces">Moya</h4>
-							<p class="penlaces"> Museo Tomás Morales </p>
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp;  Plaza Tomás Morales, s/n
-							</p>
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp;  928620217
-							</p>
-							<a href="http://www.tomasmorales.com/es" class="boton">Ver sitio web</a>
-						</section>	
-					</section>		
+					<section class="cajainfo" id="cajainfojson1"></section>		
 				</section>
 			</section>
 
@@ -192,7 +140,10 @@
 				</section>
 			</section>
 		</section>				
-		
+
+		<!-- Fecha de actualización del JSON -->
+		<div id="actualizacion"></div>
+
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
 	</body>
