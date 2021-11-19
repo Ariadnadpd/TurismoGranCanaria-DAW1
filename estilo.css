@@ -1358,6 +1358,10 @@ input[type=submit]:hover {
   font-weight: 700;
 }
 
+#hora_actualizacion {
+  text-align: center;
+}
+
 /* Fin Página de Preguntas Frecuentes */
 
 /* Página de Quienes Somos */
