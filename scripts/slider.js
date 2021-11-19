@@ -38,17 +38,17 @@ $(document).ready(function(){
     botonDer.addEventListener('click', function(){
         Siguiente();
         pararAuto(); //Paramos el intervalo automático
-        auto = setInterval(Siguiente, 5000); ///Volvemos a iniciar el intervalo automático
+        auto = setInterval(Siguiente, 2500); ///Volvemos a iniciar el intervalo automático
     });
 
     botonIzq.addEventListener('click', function(){
         Anterior();
         pararAuto(); //Paramos el intervalo automático
-        auto = setInterval(Siguiente, 5000); ///Volvemos a iniciar el intervalo automático
+        auto = setInterval(Siguiente, 2500); ///Volvemos a iniciar el intervalo automático
     });
 
     // Slider automático
-    var auto = setInterval(Siguiente, 5000);
+    var auto = setInterval(Siguiente, 2500);
 
     //Parar ejecución automático cuando se hace click en siguiente
     function pararAuto() {

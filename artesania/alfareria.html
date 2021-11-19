@@ -19,7 +19,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/slider.js"></script>
-		<script src="../scripts/validacion.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.header_dinamico').load("../carga_ficheros/header_footer.html .fondo");
+				$('.footer_dinamico').load("../carga_ficheros/header_footer.html .footer");
+			});
+		</script>
 		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
 	</head>
 	
@@ -74,15 +79,15 @@
 						</section>
 						<section class="seccion-slider">
 							<h3>Alfarería en Gran Canaria</h3>
-							<img src="../imagenes/artesania/alfarería3.jpg" alt="Alfarería 3" class="slider-imagen">
+							<img src="../imagenes/artesania/alfareria3.jpg" alt="Alfarería 3" class="slider-imagen">
 						</section>
 						<section class="seccion-slider">
 							<h3>Alfarería en Gran Canaria</h3>
-							<img src="../imagenes/artesania/alfarería4.jpg" alt="Alfarería 4" class="slider-imagen">
+							<img src="../imagenes/artesania/alfareria4.jpg" alt="Alfarería 4" class="slider-imagen">
 						</section>
 						<section class="seccion-slider">
 							<h3>Alfarería en Gran Canaria</h3>
-							<img src="../imagenes/artesania/alfarería5.jpg" alt="Alfarería 5" class="slider-imagen">
+							<img src="../imagenes/artesania/alfareria5.jpg" alt="Alfarería 5" class="slider-imagen">
 						</section>
 					</div>
 					<div class="boton-slider boton-derecho" id="boton-derecho"><img src="../imagenes/iconos/flecha-der.svg" alt="Flecha Derecha"></div>

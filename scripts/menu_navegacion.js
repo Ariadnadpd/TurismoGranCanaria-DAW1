@@ -1,11 +1,5 @@
 'use strict'
 
-// Carga de ficheros dinámicamente
-$(document).ready(function(){
-    $('.header_dinamico').load("../carga_ficheros/header_footer.html .fondo");
-    $('.footer_dinamico').load("../carga_ficheros/header_footer.html .footer");
-});
-
 // Menú de navegación responsive.
 
 //Función que despliega y cierra el menú de hamburguesa de la barra de navegación

@@ -18,9 +18,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 		<script src="../scripts/menu_navegacion.js"></script>
-		<script src="../scripts/validacion.js"></script>
 		<script src="../scripts/iconos_compartir.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.header_dinamico').load("../carga_ficheros/header_footer.html .fondo");
+				$('.footer_dinamico').load("../carga_ficheros/header_footer.html .footer");
+			});
+		</script>
 		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
 	</head>
 
