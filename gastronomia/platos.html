@@ -20,6 +20,9 @@
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/iconos_compartir.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
+		<script type="text/JavaScript" src="../datos.json"></script>
+		<script src="../scripts/gastronomia_JSON.js"></script>
+		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script>
 			$(document).ready(function(){
 				$('.header_dinamico').load("../carga_ficheros/header_footer.html .fondo");
@@ -93,105 +96,7 @@
 				<section class="masinfo">
 					<h3 class="h3enlaces">Restaurantes</h3>
 					<hr class="hrenlaces">
-					<section class="cajainfo">
-						<section>
-							<h4 class="h4enlaces">Agaete</h4>
-							<p class="penlaces"> Restaurante Dedo de Dios </p>
-							
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calle Ctra. al Puerto de Las Nieves
-							</p>
-
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 928898000
-							</p>
-
-							<a href="https://www.aytoagaete.es/lugares/restaurante-dedo-de-dios">
-								<img src="../imagenes/iconos/logo-chrome.svg" alt="icono-chroome" class="iconosrss">
-								&nbsp; Más información
-							</a>
-						</section>
-						
-						<section>
-							<h4 class="h4enlaces">Tafira Baja</h4>
-							<p class="penlaces"> Restaurante Jardín Canario </p>
-						
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calle Ctra. del Centro, Km. 7
-							</p>
-
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 928355245
-							</p>
-
-							<a href="https://www.facebook.com/Restaurante-Jardin-Canario-125554407552282/">
-								<img src="../imagenes/iconos/logo-facebook.svg" alt="icono-facebook" class="iconosrss">
-								&nbsp; Visita el facebook
-							</a>
-						</section>	
-
-						<section>
-							<h4 class="h4enlaces">Arguineguín</h4>
-							<p class="penlaces">  Visita el Bar Playa "El Boya" </p>
-							
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calle Santa Agueda, 32
-							</p>
-
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 928355245
-							</p>
-
-							<p>
-								<a href="https://www.barplaya.com">
-									<img src="../imagenes/iconos/logo-chrome.svg" alt="icono-chroome" class="iconosrss">
-									&nbsp; Sitio oficial
-								</a>
-							</p>
-
-							<p>
-								<a href="https://www.facebook.com/Bar-Playa-El-Boya-136104796504468/">
-									<img src="../imagenes/iconos/logo-facebook.svg" alt="icono-facebook" class="iconosrss">
-									&nbsp; Visita el facebook
-								</a>
-							</p>
-							
-						</section>
-
-						<section>
-							<h4 class="h4enlaces">Santa Catalina</h4>
-							<p class="penlaces"> Visita La Casa Fataga </p>
-
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calle Parque de Santa Catalina
-							</p>
-
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 828600022
-							</p>
-							<p>
-								<a href="https://www.bodegoncasafataga.com">
-									<img src="../imagenes/iconos/logo-chrome.svg" alt="icono-chroome" class="iconosrss">
-									&nbsp; Sitio oficial
-								</a>
-							</p>
-							<p>
-								<a href="https://es-es.facebook.com/bodegoncasafataga/">
-									<img src="../imagenes/iconos/logo-facebook.svg" alt="icono-facebook" class="iconosrss">
-									&nbsp; Visita el facebook
-								</a>
-							</p>
-							
-						</section>
-					</section>	
+					<section class="cajainfo" id="cajainfojson2"></section>	
 				</section>
 			</section>
 			<section class="seccion_compartir">
@@ -230,6 +135,9 @@
 				</section>
 			</section>
 		</section>
+
+		<!-- Fecha de actualización del JSON -->
+		<div id="actualizacion"></div>
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>

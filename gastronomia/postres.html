@@ -20,6 +20,9 @@
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/iconos_compartir.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
+		<script type="text/JavaScript" src="../datos.json"></script>
+		<script src="../scripts/gastronomia_JSON.js"></script>
+		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script>
 			$(document).ready(function(){
 				$('.header_dinamico').load("../carga_ficheros/header_footer.html .fondo");
@@ -97,116 +100,7 @@
 				<section class="masinfo">
 					<h3 class="h3enlaces">Dulcerías, fábricas y panaderías</h3>
 					<hr class="hrenlaces">
-					<section class="cajainfo">
-						<section>
-							<h4 class="h4enlaces">Guía</h4>
-							<p class="penlaces">Dulces Artesanos de Guia Antoñita </p>
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calle Pérez Galdós, 40
-							</p>
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 928882188
-							</p>
-							<p>
-								<a href="https://es-es.facebook.com/dulcesdeguia/">
-									<img src="../imagenes/iconos/logo-facebook.svg" alt="icono-facebook" class="iconosrss">
-									&nbsp; Visita el facebook
-								</a>
-							</p>
-							<p>
-								<a href="http://comercio.descubreguia.com/comercios/artesanos/479-DULCES_DE_GUIA_ANTONITA.html">
-									<img src="../imagenes/iconos/logo-chrome.svg" alt="icono-chroome" class="iconosrss">
-									&nbsp; Más información
-								</a>
-							</p>
-						</section>
-						<section>
-							<h4 class="h4enlaces">Tejeda</h4>
-							<p class="penlaces">Dulcería Nublo en Tejeda</p>
-							
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calle Dr. Domingo Hernández Guerra, 15
-							</p>
-
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 928666030
-							</p>
-
-							<p>
-								<a href="https://es-es.facebook.com/dulcerianublo/">
-									<img src="../imagenes/iconos/logo-facebook.svg" alt="icono-facebook" class="iconosrss">
-									&nbsp; Visita el facebook
-								</a>
-							</p>		
-
-							<p>
-								<a href="https://www.instagram.com/dulcerianublo/?hl=es">
-									<img src="../imagenes/iconos/logo-instagram.svg" alt="icono-instagram" class="iconosrss">
-									&nbsp; Visita el instagram
-								</a>
-							</p>
-							
-						</section>
-						<section>
-							<h4 class="h4enlaces">San Mateo</h4>
-							<p class="penlaces">Panadería Pastelería Pulido</p>
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calledel Agua, 15
-							</p>
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 928661227
-							</p>
-							<p>
-								<a href="https://www.panaderiapulido.com">
-									<img src="../imagenes/iconos/logo-chrome.svg" alt="icono-chroome" class="iconosrss">
-									&nbsp; Página oficial
-								</a>
-							</p>
-							<p> 
-								<a href="https://es-es.facebook.com/panaderiapasteleria.pulido/">
-									<img src="../imagenes/iconos/logo-facebook.svg" alt="icono-facebook" class="iconosrss">
-									&nbsp; Visita el facebook
-								</a>
-							</p>
-							
-							<p>
-								<a href="https://www.instagram.com/panaderiapasteleriapulido/?hl=es">
-									<img src="../imagenes/iconos/logo-instagram.svg" alt="icono-instagram" class="iconosrss">
-									&nbsp; Visita el instagram
-								</a>
-							</p>
-						</section>
-						<section>
-							<h4 class="h4enlaces">Moya</h4>
-							<p class="penlaces">Bizcochos de Moya Doramas, S.L.</p>
-							<p>
-								<img src="../imagenes/iconos/location-outline.svg" alt="icono-location" class="iconoscu">
-								&nbsp; Calle Bolivia, 3
-							</p>
-							<p>
-								<img src="../imagenes/iconos/call-outline.svg" alt="icono-call" class="iconoscu">
-								&nbsp; 928620080
-							</p>
-							<p> 
-								<a href="https://m.facebook.com/BizcochosdeMoya/?locale2=es_ES">
-									<img src="../imagenes/iconos/logo-facebook.svg" alt="icono-facebook" class="iconosrss">
-									&nbsp; Visita el facebook
-								</a>
-							</p>
-							<p>
-								<a href="https://comerciovillademoya.es/comercios/empresas/doramas-bizcochos-de-moya/713.html">
-									<img src="../imagenes/iconos/logo-chrome.svg" alt="icono-chroome" class="iconosrss">
-									&nbsp; Más información
-								</a>
-							</p>
-						</section>
-					</section>
+					<section class="cajainfo" id="cajainfojson1"></section>
 				</section>
 			</section>
 
@@ -247,6 +141,9 @@
 			</section>
 		</section>	
 	
+		<!-- Fecha de actualización del JSON -->
+		<div id="actualizacion"></div>
+
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
 	</body>
