@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -21,7 +19,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 		<script src="./scripts/menu_navegacion.js"></script>
 		<script type="text/JavaScript" src="../datos.json"></script>
-		<script src="./scripts/preguntasfrec_JSON.js"></script>
 		<script src="./scripts/ultima_actualizacion.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -65,6 +62,27 @@
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+
+		<script>
+			//Cargamos dinámicamente las preguntas frecuentes de la página, a través de los datos del fichero JSON.
+			$(document).ready(function(){
+				$.getJSON("./datos.json", function(datosJSON){
+					$.each(datosJSON.datos.preguntasfrec, function(clave, valor){
+						//Preguntas
+						clave++;
+						$('#pregfrec').append("<li><a href='#p" + clave + "'>" +  valor["pregunta"] + "</a></li>");
+
+						//Respuestas
+						$('#seccion_respuestas').append("<section id='p" + clave + "'>" +
+						'<h4>' + valor["pregunta"] + '</h4>' + 
+						'<p>' + valor["respuesta"] + '</p>' +
+						'<a href=\"#seccion_preguntas\" id=\"a_arriba\">Arriba</a>' +
+						'<hr id=\"hrseccionpf\">' +
+						'</section>');
+					});
+				});
+			});
+		</script>
 	</body>
 </html>
 

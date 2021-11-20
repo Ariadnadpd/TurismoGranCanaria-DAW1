@@ -21,7 +21,6 @@
 		<script src="../scripts/iconos_compartir.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
 		<script type="text/JavaScript" src="../datos.json"></script>
-		<script src="../scripts/gastronomia_JSON.js"></script>
 		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -96,7 +95,7 @@
 				<section class="masinfo">
 					<h3 class="h3enlaces">Restaurantes</h3>
 					<hr class="hrenlaces">
-					<section class="cajainfo" id="cajainfojson2"></section>	
+					<section class="cajainfo" id="cajainfojson1"></section>	
 				</section>
 			</section>
 			<section class="seccion_compartir">
@@ -141,5 +140,21 @@
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+
+		<script>
+			//Cargamos dinámicamente la sección de gastronomia - platos recomendados
+			$(document).ready(function(){
+				$.getJSON("../datos.json", function(datosJSON){
+					
+					$.each(datosJSON.datos.gastronomia[0].platos, function(){
+						$('#cajainfojson1').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
+						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["localizacion"] + "</p>"
+						+ "<p>" + this["telefono"] + " </p>" + "<p>" + this["informacion"] + "</p>"
+						+ "<p>" + this["rss_facebook"] + "</p>" + "</section>");
+					});
+					
+				});
+			});
+		</script>
 	</body>
 </html>

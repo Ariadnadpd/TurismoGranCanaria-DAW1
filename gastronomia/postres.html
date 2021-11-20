@@ -21,7 +21,6 @@
 		<script src="../scripts/iconos_compartir.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
 		<script type="text/JavaScript" src="../datos.json"></script>
-		<script src="../scripts/gastronomia_JSON.js"></script>
 		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -100,7 +99,7 @@
 				<section class="masinfo">
 					<h3 class="h3enlaces">Dulcerías, fábricas y panaderías</h3>
 					<hr class="hrenlaces">
-					<section class="cajainfo" id="cajainfojson1"></section>
+					<section class="cajainfo" id="cajainfojson2"></section>
 				</section>
 			</section>
 
@@ -146,6 +145,22 @@
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+
+		<script>
+			//Cargamos dinámicamente la sección de gastronomia - postres recomendados
+			$(document).ready(function(){
+				$.getJSON("../datos.json", function(datosJSON){
+
+					$.each(datosJSON.datos.gastronomia[1].postres, function(){
+						$('#cajainfojson2').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
+						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["localizacion"] + "</p>"
+						+ "<p>" + this["telefono"] + " </p>" + "<p>" + this["rss_facebook"] + "</p>"
+						+ "<p>" + this["rss_instagram"] + "</p>" + "<p>" + this["informacion"] + "</p>" + "</section>");
+					});
+					
+				});
+			});
+		</script>
 	</body>
 </html>
 

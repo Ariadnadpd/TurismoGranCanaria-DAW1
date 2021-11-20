@@ -20,7 +20,6 @@
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/iconos_compartir.js"></script>
 		<script type="text/JavaScript" src="../datos.json"></script>
-		<script src="../scripts/adondeir_JSON.js"></script>
 		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
 		<script>
@@ -145,5 +144,20 @@
 		
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+
+		<script>
+			//Cargamos dinámicamente la sección de adondeir - playas recomendados
+			$(document).ready(function(){
+				$.getJSON("../datos.json", function(datosJSON){
+					
+					$.each(datosJSON.datos.adondeir[2].playas, function(){
+						$('#cajainfojson3').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
+						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["localizacion"] + "</p>"
+						+ "</section>");
+					});
+					
+				});
+			});
+		</script>
 	</body>
 </html>

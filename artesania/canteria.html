@@ -20,7 +20,6 @@
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/slider.js"></script>
 		<script type="text/JavaScript" src="../datos.json"></script>
-		<script src="../scripts/artesania_JSON.js"></script>
 		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -158,6 +157,22 @@
 
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
+
+		<script>
+			//Cargamos dinámicamente la sección de artesania - canteria recomendados
+			$(document).ready(function(){
+				$.getJSON("../datos.json", function(datosJSON){
+					
+					$.each(datosJSON.datos.artesania[1].canteria, function(){
+						$('#cajainfojson2').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
+						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["localizacion"] + "</p>"
+						+ "<p>" + this["telefono"] + " </p>" + "<p>" + this["informacion"] + "</p>" 
+						+ "<p>" + this["rss_facebook"] + "</p>" + "</section>");
+					});
+					
+				});
+			});
+		</script>
 	</body>
 </html>
 
