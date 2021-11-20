@@ -38,13 +38,12 @@
 				$('.footer_dinamico').load("./carga_ficheros/header_footer2.html .footer");
 			});
 		</script>
-		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
 
 	</head>
      
 	<body>
 		
-
+		<noscript>Necesitas tener activado JavaScript para ver el sitio web.</noscript>
 		<!-- Menú de navegación-->
 		<div class="header_dinamico"></div>
 
@@ -64,10 +63,10 @@
             <hr id="hrpagn">
 			
 			<div class="contenedor_formulario">
-				<form id="formulario_contacto"> <!--/*onSubmit="return validarFormulario();"*/-->
-					<label for="asunto">El mensaje es sobre</label>
+				<form id="formulario_contacto">
+					<label for="select_contacto">El mensaje es sobre</label>
 					<select name="seleccion_asunto" id="select_contacto" required> 
-						<option value="0">Por favor, escoja uno de la lista...</option>
+						<option value="">Por favor, escoja uno de la lista...</option>
 						<option value="1">Correcciones/Actualizaciones</option>
 						<option value="2">Quejas generales</option>
 						<option value="3">Agradecimientos generales</option>
@@ -75,7 +74,7 @@
 						<option value="5">Otros</option>
 					</select>
                     <div class="error" id="error_select"></div>
-					<label for="asunto">Comentario</label>
+					<label for="comentario1">Comentario</label>
 					<div>
 						<textarea name="comentario" id="comentario1" required onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>
 						<div id="em_com"> 
@@ -84,11 +83,11 @@
 					</div>
 					<div id="error_textarea" class="error"></div>
 					
-					<label for="nombre_apellidos">Nombre y apellidos</label>
+					<label for="nombreContacto">Nombre y apellidos</label>
 					<input id="nombreContacto" type="text" name="nombreyapellidos" required>
 					<div id="error_nombre" class="error"></div>
 
-					<label for="email">Email de contacto</label>
+					<label for="emailContacto">Email de contacto</label>
 					<input id="emailContacto" type="email" name="email" required>
 					<div id="error_email" class="error"></div>
 					<span>
@@ -113,7 +112,7 @@
 			</div>
         </section>
 
-		<div id="dialog" title="Email enviado"><p><img src="./imagenes/iconos/checkmark-done-outline.svg" id="check_icon"></img>
+		<div id="dialog" title="Email enviado"><p><img src="./imagenes/iconos/checkmark-done-outline.svg" alt="Icono confirmacion" id="check_icon"></p>
 			<p>El correo se ha enviado correctamente. <br> ¡Muchas gracias por tu opinión!</p>
 		</div>
 

@@ -27,7 +27,7 @@ function validarFormulario(evento){
     var regEmail = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 
     // ************************** Select **************************
-    if(nombreSelect.value == 0) {
+    if(nombreSelect.value == "") {
       errorSelect.innerHTML = "<p>!Debe seleccionar alguna opción!</p>";
       let error_color_select = document.querySelector("#select_contacto");
       if(!error_color_select.classList.contains("errorform3")){
