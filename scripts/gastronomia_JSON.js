@@ -13,7 +13,6 @@ $(document).ready(function(){
 	});
 });
 
-// "<p>" + this["rss_instagram"] + "</p>" 
 
 //Cargamos dinámicamente la sección de gastronomia - postres recomendados
 $(document).ready(function(){
