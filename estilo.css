@@ -25,7 +25,6 @@ em {
   font-weight: bold;
 }
 
-
 /***************************************** Header *****************************************/
 
 .fondo {
@@ -127,8 +126,7 @@ em {
   transition: all .3s;
 }
 
-.menu li:hover .htmlcss-arrow,
-.menu li:hover .js-arrow{
+.menu li:hover .htmlcss-arrow{
   transform: rotate(180deg);
 }
 
@@ -231,7 +229,6 @@ em {
   position: absolute;
   height: 20px;
   width: 20px;
-  /*background: #3E8DA8;*/
   right: 10px;
   top: -6px;
   transform: rotate(45deg);
@@ -306,7 +303,6 @@ select:focus {
 /* Video Presentacion */
 
 .presentacion_gc_insider {
-  
   margin: auto;
 }
 
@@ -323,7 +319,6 @@ select:focus {
 
 .presentacion_gc_insider p {
   text-align: justify;
-  /*text-indent: 1.65em;*/
   margin: auto;
   width: 80%;
   font-size: 1.2em;
@@ -383,8 +378,6 @@ select:focus {
   height: 300px;
   border-radius: 0.3em;
 }
-
-
 
 /*** Seccion imángees en disposición GRID ***/
 .contenedor, .contenedor2, .contenedor3 {
@@ -468,17 +461,6 @@ select:focus {
   transition: all 1.5s;
 }
 
-.contenedor .fila_1 {
-    margin-top: 4%;
-}
-
-.contenedor .img1 {
-  float: left;
-  width: 45%;
-  height: 50%;
-  margin-left: 8%;
-}
-
 .contenedor .img2 {
   float: right;
   width: 25%;
@@ -487,19 +469,7 @@ select:focus {
   margin-top: 2%;
 }
 
-.contenedor .fila_2 {
-  position: relative;
-  overflow: hidden;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 5.5%;
-}
-
-.contenedor .img3,
-.contenedor .img4,
-.contenedor .img5 {
+.contenedor .img3 {
   width: 32%;
   border-radius:57%;
   height: auto;
@@ -512,12 +482,11 @@ select:focus {
 /******************************************* Footer ************************************************/
 
 footer {
-    background-image: linear-gradient(50deg,#243342, #374861, #606B78 );
-    overflow: hidden;
-    /*height: auto;*/
-    height: 120%;
-    margin-top: 4%;
-    padding: 25px;
+  background-image: linear-gradient(50deg,#243342, #374861, #606B78 );
+  overflow: hidden;
+  height: 120%;
+  margin-top: 4%;
+  padding: 25px;
 }
 
 .capa_principal {
@@ -639,97 +608,79 @@ footer {
   background-image: linear-gradient(50deg,#243342, #374861, #606B78 );
 }
 
-/* Style the list */
 ul.migasdepan {
-    padding: 10px 16px;
-    list-style: none;
-    background-image: linear-gradient(50deg,#1E2B3E, #243342, #606B78);
-  }
+  padding: 10px 16px;
+  list-style: none;
+  background-image: linear-gradient(50deg,#1E2B3E, #243342, #606B78);
+}
+
+ul.migasdepan li {
+  display: inline;
+  font-size: 1.125em;
+}
   
-  /* Display list items side by side */
-  ul.migasdepan li {
-    display: inline;
-    font-size: 1.125em;
-  }
+ul.migasdepan li+li:before {
+  padding: 8px;
+  color: #eee;
+  content: "/\00a0";
+}
+
+ul.migasdepan li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+ul.migasdepan li a:hover {
+  color: #B78D8B;
+  font-size: 1.3em;
+  transition: 0.2s;
+}
+
+ul.migasdepan li a:focus {
+  background-size: 100% 2px;
+}
+
+.migasdepan_sinespacio {
+  margin-top: -1.5%;
+}
+
+/****************************************** Fin de Migas de pan ********************************************/
+
+/**************************************** Páginas principales **********************************************/
+
+.presentacion .texto{
+  margin: 5%;
+  text-align: justify;
+}
+
+/* Imagen principal de a donde ir*/
+#cala {
+  display: grid;
+  float: right;
+  width: 200px; height: 200px;
+}
+
+
+/*** Título de las páginas principales  ***/
   
-  /* Add a slash symbol (/) before/behind each list item */
-  ul.migasdepan li+li:before {
-    padding: 8px;
-    color: #eee;
-    content: "/\00a0";
-  }
-  
-  /* Add a color to all links inside the list */
-  ul.migasdepan li a {
-    color: #eee;
-    text-decoration: none;
-  }
+.catras {
+  background-image: url(./imagenes/fondo.jpeg);
+  background-size: cover;
+  background-position: bottom ;
+}
 
-  /* Add a color on mouse-over */
-  ul.migasdepan li a:hover {
-    color: #B78D8B;
-    font-size: 1.3em;
-    transition: 0.2s;
-  }
-
-  ul.migasdepan li a:focus {
-    background-size: 100% 2px;
-  }
-
-  .migasdepan_sinespacio {
-    margin-top: -1.5%;
-  }
-
-  /****************************************** Fin de Migas de pan ********************************************/
-
-  /**************************************** Páginas principales **********************************************/
-
-  .presentacion .texto{
-    margin: 5%;
-    text-align: justify;
-  }
-
-  /* Imagen principal de a donde ir*/
-  #cala {
-    display: grid;
-    float: right;
-    width: 200px; height: 200px;
-  }
-
-
-  /*** Título de las páginas principales  ***/
-  
-  .catras {
-    background-image: url(./imagenes/fondo.jpeg);
-    background-size: cover;
-    background-position: bottom ;
-  }
-
-  
-  /*.catras .atras{
-    text-decoration: none;
-    color:black;
-    width: 30%;
-  }*/
 
   .header2 .nombre_pagina {
     text-transform: uppercase;
   }
 
   .catras .nombre_pagina {
-
     padding-top: 12px;
     padding-bottom: 12px;
     text-transform: uppercase;
     color: #eee;
     margin: auto;
   }
-
-  .vacio {
-    width: 30%;
-    background-color: blue;
-  }
-
    
   /*** Enlaces a categorías ***/
  
@@ -773,7 +724,6 @@ ul.migasdepan {
     font-size: 1.2em;
   }
 
-  /* Efecto hover */
   .cenlaces .menu2 li a {
     text-decoration: none;
     background-image: linear-gradient(#374861, #374861);
@@ -783,6 +733,7 @@ ul.migasdepan {
     transition: background-size .3s;
 }
 
+  /* Efecto hover y focus */
   .cenlaces .menu2 li a:hover, a:focus {
     background-size: 100% 2px;
   }
@@ -793,33 +744,9 @@ ul.migasdepan {
     display: grid;
   }
 
-  .img1_1, .img2_2, .img3_3, .img4_4 {
-    width: 300px; height: 300px;
-    border-radius: 0.3em;
-  }
+  /*************************************** Slider de las subactegorías ***************************************/
 
-
-
-  /*************************************** Páginas de categorías  ***************************************/
-
-  /********* Parte de arriba de las categorías (texto e imagenes) *********/
-
-  /*** Presentación categoría actividades y artesanía ***/
-
-  .presentacion_categoria {
-   /* margin: 2.5% 5%;*/
-   margin: 0;
-  }
-
-  .presentacion_categoria p {
-    font-size: 1.2em;
-    line-height: normal;
-    text-align: justify;
-  }
-  
   /* Slider De Imágenes */
-
-
   .contenedor-slider {
     width: 90%;
     max-width: 900px;
@@ -832,7 +759,6 @@ ul.migasdepan {
     margin-bottom: 2%;
   }
     
-  
   .slider {
     display: flex;
     width: 500%;
@@ -840,11 +766,10 @@ ul.migasdepan {
     margin-left: -100%;
   }
     
-    .seccion-slider {
+  .seccion-slider {
     width: 100%;
-    }
+  }
     
-  
   .seccion-slider h3 {
     position: absolute;
     padding: 10px;
@@ -904,74 +829,6 @@ ul.migasdepan {
     right: 10px;
   }
 
-    /**
-  .img-slide {
-    width: 100%;
-  }
-
-  #active, .item {
-    height: 450px;
-  }
-
-.slider-frame {
-  width: 62%;
-  height: auto;
-  margin:50px auto 0;
-  overflow: hidden;
-
-  position: relative;
-}
-  
-.slider-frame .slide {
-  display: flex;
-  padding: 0;
-  width: 500%;
-    
-  animation: desplazamiento 20s infinite alternate ease-in-out;
-}
-  
-.slider-frame .slide li {
-  width: 100%;
-  list-style: none;
-}
-
-.slider-frame .slide li h3{
-  position: absolute;
-  padding: 10px;
-  left: 50%;
-  top: 20%;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  color:#fff;
-  font-weight: bold;
-  border-bottom: 2px solid #fff;
-  width:auto;
-  
-}
-.slider-frame img {
-  width: 100%;
-  height: 450px;
-  object-fit: cover;
-}
-  
-@keyframes desplazamiento {
-  0% {margin-left: 0;}
-  10% {margin-left: 0;}
-
-  22% {margin-left: -100%;}
-  32% {margin-left: -100%;}
-
-  44% {margin-left: -200%;}
-  54% {margin-left: -200%;}
-
-  66% {margin-left: -300%;}
-  76% {margin-left: -300%;}
-
-  88% {margin-left: -400%;}
-  100% {margin-left: -400%;}
-}
-*/
-
   /*** Presentación categoría a donde ir y gastronomía ***/
 
   .presentacion_categoria1 {
@@ -999,8 +856,6 @@ ul.migasdepan {
     justify-content:center;
   }
 
-  
-
   .img_presentacion_cat1, .img_presentacion_cat_grande1 {
     width: 270px; height: 270px;
     border-radius: 0.3em;
@@ -1021,7 +876,6 @@ ul.migasdepan {
   .masinfo p{
     width: 100%;
   }
-
 
   .h3enlaces {
     text-transform: uppercase;
@@ -1132,7 +986,6 @@ ul.migasdepan {
       z-index: 9999997;
     }
   
-  
     .a2a_i:hover {
       background-color: #CCC;
     }
@@ -1147,6 +1000,7 @@ ul.migasdepan {
       font-size: 16px;
       outline: 0;
     }
+
   /* Aquí termina parte de compartir*/
 
   /* Caja de información de todas las categorías (enlaces) */
@@ -1179,7 +1033,6 @@ ul.migasdepan {
     grid-row-gap: 1em;
   }
 
-
   .masinfo a {
     text-decoration: none;
     color: black;
@@ -1192,8 +1045,6 @@ ul.migasdepan {
     padding: 5px; 
     color: white;
   }
-
-  
 
   /*** Iconos de los enlaces en las categorías ***/
 
@@ -1229,6 +1080,7 @@ ul.migasdepan {
   float: left; 
   margin: 0 10px 6px 0;
 }
+
 .contenedor_formulario {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -1308,7 +1160,6 @@ input[type=submit]:hover {
 
 #hrseccionpf {
   width: 100%;
-  /*margin-right: 10%;*/
 }
 
 .contenedor_preguntas {
@@ -1456,10 +1307,7 @@ input[type=submit]:hover {
 .leermas1, .leermas2, .leermas3,
 #botonM1, #botonM2, #botonM3 {
   display: none;
-  
 }
-
-
 
 /* Fin Página Quienes somos */
 
@@ -1468,7 +1316,7 @@ input[type=submit]:hover {
 /************************************************ RESPONSIVE  ************************************************/
 
 
-/********* Estilo para ordenadores *********/
+/********* Estilos para ordenadores (MediaQuery para PC's [1230px-920px]) *********/
 
 @media screen and (max-width: 1230px) {
   .bloque_imagenes {
@@ -1485,6 +1333,7 @@ input[type=submit]:hover {
     object-fit: cover;
   }
 }
+
 @media screen and (max-width: 1024px) {
   
   .mapa1, .cajainfo, .contenedor, .contenedor_int, .masinfo, .bloque_imagenes{
@@ -1538,11 +1387,6 @@ input[type=submit]:hover {
    width: 100%;
   }
 
-  .img_presentacion_cat, .img_presentacion_cat_grande {
-    width: 300px; height: 300px;
-    margin: 5px;
-  }
-
   .img_presentacion_cat1, .img_presentacion_cat_grande1 {
     width: 300px; height: 300px;
     border-radius: 0.3em;
@@ -1552,8 +1396,6 @@ input[type=submit]:hover {
   .presentacion_categoria1 p {
     font-size: 1.1em;
   }
-
-  
 
   /* Imagenes páginas principales */
 
@@ -1576,7 +1418,6 @@ input[type=submit]:hover {
   .primera_capa #iconos{
     font-size: 1em;
     flex: 1.5;
-    
   }
 
   .primera_capa #iconos div i {
@@ -1596,7 +1437,6 @@ input[type=submit]:hover {
   .presentacion_columna .imagenes_horizontales {
     flex-direction: column;
   }
-
 
   .img, .img2, .img3 {
     height: 72%;
@@ -1637,14 +1477,6 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 1030px) {
-
-  .logon {
-    left:  60%;
-  }
-
-  .contenedor_buscador {
-    left:  78%;
-  }
 
   .mapa1 h3 {
     margin-left: 7%;
@@ -1710,6 +1542,8 @@ input[type=submit]:hover {
     margin-left: -10%;
   }
 }
+
+/********** Estilos para tablets (MediaQuery para tablets [800px-560px]) *********/
 
 @media (max-width:800px){
 
@@ -1812,8 +1646,7 @@ input[type=submit]:hover {
     border-bottom: none;
   }
 
-  .menu li:hover .htmlcss-arrow,
-  .menu li:hover .js-arrow{
+  .menu li:hover .htmlcss-arrow{
     transform: rotate(0deg);
     cursor:pointer;
   }
@@ -1846,7 +1679,6 @@ input[type=submit]:hover {
     margin-bottom: 4%;
   }
   
-
   .slider {
     height: 300px;
   }
@@ -1948,10 +1780,6 @@ input[type=submit]:hover {
     width: 90%;
     left:8%;
   }
-
-  .img_presentacion_cat_grande, .img_presentacion_cat {
-    width: 300px; height: 300px;
-  }
   
   .img_presentacion_cat1, .img_presentacion_cat_grande1 {
     width: 300px; height: 300px;
@@ -1964,11 +1792,6 @@ input[type=submit]:hover {
 
   .buscador input {
     font-size: 0.90em; 
-  }
-
-  .contenedor_buscador input{
-    font-size: 0.65em;
-    padding: 0 40px 0 10px;
   }
 
   .contenedor-slider {
@@ -2014,7 +1837,6 @@ input[type=submit]:hover {
     height: 145px;
   }
 
-
   .img2 {
     width: 250px;
   }
@@ -2046,11 +1868,6 @@ input[type=submit]:hover {
     font-size: 0.75em;
   }
 
-  .img_presentacion_cat_grande, .img_presentacion_cat {
-    width: 200px; height: 200px;
-    padding: 2px;
-  }
-
   .img_presentacion_cat1, .img_presentacion_cat_grande1 {
     width: 200px; height: 200px;
     border-radius: 0.3em;
@@ -2065,9 +1882,6 @@ input[type=submit]:hover {
     font-size: 0.7em;
     flex: 1;
   }
-
-  
-
 }
 
 @media screen and (max-width: 560px) {
@@ -2123,12 +1937,6 @@ input[type=submit]:hover {
     flex-direction: column;
     align-items: center;
     justify-content:center;
-  }
-
-
-  .img_presentacion_cat_grande, .img_presentacion_cat {
-    width: 200px; height: 200px;
-    border-radius: 0.3em;
   }
 
   .img_presentacion_cat1, .img_presentacion_cat_grande1 {
@@ -2194,8 +2002,9 @@ input[type=submit]:hover {
   .primera_capa #seccion_logo img{
     width: 52px;
   }
-
 }
+
+/*********** Estilos para móviles (MediaQuery para móviles [500px-220px]) ***********/
 
 @media screen and (max-width: 500px) {
 
@@ -2276,17 +2085,16 @@ input[type=submit]:hover {
   }
 
   .primera_capa #seccion_texto ul {
-   width: 590%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
+    width: 590%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .primera_capa #iconos{
     font-size: 0.6em;
   }
-
 
   .primera_capa #seccion_texto ul li a {
     font-size: 0.55em;
@@ -2329,7 +2137,7 @@ input[type=submit]:hover {
   
   .presentacion_categoria1 p{
     font-size: 0.8em;
-   }
+  }
 
   .presentacion p, .presentacion_gc_insider p {
     font-size: 0.87em;
@@ -2486,5 +2294,3 @@ input[type=submit]:hover {
 }
 
 /********************************************** FIN RESPONSIVE  **********************************************/
-
-
