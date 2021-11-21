@@ -112,9 +112,10 @@ function validarFormulario(evento){
       errorDialogo();
       return false;
     } else {
-      $("#dialog").dialog("open");       
+      $("#dialog").dialog("open");      
     }
-    return true;
+    return true; 
+    
 }
 
 

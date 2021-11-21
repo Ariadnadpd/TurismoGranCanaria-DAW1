@@ -17,18 +17,12 @@
 		<meta name= "keywords" content= "Turismo, Gastronomía, Actividades, Artesanía, A donde ir, Gran Canaria">
 		<meta http-equiv= "refresh" content="400"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- jQuery -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	
+		<!-- JQueryUI -->
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  		<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 
-		<!-- jQuery Modal -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-		   
-		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-		<link rel="stylesheet" href="/resources/demos/style.css">
 
 		<script src="./scripts/menu_navegacion.js"></script>
 		<script src="./scripts/validacion.js"></script>
@@ -64,7 +58,7 @@
 			
 			<div class="contenedor_formulario">
 				<form id="formulario_contacto">
-					<label for="select_contacto">El mensaje es sobre</label>
+					<label class="etiqueta" for="select_contacto">El mensaje es sobre</label>
 					<select name="seleccion_asunto" id="select_contacto" required> 
 						<option value="">Por favor, escoja uno de la lista...</option>
 						<option value="1">Correcciones/Actualizaciones</option>
@@ -74,7 +68,7 @@
 						<option value="5">Otros</option>
 					</select>
                     <div class="error" id="error_select"></div>
-					<label for="comentario1">Comentario</label>
+					<label class="etiqueta" for="comentario1">Comentario</label>
 					<div>
 						<textarea name="comentario" id="comentario1" required onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>
 						<div id="em_com"> 
@@ -83,14 +77,14 @@
 					</div>
 					<div id="error_textarea" class="error"></div>
 					
-					<label for="nombreContacto">Nombre y apellidos</label>
+					<label class="etiqueta" for="nombreContacto">Nombre y apellidos</label>
 					<input id="nombreContacto" type="text" name="nombreyapellidos" required>
 					<div id="error_nombre" class="error"></div>
 
-					<label for="emailContacto">Email de contacto</label>
+					<label class="etiqueta" for="emailContacto">Email de contacto</label>
 					<input id="emailContacto" type="email" name="email" required>
 					<div id="error_email" class="error"></div>
-					<span>
+					<span id="texto-span">
 						EDITORIAL GCINSIDER, S.A.U., con domicilio en Avda. Diagonal, 660-662 tratará sus datos personales 
 						para tramitar su solicitud y/o resolver la consulta planteada, siendo eliminados una vez tramitada 
 						dicha solicitud o resuelta su consulta. Sus datos no se cederán a terceros ni serán objeto de 
