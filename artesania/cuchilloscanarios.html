@@ -19,7 +19,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/slider.js"></script>
-		<script src="../datos.json"></script>
+		<script src="../json/artesania.json"></script>
 		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -178,7 +178,7 @@
 		<script>
 			//Cargamos dinámicamente la sección de artesania - canteria recomendados
 			$(document).ready(function(){
-				$.getJSON("../datos.json", function(datosJSON){
+				$.getJSON("../json/artesania.json", function(datosJSON){
 					
 					$.each(datosJSON.datos.artesania[2].cuchilloscanarios, function(){
 						$('#cajainfojson3').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
@@ -186,8 +186,8 @@
 						+ "<p>" + this["telefono"] + " </p>" + "<p>" + this["informacion"] + "</p>" 
 						+ "<p>" + this["rss_facebook"] + "</p>" + "</section>");
 					});
-					
 				});
+				ultmod("../json/artesania.json");
 			});
 		</script>
 

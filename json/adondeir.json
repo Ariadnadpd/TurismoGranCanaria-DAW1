@@ -1,0 +1,88 @@
+{
+    "datos": {
+        "adondeir": [
+            { "museos": [
+                {
+                    "titulo": "Gáldar",
+                    "subtitulo": "Museo y Parque Arqueológico Cueva Pintada",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Audiencia, 2",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928895489",
+                    "sitioweb": "<a href='http://www.cuevapintada.com/es' class='boton'>Ver sitio web<\/a>"
+                }, 
+                {
+                    "titulo": "Vegueta",
+                    "subtitulo": "Casa de Colón",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Colón, 1",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp;  928312373",
+                    "sitioweb": "<a href='http://www.casadecolon.com/es' class='boton'>Ver sitio web<\/a>"
+                }, 
+                {
+                    "titulo": "Parque Santa Catalina",
+                    "subtitulo": "Museo Elder de la Ciencia y la Tecnología",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Muelle de Sta. Catalina",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 828011828",
+                    "sitioweb": "<a href='http://www.museoelder.org' class='boton'>Ver sitio web<\/a>"   
+                }, {
+                    "titulo": "Moya",
+                    "subtitulo": "Museo Tomás Morales",
+                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp;  Plaza Tomás Morales, s/n",
+                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp;  928620217",
+                    "sitioweb": "<a href='http://www.tomasmorales.com/es' class='boton'>Ver sitio web<\/a>"   
+                }
+            ]},
+
+            {"parquesnaturales": [
+                {
+                    "titulo": "Tejeda",
+                    "subtitulo": "Parque Rural del Nublo",
+                    "ruta": "<a href='https://goo.gl/maps/owz9LTShBdocY4LF9' class='boton'> Ver ruta</a>"
+                },
+                {
+                    "titulo": "Agaete, Artenara y La Aldea de San Nicolás",
+                    "subtitulo": "Parque Natural de Tamadaba",
+                    "ruta": "<a href='https://goo.gl/maps/tPpmXSnqvY9YS5y96' class='boton'> Ver ruta</a>"
+                },
+                {
+                    "titulo": "Teror",
+                    "subtitulo": "Finca de Osorio",
+                    "ruta": "<a href='https://goo.gl/maps/Z1vrz8symaBEMLfc6' class='boton'> Ver ruta</a>"
+                },
+                {
+                    "titulo": "Moya",
+                    "subtitulo": "Reserva Natural Especial Los Tilos",
+                    "ruta": "<a href='https://goo.gl/maps/JwSz9QjHRfxEwfut8' class='boton'> Ver ruta</a>"  
+                }
+            ]},
+
+            {"playas": [
+                {
+                    "titulo": "Agaete",
+                    "subtitulo": "Playa del Dedo de Dios",
+                    "localizacion": "<a href='https://www.google.com/maps/dir/28.1476038,-15.6529834/Playa+Dedo+de+Dios/@28.1202773,-15.7144448,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xc408b745582e883:0x2a277996c2ac3cb4!2m2!1d-15.7076547!2d28.096138' class='boton'> Cómo llegar</a>"
+                }, {
+                    "titulo": "Gáldar",
+                    "subtitulo": "Playa de Caleta Abajo",
+                    "localizacion": "<a href='https://goo.gl/maps/PadJyHCYWvPjUukTA' class='boton'>Cómo llegar</a>"
+                }, {
+                    "titulo": "Gáldar",
+                    "subtitulo": "Playa de Sardina del Norte",
+                    "localizacion": "<a href='https://goo.gl/maps/zbtSBbdTV2nAi3HTA' class='boton'>Cómo llegar</a>"
+                }, 
+                {
+                    "titulo": "Maspalomas",
+                    "subtitulo": "Playa del Inglés",
+                    "localizacion": "<a href='https://goo.gl/maps/Rr8uAu6isDh9JcdR7' class='boton'> Cómo llegar</a>"
+                }, {
+                    "titulo": "Agaete",
+                    "subtitulo": "Playa del Juncal",
+                    "localizacion": "<a href='https://goo.gl/maps/VDJLJKkCo5kvz6ct6' class='boton'> Cómo llegar</a>"
+                }, 
+                {
+                    "titulo": "Las Palmas de Gran Canaria",
+                    "subtitulo": "Playa de las Canteras",
+                    "localizacion": "<a href='https://goo.gl/maps/4MGY6fBCHnzyqbZW6' class='boton'> Cómo llegar</a>"
+                }
+            ]}
+        ]
+    }
+}

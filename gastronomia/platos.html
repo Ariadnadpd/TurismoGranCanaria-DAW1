@@ -20,7 +20,7 @@
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/iconos_compartir.js"></script>
 		<script async src="https://static.addtoany.com/menu/page.js"></script>
-		<script src="../datos.json"></script>
+		<script src="../json/gastronomia.json"></script>
 		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -160,7 +160,7 @@
 		<script>
 			//Cargamos dinámicamente la sección de gastronomia - platos recomendados
 			$(document).ready(function(){
-				$.getJSON("../datos.json", function(datosJSON){
+				$.getJSON("../json/gastronomia.json", function(datosJSON){
 					
 					$.each(datosJSON.datos.gastronomia[0].platos, function(){
 						$('#cajainfojson1').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
@@ -168,8 +168,8 @@
 						+ "<p>" + this["telefono"] + " </p>" + "<p>" + this["informacion"] + "</p>"
 						+ "<p>" + this["rss_facebook"] + "</p>" + "</section>");
 					});
-					
 				});
+				ultmod("../json/gastronomia.json");
 			});
 		</script>
 	</body>

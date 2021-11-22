@@ -19,7 +19,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 		<script src="../scripts/menu_navegacion.js"></script>
 		<script src="../scripts/slider.js"></script>
-		<script src="../datos.json"></script>
+		<script src="../json/actividades.json"></script>
 		<script src="../scripts/ultima_actualizacion.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -182,15 +182,15 @@
 		<script>
 			//Cargamos dinámicamente la sección de actividades - parques temáticos recomendados
 			$(document).ready(function(){
-				$.getJSON("../datos.json", function(datosJSON){
+				$.getJSON("../json/actividades.json", function(datosJSON){
 					
 					$.each(datosJSON.datos.actividades[1].parquestematicos, function(){
 						$('.cajainfopt').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["localizacion"] + "</p>"
 						+ "<p>" + this["telefono"] + " </p>" + this["sitioweb"] + "</section>");
 					});
-					
 				});
+				ultmod("../json/actividades.json");
 			});
 		</script>
 	</body>
