@@ -2201,6 +2201,7 @@ input[type=submit]:hover {
   .primera_capa #seccion_texto ul li {
     width: 120%;
   }
+
 }
 
 @media (max-width:370px){
@@ -2246,12 +2247,14 @@ input[type=submit]:hover {
   .presentacion p, .presentacion_gc_insider p {
     font-size: 0.8em;
   }
+ 
 }
 
 @media screen and (max-width: 330px) {
   .primera_capa #seccion_texto ul li {
     width: 140%;
   }
+
 }
 
 @media screen and (max-width:220px) {
@@ -2284,13 +2287,23 @@ input[type=submit]:hover {
   .etiqueta {
     font-size: 0.55em;
   }
+
 }
 
 @media only screen and (min-width:320px) and (max-width:768px){
   .contenedor-tarjetas{
     flex-direction: column;
   }
+}
+
+@media only screen and (min-width:320px) and (max-width:500px){
+
+  #seccion_enlaces #ulenlaces li+li:before{
+    content: "";
+  }
 
 }
+
+
 
 /********************************************** FIN RESPONSIVE  **********************************************/
