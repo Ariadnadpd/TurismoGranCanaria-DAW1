@@ -58,32 +58,49 @@
 			
 			<div class="contenedor_formulario">
 				<form id="formulario_contacto">
-					<label class="etiqueta" for="select_contacto">El mensaje es sobre</label>
-					<select name="seleccion_asunto" id="select_contacto" required> 
-						<option value="">Por favor, escoja uno de la lista...</option>
-						<option value="1">Correcciones/Actualizaciones</option>
-						<option value="2">Quejas generales</option>
-						<option value="3">Agradecimientos generales</option>
-						<option value="4">Sugerencias</option>
-						<option value="5">Otros</option>
-					</select>
-                    <div class="error" id="error_select"></div>
-					<label class="etiqueta" for="comentario1">Comentario</label>
-					<div>
-						<textarea name="comentario" id="comentario1" required onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>
+
+					<div class="form-control">
+						<label class="etiqueta" for="select_contacto">El mensaje es sobre</label>
+						<select name="seleccion_asunto" id="select_contacto"> 
+							<option value="">Por favor, escoja uno de la lista...</option>
+							<option value="1">Correcciones/Actualizaciones</option>
+							<option value="2">Quejas generales</option>
+							<option value="3">Agradecimientos generales</option>
+							<option value="4">Sugerencias</option>
+							<option value="5">Otros</option>
+						</select>
+						<i id="prueba" class="fas fa-check-circle"></i>
+						<i id="prueba" class="fas fa-exclamation-circle"></i>
+						<small>Mensaje de error</small>
+					</div>
+
+					<div class="form-control">
+						<label class="etiqueta" for="comentario1">Comentario</label>
+						<textarea name="comentario" id="comentario1" onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
 						<div id="em_com"> 
 							<em>Comentario limitado a mínimo 2 caracteres y máximo 250 caracteres, restante: <strong id="strong">250</strong></em>
 						</div>
+						<small>Mensaje de error</small>
 					</div>
-					<div id="error_textarea" class="error"></div>
 					
-					<label class="etiqueta" for="nombreContacto">Nombre y apellidos</label>
-					<input id="nombreContacto" type="text" name="nombreyapellidos" required>
-					<div id="error_nombre" class="error"></div>
+					<div class="form-control">
+						<label class="etiqueta" for="nombreContacto">Nombre y apellidos</label>
+						<input type="text" id="nombreContacto" name="nombreyapellidos" >
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Mensaje de error</small>
+					</div>
 
-					<label class="etiqueta" for="emailContacto">Email de contacto</label>
-					<input id="emailContacto" type="email" name="email" required>
-					<div id="error_email" class="error"></div>
+					<div class="form-control">
+						<label class="etiqueta" for="emailContacto">Email de contacto</label>
+						<input id="emailContacto" type="email" name="email" >
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Mensaje de error</small>
+					</div>
+
 					<span id="texto-span">
 						EDITORIAL GCINSIDER, S.A.U., con domicilio en Avda. Diagonal, 660-662 tratará sus datos personales 
 						para tramitar su solicitud y/o resolver la consulta planteada, siendo eliminados una vez tramitada 
@@ -101,15 +118,22 @@
 						dpo@insider.es o a Grupo Insider, At.: Delegado de Protección de Datos, Avda. Diagonal 662-664, 35011 Las Palmas.
 					</span>
 					
-					<input type="submit" value="Enviar" name="enviar" id="enviar_form" onSubmit="exitoDialogo();">
+					<input type="submit" value="Enviar" name="enviar" id="enviar_form">
 				</form>
 			</div>
         </section>
 
-		<div id="dialog" title="Email enviado"><p><img src="./imagenes/iconos/checkmark-done-outline.svg" alt="Icono confirmacion" id="check_icon"></p>
+		<div id="dialog" title="Email enviado">
+			<p><img src="./imagenes/iconos/checkmark-done-outline.svg" alt="Icono confirmacion" id="check_icon"></p>
 			<p>El correo se ha enviado correctamente. <br> ¡Muchas gracias por tu opinión!</p>
 		</div>
 
+		<style>
+			#ui-id-2 {
+font-size: large;
+			}
+			
+		</style>
 		<!-- Pie de página del sitio web -->
 		<div class="footer_dinamico"></div>
 	</body>
