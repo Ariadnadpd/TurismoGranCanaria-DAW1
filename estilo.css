@@ -1149,7 +1149,7 @@ input[type=submit]:hover {
 		right: 40px;
 	}
 
-  .form-control #prueba {
+  .form-control #prueba1, .form-control #prueba2 {
     right: 20px;
   }
 
@@ -1278,7 +1278,6 @@ input[type=submit]:hover {
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 30px;
 }
 
 .titulo-tarjetas{
@@ -1377,7 +1376,7 @@ input[type=submit]:hover {
     object-fit: cover;
   }
 
-  .form-control #prueba {
+  .form-control #prueba1, .form-control #prueba2 {
     right: 5px;
   }
 }
@@ -1595,7 +1594,7 @@ input[type=submit]:hover {
     margin-left: -10%;
   }
 
-  .form-control #prueba {
+  .form-control #prueba1, .form-control #prueba2 {
     top: 53px;
 		right: 10px;
   }
@@ -2122,10 +2121,6 @@ input[type=submit]:hover {
     font-size: 2rem;
   }
 
-  .tarjeta{
-     margin-left: -10%;
-  }
-
   #hrseccionpf{
     width: 100%;
   }
@@ -2353,7 +2348,7 @@ input[type=submit]:hover {
 		right: 5px;
 	}
 
-  .form-control #prueba {
+  .form-control #prueba1, .form-control #prueba2 {
     top: 48px;
 		right: 5px;
   }
