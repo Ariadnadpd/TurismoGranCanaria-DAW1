@@ -1,3 +1,7 @@
+'use strict'
+
+// Fecha de última modificación del JSON
+
 // Función que detecta la última modificación del archivo JSON y llama a ultActualizacion()
 function ultmod(url) {
     var xhr = new XMLHttpRequest();

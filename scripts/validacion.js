@@ -107,71 +107,71 @@ function validarFormulario(evento) {
     // ************************** Select **************************
     if(asuntoValue === '') {
         error++;
-        setErrorFor(asunto, '!Debe seleccionar alguna opción!');
+        mostrarError(asunto, '!Debe seleccionar alguna opción!');
     } else{
-        setSuccessFor(asunto);
+        mostrarExito(asunto);
     }
 
     // ************************** Textarea **************************
     //TextArea vacío, con más de 250 caracteres o con menos de 2 caracteres
     if(comentarioValue === '') {
         error++;
-        setErrorFor(comentario, '¡El comentario no puede estar en blanco!');
+        mostrarError(comentario, '¡El comentario no puede estar en blanco!');
     } else if(comentarioValue.length > 250){
         error++;
-        setErrorFor(comentario, '¡El número máximo de caracteres es de 250!');
+        mostrarError(comentario, '¡El número máximo de caracteres es de 250!');
     } else if (comentarioValue.length < 2){
         error++;
-        setErrorFor(comentario, '¡El número mínimo de caracteres es de 2!');
+        mostrarError(comentario, '¡El número mínimo de caracteres es de 2!');
     } else {
-        setSuccessFor(comentario);
+        mostrarExito(comentario);
     }
 
     // ************************** Nombre y apellidos **************************
     //Nombre y apellidos que no cumplen con el patrón de un nombre y apellidos
     if(nombreValue === '') { 
         error++;
-        setErrorFor(nombre, '¡El nombre y apellidos no puede estar en blanco!');	
-    }else if(!isName(nombreValue)) {
+        mostrarError(nombre, '¡El nombre y apellidos no puede estar en blanco!');	
+    }else if(!esNombreApellidos(nombreValue)) {
         error++;
-        setErrorFor(nombre, 'Nombre inválido. Un nombre válido podría ser: Antonio García Rodríguez');	
+        mostrarError(nombre, 'Nombre inválido. Un nombre válido podría ser: Antonio García Rodríguez');	
     } else {
-        setSuccessFor(nombre);
+        mostrarExito(nombre);
     }
     
     // ************************** Email **************************
     //Email correcto siguiendo un patrón
     if(emailValue === '') {
         error++;
-        setErrorFor(email, '¡El email no puede estar en blanco!');
-    } else if (!isEmail(emailValue)) {
+        mostrarError(email, '¡El email no puede estar en blanco!');
+    } else if (!esEmail(emailValue)) {
         error++;
-        setErrorFor(email, 'Email inválido. Un email válido podría ser: jose.daw.99@gmail.com');
+        mostrarError(email, 'Email inválido. Un email válido podría ser: jose.daw.99@gmail.com');
     } else {
-        setSuccessFor(email);
+        mostrarExito(email);
     }
 
 }
 
-function setErrorFor(input, message) {
+function mostrarError(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
     formControl.className = 'form-control error';
     small.innerText = message;
 }
 
-function setSuccessFor(input) {
+function mostrarExito(input) {
     acierto++;
     const formControl = input.parentElement;
     formControl.className = 'form-control success';  
 }
     
-function isEmail(email) {
+function esEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
 
-function isName(nombre){
+function esNombreApellidos(nombre){
     return /^([a-z ñáéíóú]{4,60})$/i.test(nombre);
 }
 
