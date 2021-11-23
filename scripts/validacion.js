@@ -4,7 +4,7 @@ var acierto = 0;
 var error = 0;
 
 $(document).ready(function(){
-    form = document.getElementById('formulario_contacto');
+    const form = document.getElementById('formulario_contacto');
     form.addEventListener('submit', e => {
 
         e.preventDefault();
