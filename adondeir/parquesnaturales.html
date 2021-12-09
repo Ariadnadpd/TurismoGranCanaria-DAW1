@@ -162,11 +162,12 @@
 			//Cargamos dinámicamente la sección de adondeir - parques temáticos recomendados
 			$(document).ready(function(){
 				$.getJSON("../json/adondeir.json", function(datosJSON){
-					
+
+					var url = "Ver ruta";
 					$.each(datosJSON.datos.adondeir[1].parquesnaturales, function(){
 						$('#cajainfojson2').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
-						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["ruta"] + "</p>"
-						+ "</section>");
+						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + "<a href='" + this["ruta"] + " ' class='boton'>" 
+						+ url + "</a>" + "</p>" + "</section>");
 					});
 				});
 				ultmod("../json/adondeir.json");

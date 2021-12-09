@@ -165,11 +165,12 @@
 			//Cargamos dinámicamente la sección de adondeir - playas recomendados
 			$(document).ready(function(){
 				$.getJSON("../json/adondeir.json", function(datosJSON){
-					
+
+					var url = "Como llegar";
 					$.each(datosJSON.datos.adondeir[2].playas, function(){
 						$('#cajainfojson3').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
-						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["localizacion"] + "</p>"
-						+ "</section>");
+						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + "<a href='" + this["localizacion"] + " ' class='boton'>" 
+						+ url + "</a>" + "</p>" + "</section>");
 					});
 				});
 				ultmod("../json/adondeir.json");
