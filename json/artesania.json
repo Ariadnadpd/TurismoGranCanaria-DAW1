@@ -3,6 +3,7 @@
         "artesania": [
             { "alfareria": [
                 {
+                    "id": 1,
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Escuela de Arte Luján Pérez",
                     "localizacion": "Calle Roque Morera, 1",
@@ -12,6 +13,7 @@
                     "rss_facebook": "https://es-es.facebook.com/escuelalujanperez/"
                 },
                 {
+                    "id": 2,
                     "titulo": "Cruce de Arinaga",
                     "subtitulo": "La Casa Vieja S.L.",
                     "localizacion": "Calle Tirma, 137",
@@ -23,6 +25,7 @@
                     
                 },
                 {
+                    "id": 3,
                     "titulo": "Santa Lucía de Tirajana",
                     "subtitulo": "Taller Gorullo",
                     "localizacion": "Calle San Isidro, 83",
@@ -35,6 +38,7 @@
             ]},
             { "canteria": [
                 {
+                    "id": 1,
                     "titulo": "Arucas",
                     "subtitulo": "Piedras La Cantera",
                     "localizacion": "Calle Camino los Callejones, 4",
@@ -43,6 +47,7 @@
                     "rss_facebook": "https://www.facebook.com/CanteraSRLI/"
                 },
                 {
+                    "id": 2,
                     "titulo": "Arucas",
                     "subtitulo": "labrArte - Trabajos en Piedra",
                     "localizacion": "Calle Ctra. del Lomo, 45, BAJO",
@@ -55,6 +60,7 @@
             { "cuchilloscanarios": [
 
                 {
+                    "id": 1,
                     "titulo": "Gáldar",
                     "subtitulo": "Cuchillos Canarios Artesanos Torres",
                     "localizacion": "Calle Vicente Aleixandre, 49",
@@ -63,6 +69,7 @@
                     "rss_facebook": "https://es-es.facebook.com/pages/category/Community/Cuchillos-Canarios-Artesanos-Torres-159762310781262/"
                 },
                 {
+                    "id": 2,
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Tienda La Molina",
                     "localizacion": "Calle Triana, 58",
@@ -71,6 +78,7 @@
                     "rss_facebook": ""
                 },
                 {
+                    "id": 3,
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "FEDAC - Artesanía - Cabildo de Gran Canaria (FEDAC)",
                     "localizacion": "Calle Domingo J Navarro, 7",
@@ -81,7 +89,7 @@
             ]},
             {"trajestradicionales": [
                 {
-
+                    "id": 1,
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "El Kilo de San Bernardo",
                     "localizacion": "Calle General Bravo, 33",
@@ -91,6 +99,7 @@
                     "rss_instagram": "https://www.instagram.com/elkilodesanbernardo.lpa/?hl=es"
                 },
                 {
+                    "id": 2,
                     "titulo": "Telde",
                     "subtitulo": "Tienda Los Sombreritos",
                     "localizacion": "Calle Jaime Balmes, 4 ",
@@ -100,6 +109,7 @@
                     "rss_instagram": ""
                 },
                 {
+                    "id": 3,
                     "titulo": "Arinaga",
                     "subtitulo": "Tienda Grupo Bolaños",
                     "localizacion": "Calle Almendro, 3",

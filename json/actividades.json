@@ -3,6 +3,7 @@
             "actividades": [ 
             { "buceo": [
                 {
+                    "id": 1,
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Buceo La vieja",
                     "localizacion": "Calle Olof Palme, 2",
@@ -10,6 +11,7 @@
                     "sitioweb": "https://www.buceolavieja.com/"
                 },
                 {
+                    "id": 2,
                     "titulo": "Puerto de Sardina",
                     "subtitulo": "Buceo Norte",
                     "localizacion": "Calle Av. Alcalde Antonio Rosas, 46",
@@ -17,6 +19,7 @@
                     "sitioweb": "https://www.buceonorte.com/"
                 },
                 {
+                    "id": 3,
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Mirafondos",
                     "localizacion": "Calle Galileo, 51",
@@ -24,6 +27,7 @@
                     "sitioweb": "http://www.mirafondos.com/"
                 },
                 {
+                    "id": 4,
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Buceo 7 mares",
                     "localizacion": "Calle Gran Canaria, 4",
@@ -33,6 +37,7 @@
             ]}, 
             { "parquestematicos": [
                 {
+                    "id": 1,
                     "titulo": "Maspalomas",
                     "subtitulo": "Holiday World",
                     "localizacion": "Av. Touroperador Tui",
@@ -40,6 +45,7 @@
                     "sitioweb": "https://www.holidayworldmaspalomas.com/"
                 },
                 {
+                    "id": 2,
                     "titulo": "Maspalomas",
                     "subtitulo": "Palmitos Park",
                     "localizacion": "Barranco de los Palmitos, s/n",
@@ -47,12 +53,14 @@
                     "sitioweb": "https://www.palmitospark.es/"
                 },
                 {
+                    "id": 3,
                     "titulo": "Maspalomas",
                     "subtitulo": "Aqualand",
                     "localizacion": "Carr. Palmitos Park, Km 3",
                     "telefono": "928140525",
                     "sitioweb": "https://www.aqualand.es/maspalomas/"
                 }, {
+                    "id": 4,
                     "titulo": "Taurito",
                     "subtitulo": "Lago Taurito Parque Acuático",
                     "localizacion": "Calle Alhambra, s/n",
@@ -60,6 +68,7 @@
                     "sitioweb": "http://lagotaurito.es/"
                 }, 
                 {
+                    "id": 5,
                     "titulo": "Cañon del Águila",
                     "subtitulo": "Sioux City Park",
                     "localizacion": "Barranco del Aguila s/n",
@@ -69,19 +78,23 @@
             ]}, 
             { "senderismos":[
                 {
+                    "id": 1,
                     "titulo": "Tejeda",
                     "subtitulo": "Senderismo al Roque Nublo",
                     "ruta": "https://es.wikiloc.com/rutas-senderismo/ruta-circular-al-roque-nublo-gran-canaria-37007857"
                 },
                 {
+                    "id": 2,
                     "titulo": "San Bartolomé, San Mateo y Tejeda",
                     "subtitulo": "Sendero desde Pico de las Nieves hasta Llanos de la Pez",
                     "ruta": "https://www.komoot.es/smarttour/702835/zoom"
                 }, {
+                    "id": 3,
                     "titulo": "Santa Brígida",
                     "subtitulo": "Sendero circular desde Los Hoyos hasta Bandama",
                     "ruta": "https://www.komoot.es/smarttour/1026968/zoom"
                 }, {
+                    "id": 4,
                     "titulo": "Maspalomas",
                     "subtitulo": "Senderos desde Meloneras hasta las Dunas",
                     "ruta": "https://www.komoot.es/smarttour/6854390/zoom"

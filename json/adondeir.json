@@ -3,6 +3,7 @@
         "adondeir": [
             { "museos": [
                 {
+                    "id": 1,
                     "titulo": "Gáldar",
                     "subtitulo": "Museo y Parque Arqueológico Cueva Pintada",
                     "localizacion": "Calle Audiencia, 2",
@@ -10,6 +11,7 @@
                     "sitioweb": "http://www.cuevapintada.com/es"
                 }, 
                 {
+                    "id": 2,
                     "titulo": "Vegueta",
                     "subtitulo": "Casa de Colón",
                     "localizacion": "Calle Colón, 1",
@@ -17,12 +19,14 @@
                     "sitioweb": "http://www.casadecolon.com/es"
                 }, 
                 {
+                    "id": 3,
                     "titulo": "Parque Santa Catalina",
                     "subtitulo": "Museo Elder de la Ciencia y la Tecnología",
                     "localizacion": "Muelle de Sta. Catalina",
                     "telefono": "828011828",
                     "sitioweb": "http://www.museoelder.org"   
                 }, {
+                    "id": 4,
                     "titulo": "Moya",
                     "subtitulo": "Museo Tomás Morales",
                     "localizacion": "Plaza Tomás Morales, s/n",
@@ -33,21 +37,25 @@
 
             {"parquesnaturales": [
                 {
+                    "id": 1,
                     "titulo": "Tejeda",
                     "subtitulo": "Parque Rural del Nublo",
                     "ruta": "https://goo.gl/maps/owz9LTShBdocY4LF9"
                 },
                 {
+                    "id": 2,
                     "titulo": "Agaete, Artenara y La Aldea de San Nicolás",
                     "subtitulo": "Parque Natural de Tamadaba",
                     "ruta": "https://goo.gl/maps/tPpmXSnqvY9YS5y96"
                 },
                 {
+                    "id": 3,
                     "titulo": "Teror",
                     "subtitulo": "Finca de Osorio",
                     "ruta": "https://goo.gl/maps/Z1vrz8symaBEMLfc6"
                 },
                 {
+                    "id": 4,
                     "titulo": "Moya",
                     "subtitulo": "Reserva Natural Especial Los Tilos",
                     "ruta": "https://goo.gl/maps/JwSz9QjHRfxEwfut8"  
@@ -56,28 +64,34 @@
 
             {"playas": [
                 {
+                    "id": 1,
                     "titulo": "Agaete",
                     "subtitulo": "Playa del Dedo de Dios",
                     "localizacion": "https://www.google.com/maps/dir/28.1476038,-15.6529834/Playa+Dedo+de+Dios/@28.1202773,-15.7144448,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xc408b745582e883:0x2a277996c2ac3cb4!2m2!1d-15.7076547!2d28.096138"
                 }, {
+                    "id": 2,
                     "titulo": "Gáldar",
                     "subtitulo": "Playa de Caleta Abajo",
                     "localizacion": "https://goo.gl/maps/PadJyHCYWvPjUukTA"
                 }, {
+                    "id": 3,
                     "titulo": "Gáldar",
                     "subtitulo": "Playa de Sardina del Norte",
                     "localizacion": "https://goo.gl/maps/zbtSBbdTV2nAi3HTA"
                 }, 
                 {
+                    "id": 4,
                     "titulo": "Maspalomas",
                     "subtitulo": "Playa del Inglés",
                     "localizacion": "https://goo.gl/maps/Rr8uAu6isDh9JcdR7"
                 }, {
+                    "id": 5,
                     "titulo": "Agaete",
                     "subtitulo": "Playa del Juncal",
                     "localizacion": "https://goo.gl/maps/VDJLJKkCo5kvz6ct6"
                 }, 
                 {
+                    "id": 6,
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Playa de las Canteras",
                     "localizacion": "https://goo.gl/maps/4MGY6fBCHnzyqbZW6"

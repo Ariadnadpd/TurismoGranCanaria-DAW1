@@ -3,6 +3,7 @@
         "gastronomia": [
             { "platos": [
                 {
+                    "id": 1,
                     "titulo": "Agaete",
                     "subtitulo": "Restaurante Dedo de Dios",
                     "localizacion": "Calle Ctra. al Puerto de Las Nieves",
@@ -12,6 +13,7 @@
                     
                 }, 
                 {
+                    "id": 2,
                     "titulo": "Tafira Baja",
                     "subtitulo": "Restaurante Jardín Canario",
                     "localizacion": "Calle Ctra. del Centro, Km. 7",
@@ -20,6 +22,7 @@
                     "rss_facebook": ""
                 }, 
                 {
+                    "id": 3,
                     "titulo": "Arguineguín",
                     "subtitulo": "Visita el Bar Playa 'El Boya' ",
                     "localizacion": "Calle Santa Agueda, 32",
@@ -28,6 +31,7 @@
                     "rss_facebook": "https://www.facebook.com/Bar-Playa-El-Boya-136104796504468/"
                 },
                 {
+                    "id": 4,
                     "titulo": "Santa Catalina",
                     "subtitulo": "Visita La Casa Fataga",
                     "localizacion": "Calle Parque de Santa Catalina",
@@ -40,6 +44,7 @@
             { "postres": [
 
                 {
+                    "id": 1,
                     "titulo": "Guía",
                     "subtitulo": "Dulces Artesanos de Guia Antoñita",
                     "localizacion": "Calle Pérez Galdós, 40",
@@ -49,6 +54,7 @@
                     "informacion": "http://comercio.descubreguia.com/comercios/artesanos/479-DULCES_DE_GUIA_ANTONITA.html"
                 }, 
                 {
+                    "id": 2,
                     "titulo": "Tejeda",
                     "subtitulo": "Dulcería Nublo en Tejeda",
                     "localizacion": "Calle Dr. Domingo Hernández Guerra, 15",
@@ -58,6 +64,7 @@
                     "informacion": ""
                 }, 
                 {
+                    "id": 3,
                     "titulo": "San Mateo",
                     "subtitulo": "Panadería Pastelería Pulido",
                     "localizacion": "Calle del Agua, 15",
@@ -68,6 +75,7 @@
                     "informacion": ""
                 },
                 {
+                    "id": 4,
                     "titulo": "Moya",
                     "subtitulo": "Bizcochos de Moya Doramas, S.L.",
                     "localizacion": "Calle Bolivia, 3",
