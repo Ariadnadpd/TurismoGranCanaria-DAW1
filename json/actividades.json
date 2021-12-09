@@ -5,87 +5,86 @@
                 {
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Buceo La vieja",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Olof Palme, 2",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 674338922",
-                    "sitioweb": "<a href='https://www.buceolavieja.com/' class='boton'> Visitar sitio web<\/a>"
+                    "localizacion": "Calle Olof Palme, 2",
+                    "telefono": "674338922",
+                    "sitioweb": "https://www.buceolavieja.com/"
                 },
                 {
                     "titulo": "Puerto de Sardina",
                     "subtitulo": "Buceo Norte",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Av. Alcalde Antonio Rosas, 46",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 628107479",
-                    "sitioweb": "<a href='https://www.buceonorte.com/' class='boton'>Visitar sitio web<\/a>",
-                    "fecha":"22/07/1999"
+                    "localizacion": "Calle Av. Alcalde Antonio Rosas, 46",
+                    "telefono": "628107479",
+                    "sitioweb": "https://www.buceonorte.com/"
                 },
                 {
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Mirafondos",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Galileo, 51",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928490867",
-                    "sitioweb": "<a href='http://www.mirafondos.com/' class='boton'>Visitar sitio web<\/a>"
+                    "localizacion": "Calle Galileo, 51",
+                    "telefono": "928490867",
+                    "sitioweb": "http://www.mirafondos.com/"
                 },
                 {
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Buceo 7 mares",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Gran Canaria, 4",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 620061028",
-                    "sitioweb": "<a href='https://7mares.es/' class='boton'>Visitar sitio web<\/a>"
+                    "localizacion": "Calle Gran Canaria, 4",
+                    "telefono": "620061028",
+                    "sitioweb": "https://7mares.es/"
                 }
             ]}, 
             { "parquestematicos": [
                 {
                     "titulo": "Maspalomas",
                     "subtitulo": "Holiday World",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Av. Touroperador Tui",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928730498",
-                    "sitioweb": "<a href='https://www.holidayworldmaspalomas.com/' class='boton'> Visitar sitio web<\/a>"
+                    "localizacion": "Av. Touroperador Tui",
+                    "telefono": "928730498",
+                    "sitioweb": "https://www.holidayworldmaspalomas.com/"
                 },
                 {
                     "titulo": "Maspalomas",
                     "subtitulo": "Palmitos Park",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Barranco de los Palmitos, s/n",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928797070",
-                    "sitioweb": "<a href='https://www.palmitospark.es/' class='boton'> Visitar sitio web<\/a>"
+                    "localizacion": "Barranco de los Palmitos, s/n",
+                    "telefono": "928797070",
+                    "sitioweb": "https://www.palmitospark.es/"
                 },
                 {
                     "titulo": "Maspalomas",
                     "subtitulo": "Aqualand",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Carr. Palmitos Park, Km 3",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928140525",
-                    "sitioweb": "<a href='https://www.aqualand.es/maspalomas/' class='boton'> Visitar sitio web<\/a>"
+                    "localizacion": "Carr. Palmitos Park, Km 3",
+                    "telefono": "928140525",
+                    "sitioweb": "https://www.aqualand.es/maspalomas/"
                 }, {
                     "titulo": "Taurito",
                     "subtitulo": "Lago Taurito Parque Acuático",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Alhambra, s/n",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928566066",
-                    "sitioweb": "<a href='http://lagotaurito.es/' class='boton'> Visitar sitio web<\/a>"
+                    "localizacion": "Calle Alhambra, s/n",
+                    "telefono": "928566066",
+                    "sitioweb": "http://lagotaurito.es/"
                 }, 
                 {
                     "titulo": "Cañon del Águila",
                     "subtitulo": "Sioux City Park",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Barranco del Aguila s/n",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928129684",
-                    "sitioweb": "<a href='https://parquetematicosiouxcitypark.com/' class='boton'> Visitar sitio web<\/a>"
+                    "localizacion": "Barranco del Aguila s/n",
+                    "telefono": "928129684",
+                    "sitioweb": "https://parquetematicosiouxcitypark.com/"
                 }
             ]}, 
             { "senderismos":[
                 {
                     "titulo": "Tejeda",
                     "subtitulo": "Senderismo al Roque Nublo",
-                    "ruta": "<a href='https://es.wikiloc.com/rutas-senderismo/ruta-circular-al-roque-nublo-gran-canaria-37007857' class='boton'>Ver ruta<\/a>"
+                    "ruta": "https://es.wikiloc.com/rutas-senderismo/ruta-circular-al-roque-nublo-gran-canaria-37007857"
                 },
                 {
                     "titulo": "San Bartolomé, San Mateo y Tejeda",
                     "subtitulo": "Sendero desde Pico de las Nieves hasta Llanos de la Pez",
-                    "ruta": "<a href='https://www.komoot.es/smarttour/702835/zoom' class='boton'>Ver ruta<\/a>"
+                    "ruta": "https://www.komoot.es/smarttour/702835/zoom"
                 }, {
                     "titulo": "Santa Brígida",
                     "subtitulo": "Sendero circular desde Los Hoyos hasta Bandama",
-                    "ruta": "<a href='https://www.komoot.es/smarttour/1026968/zoom' class='boton'>Ver ruta<\/a>"
+                    "ruta": "https://www.komoot.es/smarttour/1026968/zoom"
                 }, {
                     "titulo": "Maspalomas",
                     "subtitulo": "Senderos desde Meloneras hasta las Dunas",
-                    "ruta": "<a href='https://www.komoot.es/smarttour/6854390/zoom' class='boton'>Ver ruta <\/a>"
+                    "ruta": "https://www.komoot.es/smarttour/6854390/zoom"
                 }
             ]}
         ]

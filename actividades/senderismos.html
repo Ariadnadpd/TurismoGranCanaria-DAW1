@@ -195,10 +195,12 @@
 			$(document).ready(function(){
 				$.getJSON("../json/actividades.json", function(datosJSON){
 					
+					var url = "Ver ruta";
+
 					$.each(datosJSON.datos.actividades[2].senderismos, function(clave, valor){
 						$('.cajainfos').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
-						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["ruta"] + "</p>"
-						+ "</section>");
+						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + "<a href='" 
+						+ this["ruta"] + " ' class='boton'>" + url + "</a>" + "</p>" + "</section>");
 					});
 				});
 				ultmod("../json/actividades.json");
