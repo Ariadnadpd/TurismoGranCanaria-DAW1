@@ -5,28 +5,30 @@
                 {
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Escuela de Arte Luján Pérez",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Roque Morera, 1",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928330580",
+                    "localizacion": "Calle Roque Morera, 1",
+                    "telefono": "928330580",
                     "email": "",
-                    "informacion": "<a href='https://escuelalujanperez.com'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
-                    "rss_facebook": "<a href='https://es-es.facebook.com/escuelalujanperez/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>"
+                    "informacion": "https://escuelalujanperez.com",
+                    "rss_facebook": "https://es-es.facebook.com/escuelalujanperez/"
                 },
                 {
                     "titulo": "Cruce de Arinaga",
                     "subtitulo": "La Casa Vieja S.L.",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Tirma, 137",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928188920",
+                    "localizacion": "Calle Tirma, 137",
+                    "telefono": "928188920",
                     "email": "",
-                    "informacion": "<a href='http://www.ceramicaslacasavieja.com'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
+                    "informacion": "http://www.ceramicaslacasavieja.com",
                     "rss_facebook": ""
+
+                    
                 },
                 {
                     "titulo": "Santa Lucía de Tirajana",
                     "subtitulo": "Taller Gorullo",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle San Isidro, 83",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928188920",
-                    "email": "<img src='../imagenes/iconos/mail-outline.svg' alt='icono-email' class='iconosrss'>&nbsp; taller-gorullo@hotmail.com",
-                    "informacion": "<a href='https://talle-gorullo.webnode.es'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
+                    "localizacion": "Calle San Isidro, 83",
+                    "telefono": "928188920",
+                    "email": "taller-gorullo@hotmail.com",
+                    "informacion": "https://talle-gorullo.webnode.es",
                     "rss_facebook": ""
                 }
 
@@ -35,18 +37,18 @@
                 {
                     "titulo": "Arucas",
                     "subtitulo": "Piedras La Cantera",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Camino los Callejones, 4",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928623510",
-                    "informacion": "<a href='http://piedraslacantera.com'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
-                    "rss_facebook": "<a href='https://www.facebook.com/CanteraSRLI/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>"
+                    "localizacion": "Calle Camino los Callejones, 4",
+                    "telefono": "928623510",
+                    "informacion": "http://piedraslacantera.com",
+                    "rss_facebook": "https://www.facebook.com/CanteraSRLI/"
                 },
                 {
                     "titulo": "Arucas",
                     "subtitulo": "labrArte - Trabajos en Piedra",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Ctra. del Lomo, 45, BAJO",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 630382282",
-                    "informacion": "<a href='http://www.labrarte.com'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
-                    "rss_facebook": "<a href='https://es-es.facebook.com/labrarte/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>"
+                    "localizacion": "Calle Ctra. del Lomo, 45, BAJO",
+                    "telefono": "630382282",
+                    "informacion": "http://www.labrarte.com'",
+                    "rss_facebook": "https://es-es.facebook.com/labrarte/"
  
                 }
             ]},
@@ -55,26 +57,26 @@
                 {
                     "titulo": "Gáldar",
                     "subtitulo": "Cuchillos Canarios Artesanos Torres",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Vicente Aleixandre, 49",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928551725",
+                    "localizacion": "Calle Vicente Aleixandre, 49",
+                    "telefono": "928551725",
                     "informacion": "",
-                    "rss_facebook": "<a href='https://es-es.facebook.com/pages/category/Community/Cuchillos-Canarios-Artesanos-Torres-159762310781262/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>"
+                    "rss_facebook": "https://es-es.facebook.com/pages/category/Community/Cuchillos-Canarios-Artesanos-Torres-159762310781262/"
                 },
                 {
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "Tienda La Molina",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Triana, 58",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928945042",
-                    "informacion": "<a href='https://www.lamolinartesania.com/cuchillos-canarios/'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
+                    "localizacion": "Calle Triana, 58",
+                    "telefono": "928945042",
+                    "informacion": "https://www.lamolinartesania.com/cuchillos-canarios/",
                     "rss_facebook": ""
                 },
                 {
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "FEDAC - Artesanía - Cabildo de Gran Canaria (FEDAC)",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Domingo J Navarro, 7",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928369661",
-                    "informacion": "<a href='https://fedac.org'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
-                    "rss_facebook": "<a href='https://es-es.facebook.com/fedac.org/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>"
+                    "localizacion": "Calle Domingo J Navarro, 7",
+                    "telefono": "928369661",
+                    "informacion": "https://fedac.org",
+                    "rss_facebook": "https://es-es.facebook.com/fedac.org/"
                 }
             ]},
             {"trajestradicionales": [
@@ -82,27 +84,27 @@
 
                     "titulo": "Las Palmas de Gran Canaria",
                     "subtitulo": "El Kilo de San Bernardo",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle General Bravo, 33",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928369177",
-                    "informacion": "<a href='https://www.elkilodesanbernardo.es/nuestros-productos/ropa-t%C3%ADpica/'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
-                    "rss_facebook": "<a href='https://m.facebook.com/elkilodesanbernardo/?locale2=es_ES'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>",
-                    "rss_instagram": "<a href='https://www.instagram.com/elkilodesanbernardo.lpa/?hl=es'><img src='../imagenes/iconos/logo-instagram.svg' alt='icono-instagram' class='iconosrss'>&nbsp; Visita el instagram</a>"
+                    "localizacion": "Calle General Bravo, 33",
+                    "telefono": "928369177",
+                    "informacion": "https://www.elkilodesanbernardo.es/nuestros-productos/ropa-t%C3%ADpica/",
+                    "rss_facebook": "https://m.facebook.com/elkilodesanbernardo/?locale2=es_ES",
+                    "rss_instagram": "https://www.instagram.com/elkilodesanbernardo.lpa/?hl=es"
                 },
                 {
                     "titulo": "Telde",
                     "subtitulo": "Tienda Los Sombreritos",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Jaime Balmes, 4 ",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 828069640",
-                    "informacion": "<a href='http://www.lossombreritos.com/trajes.html'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
+                    "localizacion": "Calle Jaime Balmes, 4 ",
+                    "telefono": "828069640",
+                    "informacion": "http://www.lossombreritos.com/trajes.html",
                     "rss_facebook": "",
                     "rss_instagram": ""
                 },
                 {
                     "titulo": "Arinaga",
                     "subtitulo": "Tienda Grupo Bolaños",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Almendro, 3",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928122019",
-                    "informacion": "<a href='https://www.grupobolanos.com/gran-canaria/ropa-tipica-canaria/'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
+                    "localizacion": "Calle Almendro, 3",
+                    "telefono": "928122019",
+                    "informacion": "https://www.grupobolanos.com/gran-canaria/ropa-tipica-canaria/",
                     "rss_facebook": "",
                     "rss_instagram": ""
                 }
