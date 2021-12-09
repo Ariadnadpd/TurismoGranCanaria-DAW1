@@ -5,35 +5,35 @@
                 {
                     "titulo": "Agaete",
                     "subtitulo": "Restaurante Dedo de Dios",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Ctra. al Puerto de Las Nieves",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928898000",
-                    "informacion": "<a href='https://www.aytoagaete.es/lugares/restaurante-dedo-de-dios'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Más información</a>",
+                    "localizacion": "Calle Ctra. al Puerto de Las Nieves",
+                    "telefono": "928898000",
+                    "informacion": "https://www.aytoagaete.es/lugares/restaurante-dedo-de-dios",
                     "rss_facebook": ""
                     
                 }, 
                 {
                     "titulo": "Tafira Baja",
                     "subtitulo": "Restaurante Jardín Canario",
-                    "localizacion": "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Ctra. del Centro, Km. 7",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928355245",
-                    "informacion": "<a href='https://www.facebook.com/Restaurante-Jardin-Canario-125554407552282/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>",
+                    "localizacion": "Calle Ctra. del Centro, Km. 7",
+                    "telefono": "928355245",
+                    "informacion": "https://www.facebook.com/Restaurante-Jardin-Canario-125554407552282/",
                     "rss_facebook": ""
                 }, 
                 {
                     "titulo": "Arguineguín",
                     "subtitulo": "Visita el Bar Playa 'El Boya' ",
-                    "localizacion": "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Santa Agueda, 32",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928355245",
-                    "informacion": "<a href='https://www.barplaya.com'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
-                    "rss_facebook": "<a href='https://www.facebook.com/Bar-Playa-El-Boya-136104796504468/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>"
+                    "localizacion": "Calle Santa Agueda, 32",
+                    "telefono": "928355245",
+                    "informacion": "https://www.barplaya.com",
+                    "rss_facebook": "https://www.facebook.com/Bar-Playa-El-Boya-136104796504468/"
                 },
                 {
                     "titulo": "Santa Catalina",
                     "subtitulo": "Visita La Casa Fataga",
-                    "localizacion": "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Parque de Santa Catalina",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 828600022",
-                    "informacion": "<a href='https://www.bodegoncasafataga.com'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial</a>",
-                    "rss_facebook": "<a href='https://es-es.facebook.com/bodegoncasafataga/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>"
+                    "localizacion": "Calle Parque de Santa Catalina",
+                    "telefono": "828600022",
+                    "informacion": "https://www.bodegoncasafataga.com",
+                    "rss_facebook": "https://es-es.facebook.com/bodegoncasafataga/"
                 }
             ]},
 
@@ -42,39 +42,39 @@
                 {
                     "titulo": "Guía",
                     "subtitulo": "Dulces Artesanos de Guia Antoñita",
-                    "localizacion": "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Pérez Galdós, 40",
-                    "telefono": "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928882188",
-                    "rss_facebook": "<a href='https://es-es.facebook.com/dulcesdeguia/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>",
+                    "localizacion": "Calle Pérez Galdós, 40",
+                    "telefono": "928882188",
+                    "rss_facebook": "https://es-es.facebook.com/dulcesdeguia/",
                     "rss_instagram": "",
-                    "informacion": "<a href='http://comercio.descubreguia.com/comercios/artesanos/479-DULCES_DE_GUIA_ANTONITA.html'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Más información</a>"
+                    "informacion": "http://comercio.descubreguia.com/comercios/artesanos/479-DULCES_DE_GUIA_ANTONITA.html"
                 }, 
                 {
                     "titulo": "Tejeda",
                     "subtitulo": "Dulcería Nublo en Tejeda",
-                    "localizacion": "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Dr. Domingo Hernández Guerra, 15",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928666030",
-                    "rss_facebook": "<a href='https://es-es.facebook.com/dulcerianublo/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>",
-                    "rss_instagram": "<a href='https://www.instagram.com/dulcerianublo/?hl=es'><img src='../imagenes/iconos/logo-instagram.svg' alt='icono-instagram' class='iconosrss'>&nbsp; Visita el instagram</a>",
+                    "localizacion": "Calle Dr. Domingo Hernández Guerra, 15",
+                    "telefono": "928666030",
+                    "rss_facebook": "https://es-es.facebook.com/dulcerianublo/",
+                    "rss_instagram": "https://www.instagram.com/dulcerianublo/?hl=es",
                     "informacion": ""
                 }, 
                 {
                     "titulo": "San Mateo",
                     "subtitulo": "Panadería Pastelería Pulido",
-                    "localizacion": "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle del Agua, 15",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928661227",
-                    "sitioweb": "<a href='https://www.panaderiapulido.com'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Página oficial</a>",
-                    "rss_facebook": "<a href='https://es-es.facebook.com/panaderiapasteleria.pulido/'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>",
-                    "rss_instagram": "<a href='https://www.instagram.com/panaderiapasteleriapulido/?hl=es'><img src='../imagenes/iconos/logo-instagram.svg' alt='icono-instagram' class='iconosrss'>&nbsp; Visita el instagram</a>",
+                    "localizacion": "Calle del Agua, 15",
+                    "telefono": "928661227",
+                    "sitioweb": "https://www.panaderiapulido.com",
+                    "rss_facebook": "https://es-es.facebook.com/panaderiapasteleria.pulido/",
+                    "rss_instagram": "https://www.instagram.com/panaderiapasteleriapulido/?hl=es",
                     "informacion": ""
                 },
                 {
                     "titulo": "Moya",
                     "subtitulo": "Bizcochos de Moya Doramas, S.L.",
-                    "localizacion": "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp; Calle Bolivia, 3",
-                    "telefono": "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp; 928620080",
-                    "rss_facebook": "<a href='https://m.facebook.com/BizcochosdeMoya/?locale2=es_ES'><img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook</a>",
+                    "localizacion": "Calle Bolivia, 3",
+                    "telefono": "928620080",
+                    "rss_facebook": "https://m.facebook.com/BizcochosdeMoya/?locale2=es_ES",
                     "rss_instagram": "",
-                    "informacion": "<a href='https://comerciovillademoya.es/comercios/empresas/doramas-bizcochos-de-moya/713.html'><img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Más información</a>"
+                    "informacion": "https://comerciovillademoya.es/comercios/empresas/doramas-bizcochos-de-moya/713.html"
                 }
 
             ]}

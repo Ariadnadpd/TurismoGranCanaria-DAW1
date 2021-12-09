@@ -167,15 +167,30 @@
 			//Cargamos dinámicamente la sección de gastronomia - postres recomendados
 			$(document).ready(function(){
 				$.getJSON("../json/gastronomia.json", function(datosJSON){
+					
+					var imgloc = "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp;";
+					var imgtel = "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp;";
+					var imginf = "<img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Página oficial";
+					var imgfac = "<img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook";
+					var imgins = "<img src='../imagenes/iconos/logo-instagram.svg' alt='icono-instagram' class='iconosrss'>&nbsp; Visita el instagram";
 
 					$.each(datosJSON.datos.gastronomia[1].postres, function(){
 						$('#cajainfojson2').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
-						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["localizacion"] + "</p>"
-						+ "<p>" + this["telefono"] + " </p>" + "<p>" + this["rss_facebook"] + "</p>"
-						+ "<p>" + this["rss_instagram"] + "</p>" + "<p>" + this["informacion"] + "</p>" + "</section>");
+						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" 
+						+ "<p>" + help(this['localizacion'],imgloc) + this["localizacion"] + "</p>"
+						+ "<p>" + help(this['telefono'],imgtel) + this["telefono"] + " </p>" 
+						+ "<p>" + "<a href=' " + this["rss_facebook"] + " '>" + help(this['rss_facebook'],imgfac) + "</a>" + "</p>"
+						+ "<p>" + "<a href=' " + this["rss_instagram"] + " '>" + help(this['rss_instagram'],imgins) +  "</a>" + "</p>"
+						+ "<p>" + "<a href=' " + this["informacion"] + " '>" + help(this['informacion'],imginf) +  "</a>" + "</p>" + "</section>");
 					});
 				});
 				ultmod("../json/gastronomia.json");
+
+				function help (param, img){
+					if(param == "") {
+						return "";
+					} return img;
+				}
 			});
 		</script>
 	</body>

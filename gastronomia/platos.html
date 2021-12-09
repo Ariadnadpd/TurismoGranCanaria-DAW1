@@ -162,14 +162,27 @@
 			$(document).ready(function(){
 				$.getJSON("../json/gastronomia.json", function(datosJSON){
 					
+					var imgloc = "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp;";
+					var imgtel = "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp;";
+					var imginf = "<img src='../imagenes/iconos/logo-chrome.svg' alt='icono-chroome' class='iconosrss'>&nbsp; Sitio oficial";
+					var imgfac = "<img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook";
+
 					$.each(datosJSON.datos.gastronomia[0].platos, function(){
 						$('#cajainfojson1').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
-						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + this["localizacion"] + "</p>"
-						+ "<p>" + this["telefono"] + " </p>" + "<p>" + this["informacion"] + "</p>"
-						+ "<p>" + this["rss_facebook"] + "</p>" + "</section>");
+						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" 
+						+ "<p>" + help(this['localizacion'],imgloc) + this["localizacion"] + "</p>"
+						+ "<p>" + help(this['telefono'],imgtel) + this["telefono"] + " </p>" 
+						+ "<p>" + "<a href=' " + this["informacion"] + " '>" + help(this['informacion'],imginf) +  "</a>" + "</p>" 
+						+ "<p>" + "<a href=' " + this["rss_facebook"] + " '>" + help(this['rss_facebook'],imgfac) + "</a>" + "</p>" + "</section>");
 					});
 				});
 				ultmod("../json/gastronomia.json");
+
+				function help (param, img){
+					if(param == "") {
+						return "";
+					} return img;
+				}
 			});
 		</script>
 	</body>
