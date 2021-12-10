@@ -174,11 +174,12 @@
 					var imgfac = "<img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook";
 					var imgins = "<img src='../imagenes/iconos/logo-instagram.svg' alt='icono-instagram' class='iconosrss'>&nbsp; Visita el instagram";
 
+					
 					$.each(datosJSON.datos.gastronomia[1].postres, function(){
 						$('#cajainfojson2').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" 
 						+ "<p>" + help(this['localizacion'],imgloc) + this["localizacion"] + "</p>"
-						+ "<p>" + help(this['telefono'],imgtel) + this["telefono"] + " </p>" 
+						+ "<p>" + help(this['telefono'], imgtel) + this["telefono"] + " </p>" 
 						+ "<p>" + "<a href=' " + this["rss_facebook"] + " '>" + help(this['rss_facebook'],imgfac) + "</a>" + "</p>"
 						+ "<p>" + "<a href=' " + this["rss_instagram"] + " '>" + help(this['rss_instagram'],imgins) +  "</a>" + "</p>"
 						+ "<p>" + "<a href=' " + this["informacion"] + " '>" + help(this['informacion'],imginf) +  "</a>" + "</p>" + "</section>");
