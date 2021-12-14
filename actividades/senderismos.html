@@ -193,17 +193,17 @@
 		<script>
 			//Cargamos dinámicamente la sección de actividades - senderismos recomendados
 			$(document).ready(function(){
-				$.getJSON("../json/actividades.json", function(datosJSON){
+				$.getJSON("https://api-sprint3-daw1.herokuapp.com/act_senderismos.json", function(datosJSON){
 					
 					var url = "Ver ruta";
 
-					$.each(datosJSON.datos.actividades[2].senderismos, function(clave, valor){
+					$.each(datosJSON, function(){
 						$('.cajainfos').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + "<a href='" 
 						+ this["ruta"] + " ' class='boton'>" + url + "</a>" + "</p>" + "</section>");
 					});
 				});
-				ultmod("../json/actividades.json");
+				ultmod("https://api-sprint3-daw1.herokuapp.com/act_senderismos.json");
 			});
 		</script>
 	</body>

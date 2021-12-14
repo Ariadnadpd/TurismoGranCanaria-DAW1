@@ -164,16 +164,16 @@
 		<script>
 			//Cargamos dinámicamente la sección de adondeir - playas recomendados
 			$(document).ready(function(){
-				$.getJSON("../json/adondeir.json", function(datosJSON){
+				$.getJSON("https://api-sprint3-daw1.herokuapp.com/adnd_playas.json", function(datosJSON){
 
 					var url = "Como llegar";
-					$.each(datosJSON.datos.adondeir[2].playas, function(){
+					$.each(datosJSON, function(){
 						$('#cajainfojson3').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + "<a href='" + this["localizacion"] + " ' class='boton'>" 
 						+ url + "</a>" + "</p>" + "</section>");
 					});
 				});
-				ultmod("../json/adondeir.json");
+				ultmod("https://api-sprint3-daw1.herokuapp.com/adnd_playas.json");
 			});
 		</script>
 	</body>

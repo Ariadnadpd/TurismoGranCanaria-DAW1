@@ -166,7 +166,7 @@
 		<script>
 			//Cargamos dinámicamente la sección de gastronomia - postres recomendados
 			$(document).ready(function(){
-				$.getJSON("../json/gastronomia.json", function(datosJSON){
+				$.getJSON("https://api-sprint3-daw1.herokuapp.com/gast_postres.json", function(datosJSON){
 					
 					var imgloc = "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp;";
 					var imgtel = "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp;";
@@ -175,7 +175,7 @@
 					var imgins = "<img src='../imagenes/iconos/logo-instagram.svg' alt='icono-instagram' class='iconosrss'>&nbsp; Visita el instagram";
 
 					
-					$.each(datosJSON.datos.gastronomia[1].postres, function(){
+					$.each(datosJSON, function(){
 						$('#cajainfojson2').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" 
 						+ "<p>" + help(this['localizacion'],imgloc) + this["localizacion"] + "</p>"
@@ -185,7 +185,7 @@
 						+ "<p>" + "<a href=' " + this["informacion"] + " '>" + help(this['informacion'],imginf) +  "</a>" + "</p>" + "</section>");
 					});
 				});
-				ultmod("../json/gastronomia.json");
+				ultmod("https://api-sprint3-daw1.herokuapp.com/gast_postres.json");
 
 				function help (param, img){
 					if(param == "") {

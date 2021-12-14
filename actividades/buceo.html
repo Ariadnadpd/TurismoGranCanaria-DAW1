@@ -183,19 +183,19 @@
 		<script>
 			//Cargamos dinámicamente la sección de actividades - buceo recomendados
 			$(document).ready(function(){
-				$.getJSON("../json/actividades.json", function(datosJSON){
+				$.getJSON("https://api-sprint3-daw1.herokuapp.com/act_buceos.json", function(datosJSON){
 
 					var img1 = "<img src='..\/imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp;";
 					var img2 = "<img src='..\/imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp;";
 					var url = "Visitar sitio web";
-					$.each(datosJSON.datos.actividades[0].buceo, function(){
+					$.each(datosJSON, function(){
 						$('.cajainfo').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + img1 + this["localizacion"] + "</p>"
 						+ "<p>" + img2 + this["telefono"] + " </p>" + "<a href='" + this["sitioweb"] + " ' class='boton'>" 
 						+ url + "</a>" + "</section>");
 					});
 				});
-				ultmod("../json/actividades.json");
+				ultmod("https://api-sprint3-daw1.herokuapp.com/act_buceos.json");
 			});
 		</script>
 		

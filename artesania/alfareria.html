@@ -183,7 +183,7 @@
 		<script>
 			//Cargamos dinámicamente la sección de artesania - alfareria recomendados
 			$(document).ready(function(){
-				$.getJSON("../json/artesania.json", function(datosJSON){
+				$.getJSON("https://api-sprint3-daw1.herokuapp.com/art_alfareris.json", function(datosJSON){
 					
 					var imgloc = "<img src='../imagenes/iconos/location-outline.svg' alt='icono-location' class='iconoscu'>&nbsp;";
 					var imgtel = "<img src='../imagenes/iconos/call-outline.svg' alt='icono-call' class='iconoscu'>&nbsp;";
@@ -192,7 +192,7 @@
 					var imgema = "<img src='../imagenes/iconos/mail-outline.svg' alt='icono-email' class='iconosrss'>&nbsp;";
 					
 
-					$.each(datosJSON.datos.artesania[0].alfareria, function(){
+					$.each(datosJSON, function(){
 						
 						$('#cajainfojson1').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + imgloc + this["localizacion"] + "</p>"
@@ -201,7 +201,7 @@
 						+ "<p>" + "<a href=' " + this["rss_facebook"] + "'> " + help(this["rss_facebook"],imgfac) + "</p>" + "</section>");
 					});
 				});
-				ultmod("../json/artesania.json");
+				ultmod("https://api-sprint3-daw1.herokuapp.com/art_alfareris.json");
 
 				function help (param, img){
 					if(param == "") {
