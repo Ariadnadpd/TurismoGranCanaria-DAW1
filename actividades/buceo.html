@@ -194,8 +194,9 @@
 						+ "<p>" + img2 + this["telefono"] + " </p>" + "<a href='" + this["sitioweb"] + " ' class='boton'>" 
 						+ url + "</a>" + "</section>");
 					});
+					var ult_act = datosJSON[datosJSON.length-1].updated_at;
+					ultmod(ult_act);
 				});
-				ultmod("https://api-sprint3-daw1.herokuapp.com/act_buceos.json");
 			});
 		</script>
 		

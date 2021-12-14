@@ -2,16 +2,9 @@
 
 // Fecha de última modificación del JSON
 
-// Función que detecta la última modificación del archivo JSON y llama a ultActualizacion()
-function ultmod(url) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("HEAD", url);
-    xhr.onreadystatechange = function () {
-            
-        if (xhr.readyState === 4) {
-            $('#actualizacion').append('<p>' + formatoFecha(xhr.getResponseHeader("Last-Modified")) + '</p>');
-        }};
-    xhr.send(); //Se realiza la petición al servidor
+// Función que detecta la última modificación del archivo JSON y llama a formatoFecha()
+function ultmod(ult_act) {
+    $('#actualizacion').append('<p>' + formatoFecha(ult_act) + '</p>');
 }
 
 //Función que muestra exactamente el momento de la última vez que se actualizó el sitio web.

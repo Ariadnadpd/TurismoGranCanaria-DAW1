@@ -204,8 +204,9 @@
                         + "<p>" + "<a href=' " + this["rss_facebook"] + "'>" + help(this["rss_facebook"], imgfac) + "</p>" 
                         + "<p>" + "<a href=' " + this["rss_instagram"] + "'>" + help(this["rss_instagram"], imgins) + "</p>" + "</section>");
                     });
+                    var ult_act = datosJSON[datosJSON.length-1].updated_at;
+					ultmod(ult_act);
                 });
-                ultmod("https://api-sprint3-daw1.herokuapp.com/art_ttradicionales.json");
 
                 function help (param, img){
 					if(param == "") {

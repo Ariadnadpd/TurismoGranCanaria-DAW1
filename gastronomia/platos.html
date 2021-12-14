@@ -175,8 +175,9 @@
 						+ "<p>" + "<a href=' " + this["informacion"] + " '>" + help(this['informacion'],imginf) +  "</a>" + "</p>" 
 						+ "<p>" + "<a href=' " + this["rss_facebook"] + " '>" + help(this['rss_facebook'],imgfac) + "</a>" + "</p>" + "</section>");
 					});
+					var ult_act = datosJSON[datosJSON.length-1].updated_at;
+					ultmod(ult_act);
 				});
-				ultmod("https://api-sprint3-daw1.herokuapp.com/gast_platos.json");
 
 				function help (param, img){
 					if(param == "") {

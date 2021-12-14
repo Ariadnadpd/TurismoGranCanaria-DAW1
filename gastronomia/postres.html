@@ -174,7 +174,6 @@
 					var imgfac = "<img src='../imagenes/iconos/logo-facebook.svg' alt='icono-facebook' class='iconosrss'>&nbsp; Visita el facebook";
 					var imgins = "<img src='../imagenes/iconos/logo-instagram.svg' alt='icono-instagram' class='iconosrss'>&nbsp; Visita el instagram";
 
-					
 					$.each(datosJSON, function(){
 						$('#cajainfojson2').append("<section>" + "<h4 class='h4enlaces'>" + this["titulo"] + "</h4>"
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" 
@@ -184,8 +183,9 @@
 						+ "<p>" + "<a href=' " + this["rss_instagram"] + " '>" + help(this['rss_instagram'],imgins) +  "</a>" + "</p>"
 						+ "<p>" + "<a href=' " + this["informacion"] + " '>" + help(this['informacion'],imginf) +  "</a>" + "</p>" + "</section>");
 					});
+					var ult_act = datosJSON[datosJSON.length-1].updated_at;
+					ultmod(ult_act);
 				});
-				ultmod("https://api-sprint3-daw1.herokuapp.com/gast_postres.json");
 
 				function help (param, img){
 					if(param == "") {

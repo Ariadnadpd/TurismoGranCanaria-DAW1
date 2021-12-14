@@ -169,8 +169,9 @@
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + "<a href='" + this["ruta"] + " ' class='boton'>" 
 						+ url + "</a>" + "</p>" + "</section>");
 					});
-				});
-				ultmod("https://api-sprint3-daw1.herokuapp.com/adnd_pnaturales.json");
+					var ult_act = datosJSON[datosJSON.length-1].updated_at;
+					ultmod(ult_act);
+				});	
 			});
 		</script>
 

@@ -172,8 +172,9 @@
 						+ "<p class='penlaces'>" + this["subtitulo"] + "</p>" + "<p>" + "<a href='" + this["localizacion"] + " ' class='boton'>" 
 						+ url + "</a>" + "</p>" + "</section>");
 					});
+					var ult_act = datosJSON[datosJSON.length-1].updated_at;
+					ultmod(ult_act);
 				});
-				ultmod("https://api-sprint3-daw1.herokuapp.com/adnd_playas.json");
 			});
 		</script>
 	</body>
