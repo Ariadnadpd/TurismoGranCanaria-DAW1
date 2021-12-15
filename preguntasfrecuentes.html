@@ -68,7 +68,7 @@
 			//Cargamos dinámicamente las preguntas frecuentes de la página, a través de los datos del fichero JSON.
 			$(document).ready(function(){
 				$.getJSON("https://api-sprint3-daw1.herokuapp.com/preguntasfrecuentes.json", function(datosJSON){
-					$.each(datosJSON.datos.preguntasfrec, function(){
+					$.each(datosJSON, function(){
 						//Preguntas
 						$('#pregfrec').append("<li><a href='#p" + this['id'] + "'>" +  this["pregunta"] + "</a></li>");
 
